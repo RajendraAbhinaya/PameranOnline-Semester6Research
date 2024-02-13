@@ -41,7 +41,7 @@ public class ActivateRays : MonoBehaviour
         rightTeleportation.SetActive(!isRightRayHovering && rightTeleportationCancel.action.ReadValue<float>() == 0 && rightTeleportationAction.action.ReadValue<float>() > 0.1f);
 
         //Ray interactor
-        leftRay.SetActive(leftDirectGrab.interactablesSelected.Count == 0 && leftTeleportationAction.action.ReadValue<float>() < 0.1f);
-        rightRay.SetActive(rightDirectGrab.interactablesSelected.Count == 0 && rightTeleportationAction.action.ReadValue<float>() < 0.1f);
+        leftRay.SetActive(leftDirectGrab.interactablesSelected.Count == 0 && leftTeleportation.activeSelf == false);
+        rightRay.SetActive(rightDirectGrab.interactablesSelected.Count == 0 && rightTeleportation.activeSelf == false);
     }
 }
