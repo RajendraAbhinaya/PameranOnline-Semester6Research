@@ -8,12 +8,14 @@ public class ExpoSelector : MonoBehaviour
 {
     public TMP_Text expoName;
     public TMP_Text errorMessage;
+    public GameObject canvas;
     private GameObject expo;
 
     void OnTriggerEnter(Collider col){
         expo = col.gameObject;
         if(expo.tag == "Expo Select"){
             expoName.text = expo.name;
+            canvas.SetActive(true);
         }
     }
 
@@ -22,6 +24,7 @@ public class ExpoSelector : MonoBehaviour
             expo = null;
             expoName.text = "";
             errorMessage.text = "";
+            canvas.SetActive(false);
         }
     }
 

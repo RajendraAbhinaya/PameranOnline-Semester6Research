@@ -5,6 +5,10 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class PokeButton : MonoBehaviour
 {
+    public GameObject visualObject;
+    public Material active;
+    public Material inactive;
+    private bool isActive = false;
     public Transform visualTarget;
     public Vector3 localAxis;
     public float resetSpeed = 5f;
@@ -23,6 +27,7 @@ public class PokeButton : MonoBehaviour
         interactable.hoverEntered.AddListener(Follow);
         interactable.hoverExited.AddListener(Reset);
         interactable.selectEntered.AddListener(Freeze);
+        ActivateButton(isActive);
     }
 
     public void Follow(BaseInteractionEventArgs hover){
@@ -68,5 +73,19 @@ public class PokeButton : MonoBehaviour
         else{
             visualTarget.localPosition = Vector3.Lerp(visualTarget.localPosition, initialPosition, Time.deltaTime * resetSpeed);
         }
+    }
+
+    public void ActivateButton(bool activate){
+        isActive = activate;
+        if(activate){
+            visualObject.GetComponent<MeshRenderer>().material = active;
+        }
+        else{
+            visualObject.GetComponent<MeshRenderer>().material = inactive;
+        }
+    }
+
+    public bool getActiveStatus(){
+        return isActive;
     }
 }

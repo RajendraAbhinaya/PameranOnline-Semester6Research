@@ -14,6 +14,7 @@ public class SlidingDoor : MonoBehaviour
     }
 
     void Update(){
+        float distance = (transform.position - openPosition).magnitude;
         if(isOpen){
             transform.position = Vector3.Lerp(transform.position, openPosition, Time.deltaTime * 5);
         }
