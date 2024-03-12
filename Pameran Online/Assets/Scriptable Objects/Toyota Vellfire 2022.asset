@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bbd0e4b01a3a9e40a465c55477a5725, type: 3}
+  m_Name: Toyota Vellfire 2022
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 2525892458471246598, guid: 2641ab714425a6949b8e0f4b8e347291, type: 3}
+  name: Toyota Vellfire 2022
+  length: 1
+  width: 3
+  height: 4
+  price: 2147483647

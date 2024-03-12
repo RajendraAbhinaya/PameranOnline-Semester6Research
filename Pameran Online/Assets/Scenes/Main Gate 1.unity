@@ -3853,8 +3853,8 @@ PrefabInstance:
         type: 3}
       propertyPath: car
       value: 
-      objectReference: {fileID: 5027506817195521372, guid: dc662f8f93e6a804f95a3e5b32658488,
-        type: 3}
+      objectReference: {fileID: 11400000, guid: 21a4adb8fa20c7842b9bb14c9fa94efd,
+        type: 2}
     - target: {fileID: 8384360574737593168, guid: bfc69e5ee4d3cb44097f28faf5a26ec1,
         type: 3}
       propertyPath: m_Mesh
@@ -4227,8 +4227,8 @@ PrefabInstance:
         type: 3}
       propertyPath: car
       value: 
-      objectReference: {fileID: 2525892458471246598, guid: 2641ab714425a6949b8e0f4b8e347291,
-        type: 3}
+      objectReference: {fileID: 11400000, guid: e195ea44c5fa0c14489c2956b9557049,
+        type: 2}
     - target: {fileID: 8384360574737593168, guid: bfc69e5ee4d3cb44097f28faf5a26ec1,
         type: 3}
       propertyPath: m_Mesh
@@ -6022,8 +6022,8 @@ PrefabInstance:
         type: 3}
       propertyPath: car
       value: 
-      objectReference: {fileID: 1658283304209078493, guid: 98e6af7b38d310c4b8c6ea7f197d9025,
-        type: 3}
+      objectReference: {fileID: 11400000, guid: df76c96b0ff178642803f871d33ce6cb,
+        type: 2}
     - target: {fileID: 8384360574737593168, guid: bfc69e5ee4d3cb44097f28faf5a26ec1,
         type: 3}
       propertyPath: m_Mesh
@@ -6054,90 +6054,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4155501283371680377, guid: bfc69e5ee4d3cb44097f28faf5a26ec1,
     type: 3}
   m_PrefabInstance: {fileID: 548544007}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &580173280
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1149701580}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: a841a2be6c1d16943a1c7541c8c2bb8a,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 99.999985
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: a841a2be6c1d16943a1c7541c8c2bb8a,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 99.999985
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: a841a2be6c1d16943a1c7541c8c2bb8a,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: a841a2be6c1d16943a1c7541c8c2bb8a,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.0115273
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: a841a2be6c1d16943a1c7541c8c2bb8a,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: a841a2be6c1d16943a1c7541c8c2bb8a,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071067
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: a841a2be6c1d16943a1c7541c8c2bb8a,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: a841a2be6c1d16943a1c7541c8c2bb8a,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: a841a2be6c1d16943a1c7541c8c2bb8a,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: a841a2be6c1d16943a1c7541c8c2bb8a,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: a841a2be6c1d16943a1c7541c8c2bb8a,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: a841a2be6c1d16943a1c7541c8c2bb8a,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: a841a2be6c1d16943a1c7541c8c2bb8a,
-        type: 3}
-      propertyPath: m_Name
-      value: hilux
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a841a2be6c1d16943a1c7541c8c2bb8a, type: 3}
---- !u!4 &580173281 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a841a2be6c1d16943a1c7541c8c2bb8a,
-    type: 3}
-  m_PrefabInstance: {fileID: 580173280}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &614897639
 PrefabInstance:
@@ -7595,8 +7511,8 @@ PrefabInstance:
         type: 3}
       propertyPath: car
       value: 
-      objectReference: {fileID: 1658283304209078493, guid: 98e6af7b38d310c4b8c6ea7f197d9025,
-        type: 3}
+      objectReference: {fileID: 11400000, guid: e6260082a5363aa4bbf783514c13c247,
+        type: 2}
     - target: {fileID: 8384360574737593168, guid: bfc69e5ee4d3cb44097f28faf5a26ec1,
         type: 3}
       propertyPath: m_Mesh
@@ -10890,8 +10806,8 @@ PrefabInstance:
         type: 3}
       propertyPath: car
       value: 
-      objectReference: {fileID: 2525892458471246598, guid: 2641ab714425a6949b8e0f4b8e347291,
-        type: 3}
+      objectReference: {fileID: 11400000, guid: e6260082a5363aa4bbf783514c13c247,
+        type: 2}
     - target: {fileID: 8384360574737593168, guid: bfc69e5ee4d3cb44097f28faf5a26ec1,
         type: 3}
       propertyPath: m_Mesh
@@ -11233,8 +11149,8 @@ PrefabInstance:
         type: 3}
       propertyPath: car
       value: 
-      objectReference: {fileID: 2525892458471246598, guid: 2641ab714425a6949b8e0f4b8e347291,
-        type: 3}
+      objectReference: {fileID: 11400000, guid: e6260082a5363aa4bbf783514c13c247,
+        type: 2}
     - target: {fileID: 8384360574737593168, guid: bfc69e5ee4d3cb44097f28faf5a26ec1,
         type: 3}
       propertyPath: m_Mesh
@@ -11714,38 +11630,6 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!1 &1149701579
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1149701580}
-  m_Layer: 0
-  m_Name: Toyota Hilux 2022
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1149701580
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1149701579}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.53, y: 0.1, z: 15.66}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 580173281}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1155023965
 GameObject:
   m_ObjectHideFlags: 0
@@ -18292,8 +18176,8 @@ PrefabInstance:
         type: 3}
       propertyPath: car
       value: 
-      objectReference: {fileID: 5027506817195521372, guid: dc662f8f93e6a804f95a3e5b32658488,
-        type: 3}
+      objectReference: {fileID: 11400000, guid: e6260082a5363aa4bbf783514c13c247,
+        type: 2}
     - target: {fileID: 8384360574737593168, guid: bfc69e5ee4d3cb44097f28faf5a26ec1,
         type: 3}
       propertyPath: m_Mesh
@@ -24563,8 +24447,8 @@ PrefabInstance:
         type: 3}
       propertyPath: car
       value: 
-      objectReference: {fileID: 5027506817195521372, guid: dc662f8f93e6a804f95a3e5b32658488,
-        type: 3}
+      objectReference: {fileID: 11400000, guid: e6260082a5363aa4bbf783514c13c247,
+        type: 2}
     - target: {fileID: 8384360574737593168, guid: bfc69e5ee4d3cb44097f28faf5a26ec1,
         type: 3}
       propertyPath: m_Mesh
@@ -24610,4 +24494,3 @@ SceneRoots:
   - {fileID: 1544316049}
   - {fileID: 974750544}
   - {fileID: 1472553339}
-  - {fileID: 1149701580}

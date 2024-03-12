@@ -3,7 +3,312 @@ guid: a841a2be6c1d16943a1c7541c8c2bb8a
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: boot.5
+    second: {fileID: 2100000, guid: 6567f817a2fb0744f8e11a16e3391698, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: door_lf.12
+    second: {fileID: 2100000, guid: 82c98d153f73881468e376f265f3e489, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: door_lf.14
+    second: {fileID: 2100000, guid: 28bf2663acecafd4d9af2a0b642c31f1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: door_rf.14
+    second: {fileID: 2100000, guid: abec5f4f2291535408303d00b8b96b40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: foglight l
+    second: {fileID: 2100000, guid: 19a1d149e203c5744b91cccfa21835a3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: foglight r
+    second: {fileID: 2100000, guid: ef95885eab334ef40bb68c4d0501d663, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: glass
+    second: {fileID: 2100000, guid: ae4984783041de04887b6a8452ac9ddd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: glass.001
+    second: {fileID: 2100000, guid: e431f53a16b40144885a526888c39765, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: glass.002
+    second: {fileID: 2100000, guid: 362af889d9645a7469c1fb2643a870d2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hilux_dashboard.3
+    second: {fileID: 2100000, guid: bdc813a8eb5dcda4cb121203cc16eb12, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hilux_headlight.0
+    second: {fileID: 2100000, guid: d45f105d69b97f64aa45a1b728b3c653, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hilux_mb01.1
+    second: {fileID: 2100000, guid: 294d9d14fa8957a41857fbf93422fbee, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hilux_mb01.2
+    second: {fileID: 2100000, guid: f79171e3c535aaa46bb6baec3f3e6a9b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hilux_mb01.6
+    second: {fileID: 2100000, guid: ddb07891a7dcf724e81134f8f57357af, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hilux_mb01.7
+    second: {fileID: 2100000, guid: 288893bd87781204c92d73b20f617a15, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hilux_mb02.0
+    second: {fileID: 2100000, guid: b5800348c452ff949a2a083de13c35e6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hilux_mb03.1
+    second: {fileID: 2100000, guid: eecaa3350bc3387498b6ff043bdf97ee, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hilux_mb03.5
+    second: {fileID: 2100000, guid: c39dc2a17f3d8e642ad7f1f5cee881d0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hilux_mb05.1
+    second: {fileID: 2100000, guid: 499e27f5758e8bd47a6d400cc6fab85e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hilux_mb05.11
+    second: {fileID: 2100000, guid: e32e57bcb3bcb9c4ab48aadea27b413c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hilux_mb05.12
+    second: {fileID: 2100000, guid: 946ea2b3df6179b49a3170d416a5222a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hilux_mb05.13
+    second: {fileID: 2100000, guid: ec76c638638be7a47ba6898c94c0404a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hilux_mb05.14
+    second: {fileID: 2100000, guid: ecb1ac2a37bcc60428ceea6e73cd6560, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hilux_mb05.4
+    second: {fileID: 2100000, guid: 9fd28ed7b26d2a647ae31508913eba06, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hilux_mb05.5
+    second: {fileID: 2100000, guid: 128aaa42a441d244194ce1e7cdc9cdbd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hilux_mb07.10
+    second: {fileID: 2100000, guid: be2910158d9471b4689798074c8d678b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hilux_mb07.11
+    second: {fileID: 2100000, guid: 4dda10bb5f9a80941a8c085eabfce951, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hilux_mb07.4
+    second: {fileID: 2100000, guid: 97aff4ee114f10646b448bdf26e73c38, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hilux_mb07.7
+    second: {fileID: 2100000, guid: 90ddd245cd1977849a3de9ae6265072e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hilux_seat_mech.11
+    second: {fileID: 2100000, guid: 8796766ffb65d0c43bb1bf2c847ee29e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hilux_speedometer.11
+    second: {fileID: 2100000, guid: 8d9b690dadf261541981d14c39dd209b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hilux_speedometer.4
+    second: {fileID: 2100000, guid: 1fa7d0e8e37f84e468aef9c58af34a94, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hilux_speedometer.5
+    second: {fileID: 2100000, guid: 3d41fb398f0bf114d903083699749e80, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: indicator lf
+    second: {fileID: 2100000, guid: 46060438a1bfc7c40b98d28fc939d83f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: indicator lm
+    second: {fileID: 2100000, guid: 6ce497603d08b2040b69c92831abb3e0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: indicator lr
+    second: {fileID: 2100000, guid: 279afbb775e6bb840851dd5d18a63acb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: indicator rf
+    second: {fileID: 2100000, guid: 523af9ee565aab6449268946c25e3062, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: indicator rm
+    second: {fileID: 2100000, guid: 0ede4a8b0f99e05408f87fc1aeb72826, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: indicator rr
+    second: {fileID: 2100000, guid: ccc9a0a3facbcdf41ab6a23f30fa052b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: left rear light
+    second: {fileID: 2100000, guid: 96a2edc904aa2da49b4c402df536802f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: movsteer_1.0.0
+    second: {fileID: 2100000, guid: 042f1eb17e03165479cbb17453bea9c8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: movsteer_1.0.1
+    second: {fileID: 2100000, guid: cec521c6c7ab6554f8e8cdd069dce766, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: movsteer_1.0.2
+    second: {fileID: 2100000, guid: 469202a1f7eb9a048b879d9a307e0431, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: movsteer_1.0.3
+    second: {fileID: 2100000, guid: 3785b2a3f6c45574b8525e78b28a6c8d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: movsteer_1.0.4
+    second: {fileID: 2100000, guid: 6c12f3832cc5aca4f94b466ae9aed868, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: movsteer_1.0.6
+    second: {fileID: 2100000, guid: 9766cfa092d273d4eae4b45f59da51c0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: movsteer_1.0.7
+    second: {fileID: 2100000, guid: 5516e936909a0fb46bd3b3c0f0083985, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: movsteer_1.0.8
+    second: {fileID: 2100000, guid: d886d475e96555c40bb88c560652cf44, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: movsteer_1.0.9
+    second: {fileID: 2100000, guid: aa1ca160278bdf04388bfaa1ec7bd5b7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: primary
+    second: {fileID: 2100000, guid: a3a620e8e77a212418c4cec35745e86b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: revlight L
+    second: {fileID: 2100000, guid: e611fe9241858164e80de5eb1ac8fce1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: revlight r
+    second: {fileID: 2100000, guid: 549901ff3d1f15049b6a0e942a9e5a14, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: right front light
+    second: {fileID: 2100000, guid: fa60920a5cf53fb44b3321c785701c41, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: right rear light
+    second: {fileID: 2100000, guid: 080218d60fa79b544944db81e65b2498, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wheel_rf.0
+    second: {fileID: 2100000, guid: 6e2d69ddfd301ac41b1f50c18fbb66ae, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wheel_rf.1
+    second: {fileID: 2100000, guid: 07ece10c41f64cc4ba0aca2e92915f5d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wheel_rf.2
+    second: {fileID: 2100000, guid: 3214c188ab8c33b438ad6f255538ef91, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wheel_rf.3
+    second: {fileID: 2100000, guid: a0b0887d1936c324fa84836f28f705ba, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wheel_rf.4
+    second: {fileID: 2100000, guid: d0761bec15f2ec14a98b883224cf8e20, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wheel_rf.5
+    second: {fileID: 2100000, guid: 0f647314f3a1191488c5b241313cf170, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wheel_rf.6
+    second: {fileID: 2100000, guid: b828cee800a7c4a4cb65002beff18e12, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

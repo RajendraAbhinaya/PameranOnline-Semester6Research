@@ -3,7 +3,222 @@ guid: bd9cc96d1a5868f438eb83e4d4a1b399
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: foglight l
+    second: {fileID: 2100000, guid: 739f0080f8f315c429f99748c139d52b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: foglight r
+    second: {fileID: 2100000, guid: 6dfa20db0dd766946811338606387e02, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: glass
+    second: {fileID: 2100000, guid: dac8178d3fdeaf043a7bdd9808a20121, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: glass.001
+    second: {fileID: 2100000, guid: 326fd35f8142fb847bd4e296a8daeea1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: glass.002
+    second: {fileID: 2100000, guid: 0bc926f6a2f6a3842b4805b81c0d8ad5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: glass.003
+    second: {fileID: 2100000, guid: 21d7341c18dfc144fb58c6b868195fc8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: indicator lf
+    second: {fileID: 2100000, guid: 478e4a9a65dcde0479f828c8331192c3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: indicator lr
+    second: {fileID: 2100000, guid: eb1adb7a7f62bcb41acf32a8dd35e538, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: indicator rf
+    second: {fileID: 2100000, guid: bdf4164534f073b4caf71250ac8b837b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: indicator rr
+    second: {fileID: 2100000, guid: 34b804b0a29854340ab9af83d062e33c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: movsteer_1.0.2
+    second: {fileID: 2100000, guid: 5392da173be178446b2b12df3a4019e8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: movsteer_1.0.3
+    second: {fileID: 2100000, guid: 69b7ddbe51b48f64aa1d37aed80235af, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: movsteer_1.0.4
+    second: {fileID: 2100000, guid: 2f9c8f644a83a474c8bab73ff8958c8a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: movsteer_1.0.5
+    second: {fileID: 2100000, guid: a278e51e8ccfafd42b558a1637cbc41f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: primary
+    second: {fileID: 2100000, guid: c28dbea0625492b4892036d992a40424, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: revlight L
+    second: {fileID: 2100000, guid: cf88df5d960b076419c9dd00bc8e389e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: revlight r
+    second: {fileID: 2100000, guid: ad03a2920dcdc1b489feac885c892ea6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: right front light
+    second: {fileID: 2100000, guid: 2113899b4bac8d841b19f6d89ebadd02, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: right rear light
+    second: {fileID: 2100000, guid: ae9087afe83038d49b197e71b1384108, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vellfire_body.5
+    second: {fileID: 2100000, guid: 0fbf86d7a6dd01944ab5dae26a8ec2f3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vellfire_boot_p.3
+    second: {fileID: 2100000, guid: d21be313bfb79e04596a7b7ddfad5f22, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vellfire_door_rf.11
+    second: {fileID: 2100000, guid: 69b3b593b954c90469538c3a0b5a4158, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vellfire_headlight_f.4
+    second: {fileID: 2100000, guid: add238bc63dea0d42b2ae896a84004a4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vellfire_mb02.3
+    second: {fileID: 2100000, guid: 4fc522470417b3043ab2683e5c85c41d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vellfire_mb02.4
+    second: {fileID: 2100000, guid: e58f374d3a620d641b04d2c691d4625f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vellfire_mb02.5
+    second: {fileID: 2100000, guid: 20f223c015dbbce42a60a2e68846159e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vellfire_mb02.6
+    second: {fileID: 2100000, guid: 0a75dd2f85bad36438ebfbccae86983f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vellfire_mb04.5
+    second: {fileID: 2100000, guid: 2ec00273753ecea4a95bb418e4e46861, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vellfire_mb04.6
+    second: {fileID: 2100000, guid: 8a3b60ba8a0bb8943948c517140fee95, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vellfire_mb2.2
+    second: {fileID: 2100000, guid: 29b694275d6ebba45bd8745ab7855c38, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vellfire_roof.7
+    second: {fileID: 2100000, guid: 7a69953a951aae24f96922164603324c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vellfire_roof.8
+    second: {fileID: 2100000, guid: ff210404ccaadd74f8208bd319dc37cd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vellfire_seats_3.1
+    second: {fileID: 2100000, guid: 77fad3441ecfb2d4780421142c3ac8fb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vellfire_tv_display.1
+    second: {fileID: 2100000, guid: 63670acce4dd53f47a4fb014b5dc5eb2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vellfire_wheel_rf.0
+    second: {fileID: 2100000, guid: 0a9242a48fa80304280359d5b6f91904, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vellfire_wheel_rf.1
+    second: {fileID: 2100000, guid: d2f2db5205707e14293daf461af33d97, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vellfire_wheel_rf.2
+    second: {fileID: 2100000, guid: bd4f5260508e6bc4585ae3601c4ee6bc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vellfire_wheel_rf.3
+    second: {fileID: 2100000, guid: c5f45522d707c0842b559db4eff72a3c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vellfire_wheel_rf.4
+    second: {fileID: 2100000, guid: 5fc235a0a97fe874abe7afb76c4357b9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vellfire_wheel_rf.5
+    second: {fileID: 2100000, guid: dfc26a14f45d3bf42a6640dc1c627601, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vellfire_wheel_rf.6
+    second: {fileID: 2100000, guid: 39e7151d749985b4280cd54136b8ac79, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vellfire_wheel_rf.7
+    second: {fileID: 2100000, guid: a2e980d17e50bce4ea907e7ae39051ea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vellfire_wheel_rf.8
+    second: {fileID: 2100000, guid: e24aac81b17cd364d87b34925e09d5a7, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
