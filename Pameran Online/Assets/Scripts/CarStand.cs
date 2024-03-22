@@ -5,10 +5,13 @@ using TMPro;
 
 public class CarStand : MonoBehaviour
 {
-    public TMP_Text carName;
-    public TMP_Text dimensions;
-    public TMP_Text price;
     public Car car;
+    public TMP_Text carName;
+    public TMP_Text description;
+    public TMP_Text length;
+    public TMP_Text width;
+    public TMP_Text height;
+    public TMP_Text price;
     public GameObject center;
     public GameObject[] panels;
     public GameObject prevButton;
@@ -23,7 +26,11 @@ public class CarStand : MonoBehaviour
         spawnedCar.transform.SetParent(center.transform);
 
         carName.text = car.name;
-        price.text = car.price.ToString();
+        description.text = car.description;
+        length.text = length.text + car.length;
+        width.text = width.text + car.width;
+        height.text = height.text + car.height;
+        price.text = price.text + car.price;
 
         panelAmount = panels.Length;
         panels[currPanel].SetActive(true);

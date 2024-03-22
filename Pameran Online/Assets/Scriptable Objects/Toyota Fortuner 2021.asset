@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 1658283304209078493, guid: 98e6af7b38d310c4b8c6ea7f197d9025, type: 3}
   name: Toyota Fortuner 2021
-  length: 1
-  width: 1
-  height: 1
-  price: 100000000
+  description: The Toyota Fortuner 2021 is an SUV
+  length: 4795
+  width: 1855
+  height: 1835
+  price: 605.800.000

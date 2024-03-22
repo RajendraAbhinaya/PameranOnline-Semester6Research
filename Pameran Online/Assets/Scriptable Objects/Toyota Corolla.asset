@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 146324900188071930, guid: a930148232eab2d4082090fea2a88c21, type: 3}
   name: Toyota Corolla
-  length: 1
-  width: 23
-  height: 455
-  price: 50000000
+  description: The new Toyota Corolla
+  length: 4375mm
+  width: 1780mm
+  height: 1435mm
+  price: 400.000.000

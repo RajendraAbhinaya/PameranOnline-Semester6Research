@@ -7,8 +7,9 @@ public class Car : ScriptableObject
 {
     public GameObject prefab;
     public new string name;
-    public int length;
-    public int width;
-    public int height;
-    public int price;
+    public string description;
+    public string length;
+    public string width;
+    public string height;
+    public string price;
 }

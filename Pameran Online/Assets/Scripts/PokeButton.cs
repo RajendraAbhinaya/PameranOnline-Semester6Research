@@ -8,11 +8,12 @@ public class PokeButton : MonoBehaviour
     public GameObject visualObject;
     public Material active;
     public Material inactive;
-    private bool isActive = false;
     public Transform visualTarget;
     public Vector3 localAxis;
     public float resetSpeed = 5f;
     public float followAngleThreshold = 45f;
+
+    private bool isActive = false;
     private Vector3 offset;
     private Transform pokeAttachTransform;
     private XRBaseInteractable interactable;
@@ -85,7 +86,7 @@ public class PokeButton : MonoBehaviour
         }
     }
 
-    public bool getActiveStatus(){
+    public bool GetActiveStatus(){
         return isActive;
     }
 }

@@ -6,6 +6,7 @@ public class SlidingDoor : MonoBehaviour
 {
     private Vector3 initialPosition;
     public Vector3 openPosition;
+    public PokeButton pokeButton;
     private bool isOpen = false;
     // Start is called before the first frame update
     void Start()
@@ -24,7 +25,9 @@ public class SlidingDoor : MonoBehaviour
     }
 
     public void Open(){
-        isOpen = true;
+        if(pokeButton.GetActiveStatus()){
+            isOpen = true;
+        }
     }
 
     public void Close(){
