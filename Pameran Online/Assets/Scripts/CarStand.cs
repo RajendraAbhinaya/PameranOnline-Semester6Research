@@ -5,7 +5,7 @@ using TMPro;
 
 public class CarStand : MonoBehaviour
 {
-    public Car car;
+    //public Car car;
     public TMP_Text carName;
     public TMP_Text description;
     public TMP_Text length;
@@ -22,6 +22,16 @@ public class CarStand : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+
+    public void SetCar(Car car){
         GameObject spawnedCar = Instantiate(car.prefab, center.transform.position, Quaternion.identity);
         spawnedCar.transform.SetParent(center.transform);
 
@@ -34,12 +44,6 @@ public class CarStand : MonoBehaviour
 
         panelAmount = panels.Length;
         panels[currPanel].SetActive(true);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     public void Prev(){

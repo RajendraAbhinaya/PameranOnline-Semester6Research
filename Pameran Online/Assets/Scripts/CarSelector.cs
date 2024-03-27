@@ -26,7 +26,7 @@ public class CarSelector : MonoBehaviour
     private int carStandsLength;
     private Brand currBrand;
     private int currBrandCarListLength;
-    private int currPage;
+    private int currPage = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -46,6 +46,8 @@ public class CarSelector : MonoBehaviour
         else{
             nextButton.SetActive(true);
         }
+
+        SetStands();
     }
 
     // Update is called once per frame
@@ -71,8 +73,8 @@ public class CarSelector : MonoBehaviour
     public void SetStands(){
         int offset = carStandsLength*currPage;
         for(int i = 0; i < carStandsLength; i++){
-            if(currBrand.carList.Count <= i + offset){
-                carStands[i].car = currBrand.carList[i+offset];
+            if(currBrand.carList.Count > i + offset){
+                carStands[i].SetCar(currBrand.carList[i+offset]);
             }
         }
     }
