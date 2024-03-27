@@ -1,0 +1,1042 @@
+{
+  "austin": {
+    "name": "austin",
+    "mapTo": "austin",
+    "class": "Material",
+    "persistentId": "e2b9bed6-47e9-436c-a5ec-4841702f85a7",
+    "Stages": [
+      {
+        "colorMap": "vehicles/e92/textures/interior/austin_diffuse.png",
+        "pixelSpecular": true,
+        "specularMap": "vehicles/common/null.dds",
+        "specularPower": 128,
+        "useAnisotropic": true
+      },
+      {
+        "colorMap": "vehicles/e92/textures/interior/austin_diffuse.png",
+        "pixelSpecular": true,
+        "specularMap": "vehicles/common/null.dds",
+        "specularPower": 128,
+        "useAnisotropic": true
+      },
+      {},
+      {}
+    ],
+    "alphaRef": 0,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle"
+  },
+  "e92_carpet": {
+    "name": "e92_carpet",
+    "mapTo": "e92_carpet",
+    "class": "material",
+    "persistentId": "05f45c01-32b8-4194-bf7f-8a669a5a93b0",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "baseColorMap": "vehicles/e92/textures/interior/e92_carpet_d.dds",
+        "normalMap": "vehicles/e92/textures/interior/e92_carpet_n.dds",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.550000012
+      },
+      {
+        "baseColorFactor": null,
+        "baseColorMap": "vehicles/e92/textures/interior/e92_carpet_d.dds",
+        "normalMap": "vehicles/e92/textures/interior/e92_carpet_n.dds",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.607767701
+      },
+      {
+        "baseColorFactor": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null
+      }
+    ],
+    "alphaRef": 0,
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "e92_chrome_interior": {
+    "name": "e92_chrome_interior",
+    "mapTo": "e92_chrome_interior",
+    "class": "Material",
+    "persistentId": "da6ce3b7-87bc-4e79-ac40-bc2fb3495cf9",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/etk800/etk800_interior_ao.data.png",
+        "baseColorFactor": [
+          0.846652985,
+          0.846652985,
+          0.846652985,
+          1
+        ],
+        "baseColorMap": "/vehicles/etk800/etk800_interior_black_b.color.png",
+        "clearCoatRoughnessFactor": 0,
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/etk800/etk800_interior_m.data.png",
+        "normalMap": "vehicles/etk800/etk800_interior_nm.normal.png",
+        "opacityFactor": 0,
+        "pixelSpecular": true,
+        "roughnessMap": "/vehicles/etk800/etk800_interior_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "metallicFactor": null,
+        "opacityFactor": null,
+        "pixelSpecular": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "metallicFactor": null,
+        "opacityFactor": null,
+        "pixelSpecular": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "metallicFactor": null,
+        "opacityFactor": null,
+        "pixelSpecular": null
+      }
+    ],
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+  "e92_dashscreen": {
+    "name": "e92_dashscreen",
+    "mapTo": "e92_dashscreen",
+    "class": "Material",
+    "persistentId": "1f4f3327-41e2-4eed-bde3-a548bae7ea3a",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          1,
+          0.999989986,
+          0.999989986,
+          1
+        ],
+        "baseColorMap": "/vehicles/e92/digital.png",
+        "emissive": true,
+        "emissiveFactor": [
+          0.822302997,
+          0.82229501,
+          0.82229501
+        ],
+        "emissiveMap": "/vehicles/e92/digital.png",
+        "metallicFactor": 1,
+        "pixelSpecular": true,
+        "roughnessFactor": 0.270000011
+      },
+      {
+        "pixelSpecular": true,
+        "roughnessFactor": 0.607767701
+      },
+      {},
+      {}
+    ],
+    "alphaRef": 0,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "e92_leather": {
+    "name": "e92_leather",
+    "mapTo": "e92_leather",
+    "class": "Material",
+    "persistentId": "000fe8a4-ccb9-40ba-831f-403890b1de68",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          9.99999997e-7,
+          9.99999997e-7,
+          9.99999997e-7,
+          1
+        ],
+        "baseColorMap": "vehicles/common/null.dds",
+        "normalMap": "vehicles/e92/textures/interior/e92_leather_n.dds",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.550000012
+      },
+      {
+        "baseColorMap": "vehicles/e92/textures/interior/e92_leather_d.dds",
+        "normalMap": "vehicles/e92/textures/interior/e92_leather_n.dds",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.607767701
+      },
+      {},
+      {}
+    ],
+    "alphaRef": 0,
+    "cubemap": "global_cubemap_metalblurred",
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "e92_leather_paintable": {
+    "name": "e92_leather_paintable",
+    "mapTo": "e92_leather_paintable",
+    "class": "Material",
+    "persistentId": "000fe8a4-ccb9-40ba-831f-403890b1de68",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          9.99999997e-7,
+          9.99999997e-7,
+          9.99999997e-7,
+          1
+        ],
+        "baseColorMap": "vehicles/common/null.dds",
+        "normalMap": "vehicles/e92/textures/interior/e92_leather_n.dds",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.550000012
+      },
+      {
+        "baseColorMap": "vehicles/e92/textures/interior/e92_leather_d.dds",
+        "normalMap": "vehicles/e92/textures/interior/e92_leather_n.dds",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.607767701
+      },
+      {},
+      {}
+    ],
+    "alphaRef": 0,
+    "cubemap": "global_cubemap_metalblurred",
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "e92_leather_paintable.skin_leather_paintable.beige": {
+    "name": "e92_leather_paintable.skin_leather_paintable.beige",
+    "mapTo": "e92_leather_paintable.skin_leather_paintable.beige",
+    "class": "Material",
+    "persistentId": "10865e21-4952-4759-98da-c62b8c4ece3e",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          1,
+          0.901961029,
+          0.764706016,
+          1
+        ],
+        "normalMap": "vehicles/e92/textures/interior/e92_leather_n.dds",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.550000012
+      },
+      {
+        "baseColorMap": "vehicles/e92/textures/interior/e92_plastic_d_c.dds",
+        "normalMap": "vehicles/e92/textures/interior/e92_leather_n.dds",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.607767701
+      },
+      {},
+      {}
+    ],
+    "alphaRef": 0,
+    "cubemap": "global_cubemap_metalblurred",
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "e92_leather_paintable.skin_leather_paintable.black": {
+    "name": "e92_leather_paintable.skin_leather_paintable.black",
+    "mapTo": "e92_leather_paintable.skin_leather_paintable.black",
+    "class": "Material",
+    "persistentId": "000fe8a4-ccb9-40ba-831f-403890b1de68",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          9.99999997e-7,
+          9.99999997e-7,
+          9.99999997e-7,
+          1
+        ],
+        "baseColorMap": "vehicles/common/null.dds",
+        "normalMap": "vehicles/e92/textures/interior/e92_leather_n.dds",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.550000012
+      },
+      {
+        "baseColorMap": "vehicles/e92/textures/interior/e92_leather_d.dds",
+        "normalMap": "vehicles/e92/textures/interior/e92_leather_n.dds",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.607767701
+      },
+      {},
+      {}
+    ],
+    "alphaRef": 0,
+    "cubemap": "global_cubemap_metalblurred",
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "e92_leather_paintable.skin_leather_paintable.brown": {
+    "name": "e92_leather_paintable.skin_leather_paintable.brown",
+    "mapTo": "e92_leather_paintable.skin_leather_paintable.brown",
+    "class": "Material",
+    "persistentId": "000fe8a4-ccb9-40ba-831f-403890b1de68",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.568627,
+          0.274509996,
+          0.137254998,
+          1
+        ],
+        "baseColorMap": "vehicles/common/null.dds",
+        "normalMap": "vehicles/e92/textures/interior/e92_leather_n.dds",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.550000012
+      },
+      {
+        "baseColorMap": "vehicles/e92/textures/interior/e92_plastic_d_b.dds",
+        "normalMap": "vehicles/e92/textures/interior/e92_leather_n.dds",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.607767701
+      },
+      {},
+      {}
+    ],
+    "alphaRef": 0,
+    "cubemap": "global_cubemap_metalblurred",
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "e92_leather_paintable.skin_leather_paintable.red": {
+    "name": "e92_leather_paintable.skin_leather_paintable.red",
+    "mapTo": "e92_leather_paintable.skin_leather_paintable.red",
+    "class": "Material",
+    "persistentId": "000fe8a4-ccb9-40ba-831f-403890b1de68",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.843137026,
+          0,
+          0.0196080003,
+          1
+        ],
+        "baseColorMap": "vehicles/common/null.dds",
+        "normalMap": "vehicles/e92/textures/interior/e92_leather_n.dds",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.550000012
+      },
+      {
+        "baseColorMap": "vehicles/e92/textures/interior/e92_plastic_d_d.dds",
+        "normalMap": "vehicles/e92/textures/interior/e92_leather_n.dds",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.607767701
+      },
+      {},
+      {}
+    ],
+    "alphaRef": 0,
+    "cubemap": "global_cubemap_metalblurred",
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "e92_leather_paintable.skin_leather_paintable.red": {
+    "name": "e92_leather_paintable.skin_leather_paintable.red",
+    "mapTo": "e92_leather_paintable.skin_leather_paintable.red",
+    "class": "Material",
+    "persistentId": "000fe8a4-ccb9-40ba-831f-403890b1de68",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.843137026,
+          0,
+          0.0196080003,
+          1
+        ],
+        "baseColorMap": "vehicles/common/null.dds",
+        "normalMap": "vehicles/e92/textures/interior/e92_leather_n.dds",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.550000012
+      },
+      {
+        "baseColorMap": "vehicles/e92/textures/interior/e92_plastic_d_d.dds",
+        "normalMap": "vehicles/e92/textures/interior/e92_leather_n.dds",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.607767701
+      },
+      {},
+      {}
+    ],
+    "alphaRef": 0,
+    "cubemap": "global_cubemap_metalblurred",
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "e92_leather_paintable.skin_leather_paintable.white": {
+    "name": "e92_leather_paintable.skin_leather_paintable.white",
+    "mapTo": "e92_leather_paintable.skin_leather_paintable.white",
+    "class": "Material",
+    "persistentId": "000fe8a4-ccb9-40ba-831f-403890b1de68",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.802559018,
+          0.802552998,
+          0.802550972,
+          1
+        ],
+        "baseColorMap": "vehicles/common/null.dds",
+        "normalMap": "vehicles/e92/textures/interior/e92_leather_n.dds",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.550000012
+      },
+      {
+        "baseColorMap": "vehicles/e92/textures/interior/e92_plastic_d_e.dds",
+        "normalMap": "vehicles/e92/textures/interior/e92_leather_n.dds",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.607767701
+      },
+      {},
+      {}
+    ],
+    "alphaRef": 0,
+    "cubemap": "global_cubemap_metalblurred",
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "e92_mesh": {
+    "name": "e92_mesh",
+    "mapTo": "e92_mesh",
+    "class": "Material",
+    "persistentId": "3ae96341-3768-4bbe-bb77-007fab56aa53",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          9.99999997e-7,
+          9.99999997e-7,
+          9.99999997e-7,
+          1
+        ],
+        "baseColorMap": "vehicles/e92/textures/interior/e92_mesh_d.dds",
+        "normalMap": "vehicles/e92/textures/interior/e92_mesh_n.dds",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.550000012
+      },
+      {
+        "baseColorMap": "vehicles/e92/textures/interior/e92_mesh_d.dds",
+        "normalMap": "vehicles/e92/textures/interior/e92_mesh_n.dds",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.607767701
+      },
+      {},
+      {}
+    ],
+    "alphaRef": 0,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "e92_plastic_interior": {
+    "name": "e92_plastic_interior",
+    "mapTo": "e92_plastic_interior",
+    "class": "Material",
+    "persistentId": "05744fbb-3d5a-4285-ac87-f68daa9d1605",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "baseColorMap": "vehicles/common/null.dds",
+        "normalMap": "vehicles/e92/textures/interior/e92_plastic_n.dds",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.550000012
+      },
+      {
+        "baseColorFactor": null,
+        "baseColorMap": "vehicles/e92/textures/interior/e92_plastic_d.dds",
+        "normalMap": "vehicles/e92/textures/interior/e92_plastic_n.dds",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.607767701
+      },
+      {
+        "baseColorFactor": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null
+      }
+    ],
+    "alphaRef": 0,
+    "cubemap": "global_cubemap_metalblurred",
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "e92_plastic_interior_glossy": {
+    "name": "e92_plastic_interior_glossy",
+    "mapTo": "e92_plastic_interior_glossy",
+    "class": "Material",
+    "persistentId": "f094b778-78eb-44b3-8f0e-d6bad4af3fe4",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/e92/textures/interior/e92_main_ao.data.png",
+        "baseColorMap": "/vehicles/e92/textures/interior/e92_main_b.color.png",
+        "clearCoatRoughnessFactor": 0,
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/e92/textures/interior/e92_main_m.data.png",
+        "normalMap": "vehicles/e92/textures/interior/e92_main_n.normal.png",
+        "roughnessFactor": 0,
+        "roughnessMap": "/vehicles/e92/textures/interior/e92_main_r.data.png"
+      },
+      {
+        "ambientOcclusionMap": "/vehicles/e92/textures/interior/e92_main_ao.data.png",
+        "clearCoatFactor": 1,
+        "clearCoatMap": "/vehicles/e92/textures/interior/e92_main_cc.data.png",
+        "colorPaletteMap": "/vehicles/etki/etki_main_p.color.png",
+        "colorPaletteMapUseUV": 1,
+        "instanceDiffuse": true,
+        "metallicFactor": 1,
+        "normalMap": "vehicles/e92/textures/interior/e92_main_n.normal.png",
+        "opacityMap": "/vehicles/e92/textures/interior/e92_main_c.data.png"
+      },
+      {},
+      {}
+    ],
+    "activeLayers": 2,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+  "e92_plastic_interior_paintable": {
+    "name": "e92_plastic_interior_paintable",
+    "mapTo": "e92_plastic_interior_paintable",
+    "class": "Material",
+    "persistentId": "05744fbb-3d5a-4285-ac87-f68daa9d1605",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          9.99999997e-7,
+          9.99999997e-7,
+          9.99999997e-7,
+          1
+        ],
+        "baseColorMap": "vehicles/common/null.dds",
+        "normalMap": "vehicles/e92/textures/interior/e92_plastic_n.dds",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.550000012
+      },
+      {
+        "baseColorMap": "vehicles/e92/textures/interior/e92_plastic_d.dds",
+        "normalMap": "vehicles/e92/textures/interior/e92_plastic_n.dds",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.607767701
+      },
+      {},
+      {}
+    ],
+    "alphaRef": 0,
+    "cubemap": "global_cubemap_metalblurred",
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "e92_plastic_interior_paintable.skin_plastic_interior_paintable.beige": {
+    "name": "e92_plastic_interior_paintable.skin_plastic_interior_paintable.beige",
+    "mapTo": "e92_plastic_interior_paintable.skin_plastic_interior_paintable.beige",
+    "class": "Material",
+    "persistentId": "1c39bbae-5af6-4dfe-9c8d-6069b595fecd",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          1,
+          0.901961029,
+          0.764706016,
+          1
+        ],
+        "normalMap": "vehicles/e92/textures/interior/e92_plastic_n.dds",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.550000012
+      },
+      {
+        "baseColorMap": "vehicles/e92/textures/interior/e92_plastic_d_c.dds",
+        "normalMap": "vehicles/e92/textures/interior/e92_plastic_n.dds",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.607767701
+      },
+      {},
+      {}
+    ],
+    "alphaRef": 0,
+    "cubemap": "global_cubemap_metalblurred",
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "e92_plastic_interior_paintable.skin_plastic_interior_paintable.black": {
+    "name": "e92_plastic_interior_paintable.skin_plastic_interior_paintable.black",
+    "mapTo": "e92_plastic_interior_paintable.skin_plastic_interior_paintable.black",
+    "class": "Material",
+    "persistentId": "05744fbb-3d5a-4285-ac87-f68daa9d1605",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          9.99999997e-7,
+          9.99999997e-7,
+          9.99999997e-7,
+          1
+        ],
+        "baseColorMap": "vehicles/common/null.dds",
+        "normalMap": "vehicles/e92/textures/interior/e92_plastic_n.dds",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.550000012
+      },
+      {
+        "baseColorMap": "vehicles/e92/textures/interior/e92_plastic_d.dds",
+        "normalMap": "vehicles/e92/textures/interior/e92_plastic_n.dds",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.607767701
+      },
+      {},
+      {}
+    ],
+    "alphaRef": 0,
+    "cubemap": "global_cubemap_metalblurred",
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "e92_plastic_interior_paintable.skin_plastic_interior_paintable.brown": {
+    "name": "e92_plastic_interior_paintable.skin_plastic_interior_paintable.brown",
+    "mapTo": "e92_plastic_interior_paintable.skin_plastic_interior_paintable.brown",
+    "class": "Material",
+    "persistentId": "323b291d-f0b7-4c1a-9c66-321ad8b2b506",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.568627,
+          0.274509996,
+          0.137254998,
+          1
+        ],
+        "baseColorMap": "vehicles/common/null.dds",
+        "normalMap": "vehicles/e92/textures/interior/e92_plastic_n.dds",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.550000012
+      },
+      {
+        "baseColorMap": "vehicles/e92/textures/interior/e92_plastic_d_b.dds",
+        "normalMap": "vehicles/e92/textures/interior/e92_plastic_n.dds",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.607767701
+      },
+      {},
+      {}
+    ],
+    "alphaRef": 0,
+    "cubemap": "global_cubemap_metalblurred",
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "e92_plastic_interior_paintable.skin_plastic_interior_paintable.red": {
+    "name": "e92_plastic_interior_paintable.skin_plastic_interior_paintable.red",
+    "mapTo": "e92_plastic_interior_paintable.skin_plastic_interior_paintable.red",
+    "class": "Material",
+    "persistentId": "52b22dd1-8518-4d9c-b72d-665f43006508",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.843137026,
+          0,
+          0.0196080003,
+          1
+        ],
+        "baseColorMap": "/vehicles/e92/textures/interior/e92_plastic_d_d",
+        "normalMap": "vehicles/e92/textures/interior/e92_plastic_n.dds",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.550000012
+      },
+      {
+        "baseColorMap": "vehicles/e92/textures/interior/e92_plastic_d_d.dds",
+        "normalMap": "vehicles/e92/textures/interior/e92_plastic_n.dds",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.607767701
+      },
+      {},
+      {}
+    ],
+    "alphaRef": 0,
+    "cubemap": "global_cubemap_metalblurred",
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "e92_plastic_interior_paintable.skin_plastic_interior_paintable.white": {
+    "name": "e92_plastic_interior_paintable.skin_plastic_interior_paintable.white",
+    "mapTo": "e92_plastic_interior_paintable.skin_plastic_interior_paintable.white",
+    "class": "Material",
+    "persistentId": "5d239b22-1263-4d32-8bbf-87e9abcad4ef",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.802559018,
+          0.802552998,
+          0.802550972,
+          1
+        ],
+        "baseColorMap": "/vehicles/e92/textures/interior/e92_plastic_d_e",
+        "normalMap": "vehicles/e92/textures/interior/e92_plastic_n.dds",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.550000012
+      },
+      {
+        "baseColorMap": "vehicles/e92/textures/interior/e92_plastic_d_e.dds",
+        "normalMap": "vehicles/e92/textures/interior/e92_plastic_n.dds",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.607767701
+      },
+      {},
+      {}
+    ],
+    "alphaRef": 0,
+    "cubemap": "global_cubemap_metalblurred",
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "e92_trim": {
+    "name": "e92_trim",
+    "mapTo": "e92_trim",
+    "class": "Material",
+    "persistentId": "0a0e1f5f-f46e-4aac-9950-28075b6a1b24",
+    "Stages": [
+      {},
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "e92_trim.skin_trim.alum": {
+    "name": "e92_trim.skin_trim.alum",
+    "mapTo": "e92_trim.skin_trim.alum",
+    "class": "Material",
+    "persistentId": "da6ce3b7-87bc-4e79-ac40-bc2fb3495cf9",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/e92/textures/interior/e92_interior_ao.data.png",
+        "baseColorFactor": [
+          0.803921998,
+          0.803921998,
+          0.803921998,
+          1
+        ],
+        "baseColorMap": "/vehicles/e92/textures/interior/e92_interior_black_b.color.png",
+        "clearCoatRoughnessFactor": 0,
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/e92/textures/interior/e92_interior_m.data.png",
+        "normalMap": "vehicles/e92/textures/interior/e92_interior_nm.normal.png",
+        "opacityFactor": 0,
+        "pixelSpecular": true,
+        "roughnessMap": "/vehicles/e92/textures/interior/e92_interior_r.data.png"
+      },
+      {},
+      {},
+      {}
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+  "e92_trim.skin_trim.cf": {
+    "name": "e92_trim.skin_trim.cf",
+    "mapTo": "e92_trim.skin_trim.cf",
+    "class": "Material",
+    "persistentId": "8afe27a4-3c4d-4529-85f7-68a0fd3a97d2",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.333332986,
+          0.333332986,
+          0.333332986,
+          1
+        ],
+        "baseColorMap": "vehicles/common/carbonfibre.dds",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.550000012
+      },
+      {
+        "baseColorMap": "vehicles/common/carbonfibre.dds",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.607767701
+      },
+      {},
+      {}
+    ],
+    "alphaRef": 0,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "e92_trim.skin_trim.plastic": {
+    "name": "e92_trim.skin_trim.plastic",
+    "mapTo": "e92_trim.skin_trim.plastic",
+    "class": "Material",
+    "persistentId": "f094b778-78eb-44b3-8f0e-d6bad4af3fe4",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/e92/textures/interior/e92_main_ao.data.png",
+        "baseColorMap": "/vehicles/e92/textures/interior/e92_main_b.color.png",
+        "clearCoatRoughnessFactor": 0,
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/e92/textures/interior/e92_main_m.data.png",
+        "normalMap": "vehicles/e92/textures/interior/e92_main_n.normal.png",
+        "roughnessFactor": 0,
+        "roughnessMap": "/vehicles/e92/textures/interior/e92_main_r.data.png"
+      },
+      {
+        "ambientOcclusionMap": "/vehicles/e92/textures/interior/e92_main_ao.data.png",
+        "clearCoatFactor": 1,
+        "clearCoatMap": "/vehicles/e92/textures/interior/e92_main_cc.data.png",
+        "colorPaletteMap": "/vehicles/e92/textures/interior/e92_main_p.color.png",
+        "colorPaletteMapUseUV": 1,
+        "instanceDiffuse": true,
+        "metallicFactor": 1,
+        "normalMap": "vehicles/e92/textures/interior/e92_main_n.normal.png",
+        "opacityMap": "/vehicles/e92/textures/interior/e92_main_c.data.png"
+      },
+      {},
+      {}
+    ],
+    "activeLayers": 2,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+  "e92_trim.skin_trim.wood": {
+    "name": "e92_trim.skin_trim.wood",
+    "mapTo": "e92_trim.skin_trim.wood",
+    "class": "Material",
+    "persistentId": "000fe8a4-ccb9-40ba-831f-403890b1de68",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.392156988,
+          0.392156988,
+          0.392156988,
+          1
+        ],
+        "baseColorMap": "/vehicles/e92/textures/interior/wood",
+        "clearCoatFactor": 1,
+        "pixelSpecular": true,
+        "roughnessFactor": 0
+      },
+      {
+        "baseColorMap": "vehicles/e92/textures/interior/e92_wood.dds",
+        "normalMap": "vehicles/e92/textures/interior/e92_leather_n.dds",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.607767701
+      },
+      {},
+      {}
+    ],
+    "alphaRef": 0,
+    "cubemap": "global_cubemap_metalblurred",
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "e92_trim.skin_trim.wood_b": {
+    "name": "e92_trim.skin_trim.wood_b",
+    "mapTo": "e92_trim.skin_trim.wood_b",
+    "class": "Material",
+    "persistentId": "71964e95-0c74-4f80-984e-b0c07bcb5a76",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.450980008,
+          0.352941006,
+          0.274509996,
+          1
+        ],
+        "baseColorMap": "/vehicles/e92/textures/interior/wood",
+        "clearCoatFactor": 1,
+        "pixelSpecular": true,
+        "roughnessFactor": 0
+      },
+      {
+        "baseColorMap": "vehicles/e92/textures/interior/e92_wood.dds",
+        "normalMap": "vehicles/e92/textures/interior/e92_leather_n.dds",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.607767701
+      },
+      {},
+      {}
+    ],
+    "alphaRef": 0,
+    "cubemap": "global_cubemap_metalblurred",
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "e92_wood": {
+    "name": "e92_wood",
+    "mapTo": "e92_wood",
+    "class": "Material",
+    "persistentId": "000fe8a4-ccb9-40ba-831f-403890b1de68",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.392156988,
+          0.392156988,
+          0.392156988,
+          1
+        ],
+        "baseColorMap": "/vehicles/e92/textures/interior/wood",
+        "clearCoatFactor": 1,
+        "pixelSpecular": true,
+        "roughnessFactor": 0
+      },
+      {
+        "baseColorMap": "vehicles/e92/textures/interior/e92_wood.dds",
+        "normalMap": "vehicles/e92/textures/interior/e92_leather_n.dds",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.607767701
+      },
+      {},
+      {}
+    ],
+    "alphaRef": 0,
+    "cubemap": "global_cubemap_metalblurred",
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "e92_wood_b": {
+    "name": "e92_wood_b",
+    "mapTo": "e92_wood_b",
+    "class": "Material",
+    "persistentId": "71964e95-0c74-4f80-984e-b0c07bcb5a76",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.450980008,
+          0.352941006,
+          0.274509996,
+          1
+        ],
+        "baseColorMap": "/vehicles/e92/textures/interior/wood",
+        "clearCoatFactor": 1,
+        "pixelSpecular": true,
+        "roughnessFactor": 0
+      },
+      {
+        "baseColorMap": "vehicles/e92/textures/interior/e92_wood.dds",
+        "normalMap": "vehicles/e92/textures/interior/e92_leather_n.dds",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.607767701
+      },
+      {},
+      {}
+    ],
+    "alphaRef": 0,
+    "cubemap": "global_cubemap_metalblurred",
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  }
+}

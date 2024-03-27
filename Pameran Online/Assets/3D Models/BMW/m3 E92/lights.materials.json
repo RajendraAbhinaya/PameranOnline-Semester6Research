@@ -1,0 +1,1031 @@
+{
+  "e92_brakelight": {
+    "name": "e92_brakelight",
+    "mapTo": "e92_brakelight",
+    "class": "Material",
+    "persistentId": "d98a21f8-0eed-471e-b1d8-27d4281b1076",
+    "Stages": [
+      {},
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "e92_brakelight_alt": {
+    "name": "e92_brakelight_alt",
+    "mapTo": "e92_brakelight_alt",
+    "class": "Material",
+    "persistentId": "f215bad4-cbb7-4de3-88ef-7ba3d11e5b08",
+    "Stages": [
+      {
+        "emissiveFactor": [
+          11.7647066,
+          11.7647066,
+          11.7647066
+        ]
+      },
+      {
+        "emissiveFactor": null
+      },
+      {
+        "emissiveFactor": null
+      },
+      {
+        "emissiveFactor": null
+      }
+    ],
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "e92_chmsl": {
+    "name": "e92_chmsl",
+    "mapTo": "e92_chmsl",
+    "class": "Material",
+    "persistentId": "4c774a1f-81f0-4293-9fc2-b55ac41cade1",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/e92/textures/lights/e92_redon.png",
+        "emissiveFactor": [
+          11.7647066,
+          0,
+          0
+        ]
+      },
+      {
+        "emissiveFactor": null
+      },
+      {
+        "emissiveFactor": null
+      },
+      {
+        "emissiveFactor": null
+      }
+    ],
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "e92_foglight": {
+    "name": "e92_foglight",
+    "mapTo": "e92_foglight",
+    "class": "Material",
+    "persistentId": "0a0e1f5f-f46e-4aac-9950-28075b6a1b24",
+    "Stages": [
+      {},
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "e92_headlight": {
+    "name": "e92_headlight",
+    "mapTo": "e92_headlight",
+    "class": "Material",
+    "persistentId": "0a0e1f5f-f46e-4aac-9950-28075b6a1b24",
+    "Stages": [
+      {},
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "e92_highbeam": {
+    "name": "e92_highbeam",
+    "mapTo": "e92_highbeam",
+    "class": "Material",
+    "persistentId": "0a0e1f5f-f46e-4aac-9950-28075b6a1b24",
+    "Stages": [
+      {},
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "e92_lights": {
+    "name": "e92_lights",
+    "mapTo": "e92_lights",
+    "class": "Material",
+    "persistentId": "4a7a5a72-cfc3-4ede-b26f-7c003e4878d3",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/e92/e92_lights_ao.data.png",
+        "baseColorMap": "/vehicles/e92/e92_lights_b.color.png",
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/e92/e92_lights_m.data.png",
+        "normalMap": "/vehicles/e92/e92_lights_n.normal.png",
+        "pixelSpecular": true,
+        "roughnessMap": "/vehicles/e92/e92_lights_r.data.png"
+      },
+      {
+        "baseColorMap": "vehicles/e92/textures/lights/e92_lights_d.dds",
+        "metallicFactor": null,
+        "pixelSpecular": true
+      },
+      {
+        "metallicFactor": null,
+        "pixelSpecular": null
+      },
+      {
+        "metallicFactor": null,
+        "pixelSpecular": null
+      }
+    ],
+    "alphaRef": 0,
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "e92_lights_alt": {
+    "name": "e92_lights_alt",
+    "mapTo": "e92_lights_alt",
+    "class": "material",
+    "persistentId": "35d96d15-5c20-4a27-a2b6-64101ea50c70",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.687829018,
+          0.687829018,
+          0.687829018,
+          1
+        ],
+        "baseColorMap": "/vehicles/e92/textures/lights/e92_lights_alt_d.dds",
+        "metallicFactor": 1,
+        "pixelSpecular": true,
+        "roughnessFactor": 0.595000029
+      },
+      {
+        "baseColorFactor": null,
+        "baseColorMap": "vehicles/e92/textures/lights/e92_lights_alt_d.dds",
+        "metallicFactor": null,
+        "pixelSpecular": true,
+        "roughnessFactor": 0.607767701
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null
+      }
+    ],
+    "alphaRef": 0,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "e92_lights_alt_dmg": {
+    "name": "e92_lights_alt_dmg",
+    "mapTo": "e92_lights_alt_dmg",
+    "class": "Material",
+    "persistentId": "e2b9bed6-47e9-436c-a5ec-4841702f85a7",
+    "Stages": [
+      {
+        "colorMap": "vehicles/e92/textures/lights/e92_lights_alt_d.dds",
+        "pixelSpecular": true,
+        "specularMap": "vehicles/e92/textures/lights/e92_lights_alt_s.dds",
+        "specularMap": "vehicles/e92/textures/lights/e92_lights_alt_s.dds",
+        "specularPower": 128,
+        "useAnisotropic": true
+      },
+      {
+        "colorMap": "vehicles/e92/textures/lights/e92_lights_alt_d.dds",
+        "pixelSpecular": true,
+        "specularMap": "vehicles/e92/textures/lights/e92_lights_alt_s.dds",
+        "specularPower": 32,
+        "useAnisotropic": true
+      },
+      {},
+      {}
+    ],
+    "alphaRef": 0,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucent": true
+  },
+  "e92_lights_alt_on": {
+    "name": "e92_lights_alt_on",
+    "mapTo": "e92_lights_alt_on",
+    "class": "Material",
+    "persistentId": "925312ee-0068-4045-b99d-851891d33994",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.211355999,
+          0.211355999,
+          0.211355999,
+          1
+        ],
+        "baseColorMap": "/vehicles/e92/textures/lights/e92_lights_alt_d.dds",
+        "emissive": null,
+        "emissiveFactor": [
+          11.7647066,
+          0,
+          0
+        ],
+        "emissiveMap": "/vehicles/e92/textures/lights/e92_lights_alt_g.dds",
+        "glow": null,
+        "metallicFactor": 1,
+        "pixelSpecular": true,
+        "roughnessFactor": 0.57099998
+      },
+      {
+        "baseColorFactor": null,
+        "emissive": null,
+        "emissiveFactor": [
+          11.7647066,
+          0,
+          0
+        ],
+        "glow": null,
+        "metallicFactor": null,
+        "pixelSpecular": true,
+        "roughnessFactor": 0.601999998
+      },
+      {
+        "baseColorFactor": [
+          1.5,
+          1.5,
+          1.5,
+          1
+        ],
+        "baseColorMap": "/vehicles/e92/textures/lights/e92_lights_alt_s.dds",
+        "emissive": true,
+        "emissiveFactor": [
+          3.92156911,
+          0,
+          0
+        ],
+        "glow": true,
+        "metallicFactor": null,
+        "pixelSpecular": true,
+        "roughnessFactor": 0.607767701
+      },
+      {
+        "baseColorFactor": null,
+        "emissive": null,
+        "emissiveFactor": null,
+        "glow": null,
+        "metallicFactor": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null
+      }
+    ],
+    "alphaRef": 0,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "e92_lights_alt_on_intense": {
+    "name": "e92_lights_alt_on_intense",
+    "mapTo": "e92_lights_alt_on_intense",
+    "class": "Material",
+    "persistentId": "a71ce805-134b-4113-aa78-3b356e48dafd",
+    "Stages": [
+      {
+        "baseColorFactor": null,
+        "baseColorMap": "/vehicles/e92/textures/lights/e92_lights_alt_d.dds",
+        "emissive": null,
+        "emissiveFactor": [
+          11.7647066,
+          0,
+          0
+        ],
+        "glow": null,
+        "pixelSpecular": true,
+        "roughnessFactor": 0.445299804
+      },
+      {
+        "baseColorFactor": null,
+        "baseColorMap": "vehicles/e92/textures/lights/e92_lights_alt_d.dds",
+        "emissive": null,
+        "emissiveFactor": null,
+        "glow": null,
+        "pixelSpecular": true,
+        "roughnessFactor": 0.607767701
+      },
+      {
+        "baseColorFactor": [
+          1.5,
+          1.5,
+          1.5,
+          1
+        ],
+        "baseColorMap": "vehicles/e92/textures/lights/e92_lights_alt_g.dds",
+        "emissive": true,
+        "emissiveFactor": null,
+        "glow": true,
+        "pixelSpecular": true,
+        "roughnessFactor": 0.607767701
+      },
+      {
+        "baseColorFactor": null,
+        "emissive": null,
+        "emissiveFactor": null,
+        "glow": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null
+      }
+    ],
+    "alphaRef": 0,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "e92_lights_b": {
+    "name": "e92_lights_b",
+    "mapTo": "e92_lights_b",
+    "class": "Material",
+    "persistentId": "fa736f9e-c8fc-46de-aa15-aeb1936f84a4",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/e92/textures/lights/e92_lights_d.png",
+        "metallicFactor": 1,
+        "pixelSpecular": true,
+        "specular": null
+      },
+      {
+        "baseColorMap": "vehicles/e92/textures/lights/e92_lights_d.dds",
+        "metallicFactor": null,
+        "pixelSpecular": true,
+        "specular": [
+          1,
+          0.999989986,
+          0.999989986,
+          1
+        ]
+      },
+      {
+        "metallicFactor": null,
+        "pixelSpecular": null,
+        "specular": null
+      },
+      {
+        "metallicFactor": null,
+        "pixelSpecular": null,
+        "specular": null
+      }
+    ],
+    "alphaRef": 0,
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "e92_lights_back": {
+    "name": "e92_lights_back",
+    "mapTo": "e92_lights_back",
+    "class": "Material",
+    "persistentId": "e2b9bed6-47e9-436c-a5ec-4841702f85a7",
+    "Stages": [
+      {
+        "colorMap": "vehicles/common/null.dds",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.445299804,
+        "specularMap": "vehicles/common/null.dds",
+        "useAnisotropic": true
+      },
+      {
+        "colorMap": "vehicles/e92/textures/lights/e92_lights_d.dds",
+        "pixelSpecular": true,
+        "specularMap": "vehicles/e92/textures/lights/e92_lights_s.dds",
+        "useAnisotropic": true
+      },
+      {},
+      {}
+    ],
+    "alphaRef": 0,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucent": true,
+    "translucentBlendOp": "None"
+  },
+  "e92_lights_dmg": {
+    "name": "e92_lights_dmg",
+    "mapTo": "e92_lights_dmg",
+    "class": "Material",
+    "persistentId": "e2b9bed6-47e9-436c-a5ec-4841702f85a7",
+    "Stages": [
+      {
+        "colorMap": "vehicles/e92/textures/lights/e92_lights_d.dds",
+        "pixelSpecular": true,
+        "specularMap": "vehicles/e92/textures/lights/e92_lights_s.dds",
+        "specularMap": "vehicles/e92/textures/lights/e92_lights_s.dds",
+        "specularPower": 128,
+        "useAnisotropic": true
+      },
+      {
+        "colorMap": "vehicles/e92/textures/lights/e92_lights_d.dds",
+        "pixelSpecular": true,
+        "specularMap": "vehicles/e92/textures/lights/e92_lights_s.dds",
+        "specularPower": 32,
+        "useAnisotropic": true
+      },
+      {},
+      {}
+    ],
+    "alphaRef": 0,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucent": true
+  },
+  "e92_lights_norm": {
+    "name": "e92_lights_norm",
+    "mapTo": "e92_lights_norm",
+    "class": "Material",
+    "persistentId": "d34bc970-b849-4652-975c-764c7896d749",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/e92/textures/lights/lights_norm",
+        "normalMap": "/vehicles/e92/8584-norgggggggggggmal.png",
+        "opacityFactor": 0.529999971,
+        "pixelSpecular": true,
+        "roughnessFactor": 0
+      },
+      {
+        "baseColorMap": "vehicles/e92/textures/lights/lights_norm.dds",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.607767701
+      },
+      {},
+      {}
+    ],
+    "alphaRef": 0,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucent": true,
+    "translucentBlendOp": "PreMulAlpha",
+    "version": 1.5
+  },
+  "e92_lights_on": {
+    "name": "e92_lights_on",
+    "mapTo": "e92_lights_on",
+    "class": "material",
+    "persistentId": "bca438b4-8fe3-41d3-865e-4f3b25874657",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.605678022,
+          0.605678022,
+          0.605678022,
+          1
+        ],
+        "baseColorMap": "/vehicles/e92/textures/lights/e92_lights_d.dds",
+        "emissive": null,
+        "emissiveFactor": [
+          11.7647066,
+          0,
+          0
+        ],
+        "emissiveMap": "/vehicles/e92/textures/lights/e92_lights_g.dds",
+        "glow": null,
+        "metallicFactor": 1,
+        "pixelSpecular": true,
+        "roughnessFactor": 0.377000004
+      },
+      {
+        "baseColorFactor": null,
+        "baseColorMap": "vehicles/e92/textures/lights/e92_lights_d.dds",
+        "emissive": null,
+        "emissiveFactor": null,
+        "glow": null,
+        "metallicFactor": null,
+        "pixelSpecular": true,
+        "roughnessFactor": 0.607767701
+      },
+      {
+        "baseColorFactor": [
+          1.5,
+          1.5,
+          1.5,
+          0.75
+        ],
+        "baseColorMap": "vehicles/e92/textures/lights/e92_lights_g.dds",
+        "emissive": true,
+        "emissiveFactor": null,
+        "glow": true,
+        "metallicFactor": null,
+        "pixelSpecular": true,
+        "roughnessFactor": 0.607767701
+      },
+      {
+        "baseColorFactor": null,
+        "emissive": null,
+        "emissiveFactor": null,
+        "glow": null,
+        "metallicFactor": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null
+      }
+    ],
+    "alphaRef": 0,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "e92_lights_on_intense": {
+    "name": "e92_lights_on_intense",
+    "mapTo": "e92_lights_on_intense",
+    "class": "Material",
+    "persistentId": "167e6478-27c5-4cd9-acda-15ea2569c61c",
+    "Stages": [
+      {
+        "baseColorFactor": null,
+        "baseColorMap": "/vehicles/e92/textures/lights/e92_lights_d.dds",
+        "emissive": null,
+        "emissiveFactor": [
+          11.7647066,
+          0,
+          0
+        ],
+        "emissiveMap": "/vehicles/e92/textures/lights/e92_lights_g.dds",
+        "glow": null,
+        "pixelSpecular": true,
+        "roughnessFactor": 0.445299804
+      },
+      {
+        "baseColorFactor": null,
+        "baseColorMap": "vehicles/e92/textures/lights/e92_lights_d.dds",
+        "emissive": true,
+        "emissiveFactor": null,
+        "glow": null,
+        "pixelSpecular": true,
+        "roughnessFactor": 0.607767701
+      },
+      {
+        "baseColorFactor": [
+          1.5,
+          1.5,
+          1.5,
+          1
+        ],
+        "baseColorMap": "vehicles/e92/textures/lights/e92_lights_g.dds",
+        "emissive": true,
+        "emissiveFactor": null,
+        "glow": true,
+        "pixelSpecular": true,
+        "roughnessFactor": 0.607767701
+      },
+      {
+        "baseColorFactor": null,
+        "emissive": null,
+        "emissiveFactor": null,
+        "glow": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null
+      }
+    ],
+    "alphaRef": 0,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "e92_redon": {
+    "name": "e92_redon",
+    "mapTo": "e92_redon",
+    "class": "Material",
+    "persistentId": "4c3ba78e-60e6-4d13-b12f-3c1ad2a3530d",
+    "Stages": [
+      {
+        "colorMap": "vehicles/e92/textures/lights/e92_redon.png",
+        "diffuseColor": [
+          9.99999997e-7,
+          9.99999997e-7,
+          9.99999997e-7,
+          0.100000001
+        ],
+        "roughnessFactor": 0.512000024,
+        "specular": [
+          0.25,
+          0.25,
+          0.25,
+          1
+        ]
+      },
+      {
+        "colorMap": "vehicles/e92/textures/lights/e92_redon.png",
+        "diffuseColor": null,
+        "roughnessFactor": null,
+        "specular": null
+      },
+      {
+        "diffuseColor": null,
+        "roughnessFactor": null,
+        "specular": null
+      },
+      {
+        "diffuseColor": null,
+        "roughnessFactor": null,
+        "specular": null
+      }
+    ],
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "materialTag0": "Miscellaneous",
+    "translucentBlendOp": "None"
+  },
+  "e92_reverselight": {
+    "name": "e92_reverselight",
+    "mapTo": "e92_reverselight",
+    "class": "Material",
+    "persistentId": "0a0e1f5f-f46e-4aac-9950-28075b6a1b24",
+    "Stages": [
+      {},
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "e92_reverselight_alt": {
+    "name": "e92_reverselight_alt",
+    "mapTo": "e92_reverselight_alt",
+    "class": "Material",
+    "persistentId": "0a0e1f5f-f46e-4aac-9950-28075b6a1b24",
+    "Stages": [
+      {},
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "e92_runninglight": {
+    "name": "e92_runninglight",
+    "mapTo": "e92_runninglight",
+    "class": "Material",
+    "persistentId": "8b8ce95f-7738-4e59-b896-741452b32019",
+    "Stages": [
+      {
+        "colorPaletteMap": "/vehicles/common/nullcolormask.dds",
+        "colorPaletteMapUseUV": 1,
+        "emissive": true,
+        "emissiveFactor": [
+          0.0235290006,
+          0.690219998,
+          11.7647066
+        ],
+        "glowFactor": [
+          1,
+          0.999996006,
+          0.999989986
+        ]
+      },
+      {
+        "colorPaletteMapUseUV": null,
+        "emissive": null,
+        "emissiveFactor": null,
+        "glowFactor": null
+      },
+      {
+        "colorPaletteMapUseUV": null,
+        "emissive": null,
+        "emissiveFactor": null,
+        "glowFactor": null
+      },
+      {
+        "colorPaletteMapUseUV": null,
+        "emissive": null,
+        "emissiveFactor": null,
+        "glowFactor": null
+      }
+    ],
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "e92_signal_L": {
+    "name": "e92_signal_L",
+    "mapTo": "e92_signal_L",
+    "class": "Material",
+    "persistentId": "0a0e1f5f-f46e-4aac-9950-28075b6a1b24",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/e92/textures/lights/e92_lights_d.dds",
+        "emissiveFactor": [
+          11.7647066,
+          0,
+          0
+        ],
+        "emissiveMap": "/vehicles/e92/textures/lights/e92_lights_g.dds"
+      },
+      {
+        "emissiveFactor": null
+      },
+      {
+        "emissiveFactor": null
+      },
+      {
+        "emissiveFactor": null
+      }
+    ],
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "e92_signal_L_alt": {
+    "name": "e92_signal_L_alt",
+    "mapTo": "e92_signal_L_alt",
+    "class": "Material",
+    "persistentId": "0a0e1f5f-f46e-4aac-9950-28075b6a1b24",
+    "Stages": [
+      {},
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "e92_signal_R": {
+    "name": "e92_signal_R",
+    "mapTo": "e92_signal_R",
+    "class": "Material",
+    "persistentId": "21c70f8d-f665-40a4-b903-95873f10d11b",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/e92/textures/lights/e92_lights_d.dds",
+        "emissiveFactor": [
+          11.7647066,
+          0,
+          0
+        ],
+        "emissiveMap": "/vehicles/e92/textures/lights/e92_lights_g.dds"
+      },
+      {
+        "emissiveFactor": null
+      },
+      {
+        "emissiveFactor": null
+      },
+      {
+        "emissiveFactor": null
+      }
+    ],
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "e92_signal_R_alt": {
+    "name": "e92_signal_R_alt",
+    "mapTo": "e92_signal_R_alt",
+    "class": "Material",
+    "persistentId": "0a0e1f5f-f46e-4aac-9950-28075b6a1b24",
+    "Stages": [
+      {},
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "e92_taillight": {
+    "name": "e92_taillight",
+    "mapTo": "e92_taillight",
+    "class": "Material",
+    "persistentId": "0a0e1f5f-f46e-4aac-9950-28075b6a1b24",
+    "Stages": [
+      {},
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "e92_taillight_alt": {
+    "name": "e92_taillight_alt",
+    "mapTo": "e92_taillight_alt",
+    "class": "Material",
+    "persistentId": "0a0e1f5f-f46e-4aac-9950-28075b6a1b24",
+    "Stages": [
+      {},
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "e92_vehiclelights": {
+    "name": "e92_vehiclelights",
+    "mapTo": "e92_vehiclelights",
+    "class": "Material",
+    "persistentId": "a66679ed-0b25-496c-bb71-d54c64e82c2f",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/e92/textures/lights/vehiclelights",
+        "metallicFactor": 1,
+        "pixelSpecular": true,
+        "roughnessFactor": 0.649999976
+      },
+      {
+        "baseColorMap": "vehicles/e92/textures/lights/vehiclelights.dds",
+        "metallicFactor": null,
+        "pixelSpecular": true,
+        "roughnessFactor": 0.607767701
+      },
+      {
+        "metallicFactor": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null
+      },
+      {
+        "metallicFactor": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null
+      }
+    ],
+    "alphaRef": 0,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "e92_vehiclelights_alt": {
+    "name": "e92_vehiclelights_alt",
+    "mapTo": "e92_vehiclelights_alt",
+    "class": "Material",
+    "persistentId": "d73dd954-1953-44ef-a98f-e4dd40780c5e",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "baseColorMap": "/vehicles/e92/textures/lights/vehiclelights",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.550000012
+      },
+      {
+        "baseColorFactor": null,
+        "baseColorMap": "vehicles/e92/textures/lights/vehiclelights.dds",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.607767701
+      },
+      {
+        "baseColorFactor": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null
+      }
+    ],
+    "alphaRef": 0,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "e92_vehiclelights_on": {
+    "name": "e92_vehiclelights_on",
+    "mapTo": "e92_vehiclelights_on",
+    "class": "Material",
+    "persistentId": "2db0cb22-f639-4f44-9bde-5624363016a1",
+    "Stages": [
+      {
+        "baseColorFactor": null,
+        "baseColorMap": "/vehicles/e92/textures/lights/vehiclelights_on.png",
+        "emissive": null,
+        "emissiveFactor": [
+          7.84313822,
+          11.7647066,
+          11.7647066
+        ],
+        "glow": null,
+        "pixelSpecular": true,
+        "roughnessFactor": 0.445299804
+      },
+      {
+        "baseColorFactor": null,
+        "baseColorMap": "vehicles/e92/textures/lights/vehiclelights_on.dds",
+        "emissive": null,
+        "emissiveFactor": null,
+        "glow": null,
+        "pixelSpecular": true,
+        "roughnessFactor": 0.607767701
+      },
+      {
+        "baseColorFactor": [
+          1.5,
+          1.5,
+          1.5,
+          0.75
+        ],
+        "baseColorMap": "vehicles/e92/textures/lights/vehiclelights_on.dds",
+        "emissive": true,
+        "emissiveFactor": null,
+        "glow": true,
+        "pixelSpecular": true,
+        "roughnessFactor": 0.607767701
+      },
+      {
+        "baseColorFactor": null,
+        "emissive": null,
+        "emissiveFactor": null,
+        "glow": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null
+      }
+    ],
+    "alphaRef": 0,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "e92_vehiclelights_on_intense": {
+    "name": "e92_vehiclelights_on_intense",
+    "mapTo": "e92_vehiclelights_on_intense",
+    "class": "Material",
+    "persistentId": "da49fa67-bf1d-4de7-83e7-9e28acc092b4",
+    "Stages": [
+      {
+        "baseColorFactor": null,
+        "baseColorMap": "/vehicles/e92/textures/lights/vehiclelights_on_intense.png",
+        "emissive": null,
+        "emissiveFactor": [
+          7.84313822,
+          0,
+          0
+        ],
+        "glow": null,
+        "pixelSpecular": true,
+        "roughnessFactor": 0.445299804
+      },
+      {
+        "baseColorFactor": null,
+        "baseColorMap": "vehicles/e92/textures/lights/vehiclelights_on_intense.dds",
+        "emissive": null,
+        "emissiveFactor": null,
+        "glow": null,
+        "pixelSpecular": true,
+        "roughnessFactor": 0.607767701
+      },
+      {
+        "baseColorFactor": [
+          1.5,
+          1.5,
+          1.5,
+          0.75
+        ],
+        "baseColorMap": "vehicles/e92/textures/lights/vehiclelights_on_intense.dds",
+        "emissive": true,
+        "emissiveFactor": null,
+        "glow": true,
+        "pixelSpecular": true,
+        "roughnessFactor": 0.607767701
+      },
+      {
+        "baseColorFactor": null,
+        "emissive": null,
+        "emissiveFactor": null,
+        "glow": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null
+      }
+    ],
+    "alphaRef": 0,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  }
+}

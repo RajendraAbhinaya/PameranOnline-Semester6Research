@@ -1,0 +1,369 @@
+{
+  "e92_m3_e92_wheel": {
+    "name": "e92_m3_e92_wheel",
+    "mapTo": "e92_m3_e92_wheel",
+    "class": "Material",
+    "persistentId": "339f748d-90f3-4ade-9932-538115d9175c",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          1,
+          0.999989986,
+          0.999989986,
+          1
+        ],
+        "baseColorMap": "vehicles/e92/textures/wheels/m3_e92_wheel.dds",
+        "metallicFactor": 1,
+        "pixelSpecular": true,
+        "roughnessFactor": 0.550000012
+      },
+      {
+        "baseColorMap": "vehicles/e92/textures/wheels/m3_e92_wheel.dds",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.445299804
+      },
+      {},
+      {}
+    ],
+    "alphaRef": 0,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+  "e92_m3_e92_wheel_b": {
+    "name": "e92_m3_e92_wheel_b",
+    "mapTo": "e92_m3_e92_wheel_b",
+    "class": "Material",
+    "persistentId": "aeccacd5-3918-4d2d-bde8-f9bf530792a5",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          1,
+          0.999989986,
+          0.999989986,
+          1
+        ],
+        "baseColorMap": "vehicles/e92/textures/wheels/m3_e92_wheel.dds",
+        "clearCoatFactor": 1,
+        "clearCoatRoughnessFactor": 0,
+        "metallicFactor": 1,
+        "pixelSpecular": true,
+        "roughnessFactor": 0.550000012
+      },
+      {
+        "baseColorMap": "vehicles/e92/textures/wheels/m3_e92_wheel.dds",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.445299804
+      },
+      {},
+      {}
+    ],
+    "alphaRef": 0,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+  "e92_wheel_01a": {
+    "name": "e92_wheel_01a",
+    "mapTo": "e92_wheel_01a",
+    "class": "Material",
+    "persistentId": "7dfd2c87-ecb3-45a1-957d-97b8e59ace36",
+    "Stages": [
+      {
+        "colorMap": "vehicles/common/null.dds",
+        "pixelSpecular": true,
+        "specularMap": "vehicles/common/null.dds",
+        "specularPower": 128,
+        "useAnisotropic": true
+      },
+      {
+        "colorMap": "vehicles/e92/textures/wheels/e92_wheel_01a_d.dds",
+        "pixelSpecular": true,
+        "specularPower": 128,
+        "useAnisotropic": true
+      },
+      {},
+      {}
+    ],
+    "alphaRef": 0,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle"
+  },
+  "e92_wheel_02a": {
+    "name": "e92_wheel_02a",
+    "mapTo": "e92_wheel_02a",
+    "class": "Material",
+    "persistentId": "7dfd2c87-ecb3-45a1-957d-97b8e59ace36",
+    "Stages": [
+      {
+        "colorMap": "vehicles/common/null.dds",
+        "pixelSpecular": true,
+        "specularMap": "vehicles/common/null.dds",
+        "specularPower": 128,
+        "useAnisotropic": true
+      },
+      {
+        "colorMap": "vehicles/e92/textures/wheels/e92_wheel_02a_d.dds",
+        "pixelSpecular": true,
+        "specularPower": 128,
+        "useAnisotropic": true
+      },
+      {},
+      {}
+    ],
+    "alphaRef": 0,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle"
+  },
+  "e92_wheel_03a": {
+    "name": "e92_wheel_03a",
+    "mapTo": "e92_wheel_03a",
+    "class": "Material",
+    "persistentId": "97268a04-4ca9-44e9-9fde-621c276695a6",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.550821006,
+          0.550816,
+          0.550816,
+          1
+        ],
+        "baseColorMap": "vehicles/e92/textures/wheels/e92_wheel_03a_d.dds",
+        "metallicFactor": 1,
+        "pixelSpecular": true,
+        "roughnessFactor": 0.550000012
+      },
+      {
+        "baseColorMap": "vehicles/e92/textures/wheels/e92_wheel_03a_d.dds",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.445299804
+      },
+      {},
+      {}
+    ],
+    "alphaRef": 0,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+  "e92_wheel_03a_b": {
+    "name": "e92_wheel_03a_b",
+    "mapTo": "e92_wheel_03a_b",
+    "class": "Material",
+    "persistentId": "3c5232cc-a826-42af-9230-048c6a30f915",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          1,
+          0.999989986,
+          0.999989986,
+          1
+        ],
+        "baseColorMap": "vehicles/e92/textures/wheels/e92_wheel_03a_d.dds",
+        "metallicFactor": 1,
+        "pixelSpecular": true,
+        "roughnessFactor": 0.550000012
+      },
+      {
+        "baseColorMap": "vehicles/e92/textures/wheels/e92_wheel_03a_d.dds",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.445299804
+      },
+      {},
+      {}
+    ],
+    "alphaRef": 0,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+  "e92_wheel_03b": {
+    "name": "e92_wheel_03b",
+    "mapTo": "e92_wheel_03b",
+    "class": "Material",
+    "persistentId": "7dfd2c87-ecb3-45a1-957d-97b8e59ace36",
+    "Stages": [
+      {
+        "colorMap": "vehicles/common/null.dds",
+        "pixelSpecular": true,
+        "specularMap": "vehicles/common/null.dds",
+        "specularPower": 128,
+        "useAnisotropic": true
+      },
+      {
+        "colorMap": "vehicles/e92/textures/wheels/e92_wheel_03b_d.dds",
+        "pixelSpecular": true,
+        "specularPower": 128,
+        "useAnisotropic": true
+      },
+      {},
+      {}
+    ],
+    "alphaRef": 0,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle"
+  },
+  "e92_wheel_04a": {
+    "name": "e92_wheel_04a",
+    "mapTo": "e92_wheel_04a",
+    "class": "Material",
+    "persistentId": "7e3b2cf4-e2c3-49f5-91b7-209c3672fb31",
+    "Stages": [
+      {
+        "baseColorMap": "vehicles/e92/textures/wheels/e92_wheel_04a_d.dds",
+        "metallicFactor": 1,
+        "pixelSpecular": true,
+        "roughnessFactor": 0.550000012
+      },
+      {
+        "baseColorMap": "vehicles/e92/textures/wheels/e92_wheel_04a_d.dds",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.445299804
+      },
+      {},
+      {}
+    ],
+    "alphaRef": 0,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "e92_wheel_05a": {
+    "name": "e92_wheel_05a",
+    "mapTo": "e92_wheel_05a",
+    "class": "Material",
+    "persistentId": "b630aecf-37e0-4c83-81c5-1b87be7747c9",
+    "Stages": [
+      {
+        "baseColorMap": "vehicles/e92/textures/wheels/e92_wheel_05a_d.dds",
+        "metallicFactor": 1,
+        "normalMap": "vehicles/e92/textures/wheels/e92_wheel_05a_n.dds",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.550000012
+      },
+      {
+        "baseColorMap": "vehicles/e92/textures/wheels/e92_wheel_05a_d.dds",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.445299804
+      },
+      {},
+      {}
+    ],
+    "alphaRef": 0,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+  "e92_wheel_05a_b": {
+    "name": "e92_wheel_05a_b",
+    "mapTo": "e92_wheel_05a_b",
+    "class": "Material",
+    "persistentId": "08ca82a5-d96b-406b-9e77-23bb6a10f219",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.588235021,
+          0.588235021,
+          0.588235021,
+          1
+        ],
+        "baseColorMap": "vehicles/e92/textures/wheels/e92_wheel_05a_d.dds",
+        "clearCoatFactor": 1,
+        "clearCoatRoughnessFactor": 0,
+        "normalMap": "vehicles/e92/textures/wheels/e92_wheel_05a_n.dds",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.550000012
+      },
+      {
+        "baseColorMap": "vehicles/e92/textures/wheels/e92_wheel_05a_d.dds",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.445299804
+      },
+      {},
+      {}
+    ],
+    "alphaRef": 0,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+  "e92_wheel_norm": {
+    "name": "e92_wheel_norm",
+    "mapTo": "e92_wheel_norm",
+    "class": "Material",
+    "persistentId": "27483f54-372b-4405-b2a1-0c1eae1e6c33",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          1,
+          0.999989986,
+          0.999989986,
+          1
+        ],
+        "baseColorMap": "vehicles/e92/textures/wheels/wheel_norm.dds",
+        "clearCoatFactor": 1,
+        "metallicFactor": 1,
+        "normalMap": "vehicles/e92/textures/wheels/wheel_norm_n.dds",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.550000012
+      },
+      {
+        "baseColorMap": "vehicles/e92/textures/wheels/wheel_norm.dds",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.445299804
+      },
+      {},
+      {}
+    ],
+    "alphaRef": 0,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+  "e92_wheel_norm_b": {
+    "name": "e92_wheel_norm_b",
+    "mapTo": "e92_wheel_norm_b",
+    "class": "Material",
+    "persistentId": "2cd36a15-d4e7-4298-8684-94dca9cf3a39",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.627451003,
+          0.627451003,
+          0.627451003,
+          1
+        ],
+        "baseColorMap": "vehicles/e92/textures/wheels/wheel_norm.dds",
+        "clearCoatFactor": 1,
+        "clearCoatRoughnessFactor": 0,
+        "normalMap": "vehicles/e92/textures/wheels/wheel_norm_n.dds",
+        "pixelSpecular": true,
+        "roughnessFactor": 0
+      },
+      {
+        "baseColorMap": "vehicles/e92/textures/wheels/wheel_norm.dds",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.445299804
+      },
+      {},
+      {}
+    ],
+    "alphaRef": 0,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  }
+}
