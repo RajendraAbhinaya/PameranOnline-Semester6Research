@@ -12,5 +12,7 @@ BMW M3 E92     : https://sketchfab.com/3d-models/bmw-m3-e92-stance-c35a14d811b04
 BMW M4 CSL 2023: https://sketchfab.com/3d-models/bmw-m4-csl-2023-26d05968e63b4fc28205cbb9abb0ea41
 BMW Alpina XB7 : https://sketchfab.com/3d-models/bmw-alpina-xb7-d0cbf277689f4ed39b06e238bcd04f73
 
-Mercedes SL63 AMG: https://sketchfab.com/3d-models/mersedes-benz-sl63-amg-free-f7a625e6f5de425e89e84ae2e92cad65
+Mercedes SL63 AMG       : https://sketchfab.com/3d-models/mersedes-benz-sl63-amg-free-f7a625e6f5de425e89e84ae2e92cad65
 Mercedes Maybach GLS 600: https://sketchfab.com/3d-models/mersedes-benz-maybach-gls-600-34c4687ba8204efaa7551afea9f5689f
+Mercedes G63 AMG        : https://sketchfab.com/3d-models/mersedes-benz-g63-amg-e5e2a1d2238048a1a494b3df983c16bb
+Mercedes S65 W222       : https://sketchfab.com/3d-models/mersedes-benz-s65-w222-f42d9d13b0404b5b9a2302a4c590a94d
