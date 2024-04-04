@@ -11,3 +11,5 @@ BMW M4 F82     : https://sketchfab.com/3d-models/bmw-m4-f82-8e87379f40fd40dcac0a
 BMW M3 E92     : https://sketchfab.com/3d-models/bmw-m3-e92-stance-c35a14d811b042d792a6da69381f7f80
 BMW M4 CSL 2023: https://sketchfab.com/3d-models/bmw-m4-csl-2023-26d05968e63b4fc28205cbb9abb0ea41
 BMW Alpina XB7 : https://sketchfab.com/3d-models/bmw-alpina-xb7-d0cbf277689f4ed39b06e238bcd04f73
+
+Mercedes SL63 AMG: https://sketchfab.com/3d-models/mersedes-benz-sl63-amg-free-f7a625e6f5de425e89e84ae2e92cad65
