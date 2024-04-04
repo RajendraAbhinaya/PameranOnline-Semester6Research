@@ -2,10 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class CarStand : MonoBehaviour
 {
     //public Car car;
+    public GameObject canvas;
     public TMP_Text carName;
     public TMP_Text description;
     public TMP_Text length;
@@ -19,29 +21,77 @@ public class CarStand : MonoBehaviour
 
     private int panelAmount;
     private int currPanel = 0;
+    private GameObject spawnedCar;
+    private XRBaseInteractable interactable;
+    private XRRayInteractor interactor;
+    private Transform startingHandPosition;
+    private Quaternion prevStandRotation;
+    private float startingHandRotation = 0f;
+    private bool isRotating = false;
+    private Quaternion startingRotation;
+    private bool reset = false;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        
+        interactable = GetComponent<XRBaseInteractable>();
+        interactable.selectEntered.AddListener(Follow);
+        interactable.selectExited.AddListener(Stop);
+
+        startingRotation = transform.rotation;
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        
+        if(isRotating){
+            float handRotation = startingHandPosition.localRotation.y - startingHandRotation;
+            transform.Rotate(new Vector3(0, -handRotation, 0));
+        }
+
+        if(reset){
+            transform.rotation = Quaternion.Lerp(transform.rotation, startingRotation, 0.2f);
+            if(Mathf.Abs(transform.rotation.y - startingRotation.y) < 0.01f){
+                reset = false;
+            }
+        }
+    }
+
+    public void Follow(BaseInteractionEventArgs hover){
+        if(hover.interactorObject is XRRayInteractor){
+            interactor = (XRRayInteractor)hover.interactorObject;
+
+            startingHandPosition = interactor.gameObject.transform.parent.transform;
+            startingHandRotation = interactor.gameObject.transform.parent.transform.localRotation.y;;
+            isRotating = true;
+        }
+    }
+
+    public void Stop(BaseInteractionEventArgs hover){
+        if(hover.interactorObject is XRRayInteractor){
+            isRotating = false;
+            prevStandRotation = transform.rotation;
+        }
+    }
+
+    public void Reset(){
+        reset = true;
+        isRotating = false;
+        prevStandRotation = startingRotation;
     }
 
     public void SetCar(Car car){
-        GameObject spawnedCar = Instantiate(car.prefab, center.transform.position, Quaternion.identity);
+        spawnedCar = Instantiate(car.prefab, center.transform.position, Quaternion.identity);
         spawnedCar.transform.SetParent(center.transform);
 
         carName.text = car.name;
         description.text = car.description;
-        length.text = length.text + car.length;
-        width.text = width.text + car.width;
-        height.text = height.text + car.height;
-        price.text = price.text + car.price;
+        length.text = "Length: " + car.length;
+        width.text = "Width: " + car.width;
+        height.text = "Height: " + car.height;
+        price.text = "Price: Rp. " + car.price;
 
+        canvas.SetActive(true);
+        currPanel = 0;
         panelAmount = panels.Length;
         panels[currPanel].SetActive(true);
     }
@@ -64,5 +114,11 @@ public class CarStand : MonoBehaviour
         if(currPanel == panelAmount-1){
             nextButton.SetActive(false);
         }
+    }
+
+    public void DestroyCar(){
+        transform.rotation = startingRotation;
+        Destroy(spawnedCar);
+        canvas.SetActive(false);
     }
 }
