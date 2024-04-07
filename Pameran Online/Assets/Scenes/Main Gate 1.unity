@@ -8146,6 +8146,74 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1001 &511034173
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1542948476859707022, guid: 14ec0b5094d07c947ae4128ded1e7567,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.4825015
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542948476859707022, guid: 14ec0b5094d07c947ae4128ded1e7567,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.014712244
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542948476859707022, guid: 14ec0b5094d07c947ae4128ded1e7567,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 30.567177
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542948476859707022, guid: 14ec0b5094d07c947ae4128ded1e7567,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542948476859707022, guid: 14ec0b5094d07c947ae4128ded1e7567,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542948476859707022, guid: 14ec0b5094d07c947ae4128ded1e7567,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542948476859707022, guid: 14ec0b5094d07c947ae4128ded1e7567,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542948476859707022, guid: 14ec0b5094d07c947ae4128ded1e7567,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542948476859707022, guid: 14ec0b5094d07c947ae4128ded1e7567,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542948476859707022, guid: 14ec0b5094d07c947ae4128ded1e7567,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4904719148763817668, guid: 14ec0b5094d07c947ae4128ded1e7567,
+        type: 3}
+      propertyPath: m_Name
+      value: SL63
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 14ec0b5094d07c947ae4128ded1e7567, type: 3}
 --- !u!1 &532837777
 GameObject:
   m_ObjectHideFlags: 0
@@ -14392,26 +14460,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dropdown: {fileID: 913610361}
-  brandList:
-  - brandName: Toyota
-    carList:
-    - {fileID: 11400000, guid: 21a4adb8fa20c7842b9bb14c9fa94efd, type: 2}
-    - {fileID: 11400000, guid: e195ea44c5fa0c14489c2956b9557049, type: 2}
-    - {fileID: 11400000, guid: e6260082a5363aa4bbf783514c13c247, type: 2}
-    - {fileID: 11400000, guid: df76c96b0ff178642803f871d33ce6cb, type: 2}
-    - {fileID: 11400000, guid: df76c96b0ff178642803f871d33ce6cb, type: 2}
-    - {fileID: 11400000, guid: df76c96b0ff178642803f871d33ce6cb, type: 2}
-    - {fileID: 11400000, guid: df76c96b0ff178642803f871d33ce6cb, type: 2}
-    - {fileID: 11400000, guid: df76c96b0ff178642803f871d33ce6cb, type: 2}
-    - {fileID: 11400000, guid: df76c96b0ff178642803f871d33ce6cb, type: 2}
-    - {fileID: 11400000, guid: df76c96b0ff178642803f871d33ce6cb, type: 2}
-    - {fileID: 11400000, guid: df76c96b0ff178642803f871d33ce6cb, type: 2}
-  - brandName: BMW
-    carList:
-    - {fileID: 11400000, guid: f233b0ad1944cac4480f11651d169749, type: 2}
-    - {fileID: 11400000, guid: 1529df439a84551468177ca89c9f3461, type: 2}
-    - {fileID: 11400000, guid: 682a532d5c0a68346b267dd30f4b6eee, type: 2}
-    - {fileID: 11400000, guid: 5d5101a7bececac49b7dbab3db2860c6, type: 2}
+  countryList: []
   carStands:
   - {fileID: 3535798198107776622}
   - {fileID: 456760287}
@@ -14423,7 +14472,7 @@ MonoBehaviour:
   - {fileID: 1119201237}
   prevButton: {fileID: 1562393197}
   nextButton: {fileID: 1333376824}
-  brandText: {fileID: 544665580}
+  countryText: {fileID: 0}
   hallText: {fileID: 354261762}
 --- !u!43 &1142323786
 Mesh:
@@ -19156,7 +19205,7 @@ Transform:
   m_GameObject: {fileID: 1413240752}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.68, y: 0, z: 20.477}
+  m_LocalPosition: {x: 1.68, y: 0, z: 1.4769993}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -29080,3 +29129,4 @@ SceneRoots:
   - {fileID: 1544316049}
   - {fileID: 974750544}
   - {fileID: 1472553339}
+  - {fileID: 511034173}

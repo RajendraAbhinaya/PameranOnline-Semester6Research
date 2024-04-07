@@ -6,7 +6,6 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class CarStand : MonoBehaviour
 {
-    //public Car car;
     public GameObject canvas;
     public TMP_Text carName;
     public TMP_Text description;
@@ -30,11 +29,12 @@ public class CarStand : MonoBehaviour
     private bool isRotating = false;
     private Quaternion startingRotation;
     private bool reset = false;
+
     // Start is called before the first frame update
     void Awake()
     {
         interactable = GetComponent<XRBaseInteractable>();
-        interactable.selectEntered.AddListener(Follow);
+        interactable.selectEntered.AddListener(Spin);
         interactable.selectExited.AddListener(Stop);
 
         startingRotation = transform.rotation;
@@ -44,10 +44,12 @@ public class CarStand : MonoBehaviour
     void FixedUpdate()
     {
         if(isRotating){
+            //Rotates the stand based on the y rotation of the controller.
             float handRotation = startingHandPosition.localRotation.y - startingHandRotation;
             transform.Rotate(new Vector3(0, -handRotation, 0));
         }
 
+         //Reset the stand's rotation.
         if(reset){
             transform.rotation = Quaternion.Lerp(transform.rotation, startingRotation, 0.2f);
             if(Mathf.Abs(transform.rotation.y - startingRotation.y) < 0.01f){
@@ -56,7 +58,8 @@ public class CarStand : MonoBehaviour
         }
     }
 
-    public void Follow(BaseInteractionEventArgs hover){
+    //Rotates the stand based on the y rotation of the controller. Called when the select button is pressed
+    public void Spin(BaseInteractionEventArgs hover){
         if(hover.interactorObject is XRRayInteractor){
             interactor = (XRRayInteractor)hover.interactorObject;
 
@@ -66,6 +69,7 @@ public class CarStand : MonoBehaviour
         }
     }
 
+    //Stops the stand from rotating. Called when the select button is released
     public void Stop(BaseInteractionEventArgs hover){
         if(hover.interactorObject is XRRayInteractor){
             isRotating = false;
@@ -73,12 +77,14 @@ public class CarStand : MonoBehaviour
         }
     }
 
+    //Reset the stand's rotation. Called when the activate button is pressed
     public void Reset(){
         reset = true;
         isRotating = false;
         prevStandRotation = startingRotation;
     }
 
+    //Sets the stand using the values from the scriptable object passed through the function
     public void SetCar(Car car){
         spawnedCar = Instantiate(car.prefab, center.transform.position, Quaternion.identity);
         spawnedCar.transform.SetParent(center.transform);
@@ -96,6 +102,7 @@ public class CarStand : MonoBehaviour
         panels[currPanel].SetActive(true);
     }
 
+    //Used to go back to a previous panel
     public void Prev(){
         nextButton.SetActive(true);
         panels[currPanel].SetActive(false);
@@ -106,6 +113,7 @@ public class CarStand : MonoBehaviour
         }
     }
 
+    //Used to go to the next page
     public void Next(){
         prevButton.SetActive(true);
         panels[currPanel].SetActive(false);
@@ -116,6 +124,7 @@ public class CarStand : MonoBehaviour
         }
     }
 
+    //Remove the current car and reset the stand's rotation
     public void DestroyCar(){
         transform.rotation = startingRotation;
         Destroy(spawnedCar);
