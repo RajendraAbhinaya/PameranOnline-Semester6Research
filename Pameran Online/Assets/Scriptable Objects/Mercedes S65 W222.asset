@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bbd0e4b01a3a9e40a465c55477a5725, type: 3}
   m_Name: Mercedes S65 W222
   m_EditorClassIdentifier: 
-  prefab: {fileID: 3859762949895665816, guid: 285fd880020eded4dbf1bf904a10a038, type: 3}
+  prefab: {fileID: 6008088142765780110, guid: 285fd880020eded4dbf1bf904a10a038, type: 3}
   name: Mercedes S65 W222
   description: 
   length: 

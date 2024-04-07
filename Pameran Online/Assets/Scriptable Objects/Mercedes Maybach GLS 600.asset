@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bbd0e4b01a3a9e40a465c55477a5725, type: 3}
   m_Name: Mercedes Maybach GLS 600
   m_EditorClassIdentifier: 
-  prefab: {fileID: 133513503890628707, guid: fa36b39b74f61cb4ca8e9c00529d31a7, type: 3}
+  prefab: {fileID: 9040878544697160532, guid: afe7b06519f045d4cba431525586153d, type: 3}
   name: Mercedes Maybach GLS 600
   description: 
   length: 
