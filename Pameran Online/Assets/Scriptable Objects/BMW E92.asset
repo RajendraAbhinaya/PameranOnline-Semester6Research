@@ -13,7 +13,10 @@ MonoBehaviour:
   m_Name: BMW E92
   m_EditorClassIdentifier: 
   prefab: {fileID: 2277652351756869108, guid: fb245079a9fe3184a97cf6e74318038f, type: 3}
+  miniature: {fileID: 4343183160831501137, guid: 979b2967747b4a14888ac61b475348a9,
+    type: 3}
   name: BMW E92
+  brand: BMW
   description: 
   length: 
   width: 

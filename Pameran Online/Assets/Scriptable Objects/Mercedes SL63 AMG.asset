@@ -13,7 +13,10 @@ MonoBehaviour:
   m_Name: Mercedes SL63 AMG
   m_EditorClassIdentifier: 
   prefab: {fileID: 4904719148763817668, guid: 14ec0b5094d07c947ae4128ded1e7567, type: 3}
+  miniature: {fileID: 2181217424674563274, guid: d4b91b3606a3ba345b0d973e7d3d83f0,
+    type: 3}
   name: Mercedes SL63 AMG
+  brand: Mercedes
   description: 
   length: 
   width: 

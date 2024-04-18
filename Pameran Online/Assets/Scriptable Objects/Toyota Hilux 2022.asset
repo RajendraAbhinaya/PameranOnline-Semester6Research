@@ -13,7 +13,10 @@ MonoBehaviour:
   m_Name: Toyota Hilux 2022
   m_EditorClassIdentifier: 
   prefab: {fileID: 5027506817195521372, guid: dc662f8f93e6a804f95a3e5b32658488, type: 3}
+  miniature: {fileID: 6511814633744166963, guid: 87ce6225b5b427743b2761c9f92ad08c,
+    type: 3}
   name: Toyota Hilux 2022
+  brand: Toyota
   description: The Toyota Hilux 2022 is a pickup truck
   length: 5265mm
   width: 1800mm

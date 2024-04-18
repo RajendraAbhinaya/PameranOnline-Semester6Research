@@ -14,6 +14,8 @@ public class CarSearch : MonoBehaviour
     public TMP_Dropdown brandDropdown;
     public TMP_Dropdown carDropdown;
     public CarStand carStand;
+    public GameObject center;
+    public GameObject socket;
     public List<Brand> brandList = new List<Brand>();
 
     private List<string> brandNames = new List<string>();
@@ -30,6 +32,22 @@ public class CarSearch : MonoBehaviour
 
         brandDropdown.ClearOptions();
         brandDropdown.AddOptions(brandNames);
+
+        string currBrandName = brandNames[0];
+        for(int i=0; i<brandList.Count; i++){
+            if(currBrandName == brandList[i].brandName){
+                currBrand = brandList[i];
+                break;
+            }
+        }
+
+        currCarList = currBrand.carList;
+        List<string> carNames = new List<string>();
+        for(int i=0; i<currCarList.Count; i++){
+            carNames.Add(currCarList[i].name);
+        }
+        carDropdown.ClearOptions();
+        carDropdown.AddOptions(carNames);
     }
 
     // Update is called once per frame
@@ -58,5 +76,12 @@ public class CarSearch : MonoBehaviour
 
     public void SelectCar(){
         
+    }
+
+    public void SelectButton(){
+        carStand.DestroyCar();
+        carStand.SetCar(currCarList[carDropdown.value]);
+        Instantiate(currCarList[carDropdown.value].miniature, socket.transform.position, Quaternion.identity);
+        center.transform.Rotate(0, 180, 0);
     }
 }

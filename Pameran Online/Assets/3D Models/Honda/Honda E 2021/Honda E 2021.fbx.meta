@@ -1,0 +1,389 @@
+fileFormatVersion: 2
+guid: 92263a1c082687440819bac638f07e9c
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BackRedReflectors
+    second: {fileID: 2100000, guid: e4cb9834daa0e7c45a419cee842ecc36, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BlackNoSplecular
+    second: {fileID: 2100000, guid: d5689fc2209a63c43b950b1f3caaf90d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BlackPlasticShiny
+    second: {fileID: 2100000, guid: 0745ff682bc4d9a47921b98c222414d4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BlueDetailLogos
+    second: {fileID: 2100000, guid: 858568dc51cdbbf4ca2406fb1b93f75b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Buttons-Detail(text)
+    second: {fileID: 2100000, guid: f27c26f93faad1a46bad2709e90c63c1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CameraLens BlackShiny
+    second: {fileID: 2100000, guid: ed9afeaba1cbd0e4c90b0e0266380273, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CameraPlasticMaterial1
+    second: {fileID: 2100000, guid: aaed9d4955bd8bd47b439b40b2a404ab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CameraPlasticMaterial2
+    second: {fileID: 2100000, guid: 7220eaecd2276ff439d490ccd26ef01d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CamerasCristal
+    second: {fileID: 2100000, guid: 1ec7f7f0e18c15f478211eb57d0e2371, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CarPaintBlack
+    second: {fileID: 2100000, guid: c1ca296457c691842a699cc4600075e1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CarPaintWhite
+    second: {fileID: 2100000, guid: 5bec93529055b18458855abceb31ec50, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CarUnderBlack
+    second: {fileID: 2100000, guid: 014fc1beed96ae749a20e3f5cf3767d3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CarpetSpecial
+    second: {fileID: 2100000, guid: db909c6705feaa84198bce020fec8bfa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CenterBigScreen
+    second: {fileID: 2100000, guid: a284495f4f2282c4cb287f874a7aa5d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CenterRetro
+    second: {fileID: 2100000, guid: bce3020c3d9f15349a4ed88bf05aa754, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chrome15
+    second: {fileID: 2100000, guid: 0fc957692d3a4c3489897ef54725de97, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ChromeLogos
+    second: {fileID: 2100000, guid: 1f0c242484ce91b449b1117561e458a9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ChromeRims
+    second: {fileID: 2100000, guid: 86d8576ccad75f24eafa2f865ffa450f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ChromedReflectors
+    second: {fileID: 2100000, guid: 1d9d34f2f138c5d49bb0cb28fdc1ad21, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cristal
+    second: {fileID: 2100000, guid: 7685a978a2d7e4c4d8e11e3d17dbd60e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CristalTintado
+    second: {fileID: 2100000, guid: 51d748e4ccf37bb4caad29b1e6db51ea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DashPatternPlastic
+    second: {fileID: 2100000, guid: ab6abf41779fd7f4eb9d9fc98c9a461e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EmissiveLogo
+    second: {fileID: 2100000, guid: dafeb31f19771b043b856d6a30f50b1d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ExteriorHeadLightsGlass
+    second: {fileID: 2100000, guid: 5b2ab5fa10261624fb69cd5c472aa72c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FullChrome
+    second: {fileID: 2100000, guid: 30180d49939d2f94eacd44e2765ed4cf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GrayClothCouches
+    second: {fileID: 2100000, guid: e118ef9d3b1ecf34da82a442f0014db5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HeadLampGlasses
+    second: {fileID: 2100000, guid: 0988b9611dcd590429402b49e0931fa1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HeatedLinesRearWindshield
+    second: {fileID: 2100000, guid: 0f59e260e7ad1214ab07f57e9d875ade, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: InteriorFloor
+    second: {fileID: 2100000, guid: 2ed412f771abf00418855cf830c9a6b3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: InteriorWood
+    second: {fileID: 2100000, guid: 327be20f83bd6bc459c2f0eaf7ea9c15, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LedFrontLight
+    second: {fileID: 2100000, guid: 6af51a6c0a5a5eb4b8d186e7d637fe6d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LedRearLight
+    second: {fileID: 2100000, guid: a5feb7a324a63114e91993f0448f9695, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MainHeadLightGlass
+    second: {fileID: 2100000, guid: 82e8833ec85f05542be6de002197e569, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Matricula
+    second: {fileID: 2100000, guid: fc7df59d3cf714c4082e367fef02f9f0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pedales
+    second: {fileID: 2100000, guid: 7bff00bd4c6f3d44ba0ca2cb4b1cb5c0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Plastic25
+    second: {fileID: 2100000, guid: c162fdca882cd214b97bf51679fafef8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Plastic45
+    second: {fileID: 2100000, guid: f4f0051afc8021248ad5ca627875326a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pneumatic
+    second: {fileID: 2100000, guid: e022738af70757f4fa85dfe77851a541, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RearLampInteriorGlasses
+    second: {fileID: 2100000, guid: b7aa9db3fb92f6845ad0e63d6fd0f981, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RearWhipper
+    second: {fileID: 2100000, guid: 57d339990f4e95049b3dd0feef7f45a6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RetroGlass
+    second: {fileID: 2100000, guid: 6cbb7c4431a348a4fb9c9102c735fb5e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RetroScreens
+    second: {fileID: 2100000, guid: 64a83e43f5e68134f8a0c6b96ddcfb6f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rims
+    second: {fileID: 2100000, guid: ed68da0ec925af34c8f7c3d44cbfbe78, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RoofCloth
+    second: {fileID: 2100000, guid: adda2580b2d8fec4dbca2fec6b7631ba, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RoofLights
+    second: {fileID: 2100000, guid: 2903b754baea1cf4fae7348888a223af, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rubber
+    second: {fileID: 2100000, guid: f648704548441ca4e848376b29aaddbf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ScreenTexture
+    second: {fileID: 2100000, guid: 6753b0f85634e9747bcbf9d58efc02de, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SeatBelt
+    second: {fileID: 2100000, guid: db988bc0149b10749884e25ef8bacf13, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SewsGolden
+    second: {fileID: 2100000, guid: 82eae87cbd6defb41bbee5a933acadff, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SewsWhite
+    second: {fileID: 2100000, guid: 7cc49f745a8e679498f96d98d5b1bab1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SpeakerRack
+    second: {fileID: 2100000, guid: 0652d6a8cee105542885a2c991f4ca40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SteeringWheel
+    second: {fileID: 2100000, guid: c6ef18cb803aff147965387199f2a86a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteClothCouches
+    second: {fileID: 2100000, guid: c1df70d7878b9764d96d8504f24b3303, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteMetalShiny
+    second: {fileID: 2100000, guid: 84297af16dea66044b83d138cf70e479, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhitePlastic
+    second: {fileID: 2100000, guid: 190bc2ce6aa5daf4fb2a44b6b998efff, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WindowsBlackSticker
+    second: {fileID: 2100000, guid: 1383073ba43602648abd2953329b1b9e, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

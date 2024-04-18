@@ -13,7 +13,10 @@ MonoBehaviour:
   m_Name: Toyota Vellfire 2022
   m_EditorClassIdentifier: 
   prefab: {fileID: 2525892458471246598, guid: 2641ab714425a6949b8e0f4b8e347291, type: 3}
+  miniature: {fileID: 4660472456403938779, guid: 4cd58d52b917da146bae1690f6acafd7,
+    type: 3}
   name: Toyota Vellfire 2022
+  brand: Toyota
   description: Toyota Vellfire memiliki 7 kursi
   length: 4935mm
   width: 1850mm

@@ -13,7 +13,10 @@ MonoBehaviour:
   m_Name: Audi A3 S-Line
   m_EditorClassIdentifier: 
   prefab: {fileID: 8349846561700143779, guid: 8d3dd22338c04624fb51704b740f2a1e, type: 3}
+  miniature: {fileID: 505077297012072216, guid: c7ebb84d8d736674e85b33cca069080a,
+    type: 3}
   name: Audi A3 S-Line
+  brand: Audi
   description: 
   length: 
   width: 

@@ -98,6 +98,8 @@ public class CarStand : MonoBehaviour
 
         canvas.SetActive(true);
         currPanel = 0;
+        prevButton.SetActive(false);
+        nextButton.SetActive(true);
         panelAmount = panels.Length;
         panels[currPanel].SetActive(true);
     }
@@ -129,5 +131,6 @@ public class CarStand : MonoBehaviour
         transform.rotation = startingRotation;
         Destroy(spawnedCar);
         canvas.SetActive(false);
+        panels[currPanel].SetActive(false);
     }
 }

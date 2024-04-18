@@ -13,7 +13,10 @@ MonoBehaviour:
   m_Name: Toyota Fortuner 2021
   m_EditorClassIdentifier: 
   prefab: {fileID: 1658283304209078493, guid: 98e6af7b38d310c4b8c6ea7f197d9025, type: 3}
+  miniature: {fileID: 4806285886595784458, guid: e508bdad586b16b498bb2ba27384d4c0,
+    type: 3}
   name: Toyota Fortuner 2021
+  brand: Toyota
   description: The Toyota Fortuner 2021 is an SUV
   length: 4795
   width: 1855

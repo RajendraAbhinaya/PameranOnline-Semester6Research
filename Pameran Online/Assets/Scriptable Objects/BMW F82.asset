@@ -13,7 +13,10 @@ MonoBehaviour:
   m_Name: BMW F82
   m_EditorClassIdentifier: 
   prefab: {fileID: 8059595516284235383, guid: bcc033af970c0a44db96dfef7f8d1ea9, type: 3}
+  miniature: {fileID: 4179289605950866645, guid: d1547a41b6b3eb14db67286d2c1cfba3,
+    type: 3}
   name: BMW F82
+  brand: BMW
   description: 
   length: 
   width: 

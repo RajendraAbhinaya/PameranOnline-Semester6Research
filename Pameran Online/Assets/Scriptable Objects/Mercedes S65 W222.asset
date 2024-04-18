@@ -13,7 +13,10 @@ MonoBehaviour:
   m_Name: Mercedes S65 W222
   m_EditorClassIdentifier: 
   prefab: {fileID: 6008088142765780110, guid: 285fd880020eded4dbf1bf904a10a038, type: 3}
+  miniature: {fileID: 2993511377134631318, guid: a6ea0ddd0cf359a48bd9d70560dc9b2a,
+    type: 3}
   name: Mercedes S65 W222
+  brand: Mercedes
   description: 
   length: 
   width: 

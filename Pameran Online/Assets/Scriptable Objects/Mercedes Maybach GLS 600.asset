@@ -13,7 +13,10 @@ MonoBehaviour:
   m_Name: Mercedes Maybach GLS 600
   m_EditorClassIdentifier: 
   prefab: {fileID: 9040878544697160532, guid: afe7b06519f045d4cba431525586153d, type: 3}
+  miniature: {fileID: 3762511465224972766, guid: fc842e9d16ebd2b40a0b43ef4a21417e,
+    type: 3}
   name: Mercedes Maybach GLS 600
+  brand: Mercedes
   description: 
   length: 
   width: 
