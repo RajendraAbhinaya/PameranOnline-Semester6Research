@@ -3582,9 +3582,10 @@ GameObject:
   - component: {fileID: 6973641062543248}
   - component: {fileID: 6908440570971313169}
   - component: {fileID: 1029433527519021152}
+  - component: {fileID: 153780668869389571}
   m_Layer: 0
   m_Name: Toyota Vellfire 2022 Miniature
-  m_TagString: Untagged
+  m_TagString: Miniature
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3809,6 +3810,27 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
+--- !u!65 &153780668869389571
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4660472456403938779}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.6763022, y: 1.6913526, z: 4.5}
+  m_Center: {x: -0.00019267201, y: 0.89740837, z: 0.0011304021}
 --- !u!1 &4907469549588237361
 GameObject:
   m_ObjectHideFlags: 0
@@ -5439,7 +5461,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4848756963511688133}
-  - component: {fileID: 669268798469655891}
   m_Layer: 0
   m_Name: hellfire
   m_TagString: Untagged
@@ -5464,27 +5485,6 @@ Transform:
   - {fileID: 8542749625142083284}
   m_Father: {fileID: 7997547504667700583}
   m_LocalEulerAnglesHint: {x: -89.98, y: 180, z: 0}
---- !u!65 &669268798469655891
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7920434239613816202}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.018625582, y: 0.050000004, z: 0.01773928}
-  m_Center: {x: -0.00019268236, y: -4.000867e-14, z: 0.0011303754}
 --- !u!1 &8034737826103390260
 GameObject:
   m_ObjectHideFlags: 0

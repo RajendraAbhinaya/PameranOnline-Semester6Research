@@ -14115,7 +14115,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2298674218240056077}
-  - component: {fileID: 314841396372599229}
   m_Layer: 0
   m_Name: fortuner_2021 (1)
   m_TagString: Untagged
@@ -14216,27 +14215,6 @@ Transform:
   - {fileID: 8994389077078193375}
   m_Father: {fileID: 7100657640574428275}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &314841396372599229
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4552688553418135188}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.018350704, y: 0.01734692, z: 0.047113415}
-  m_Center: {x: 0.0000071795366, y: 0.0088924, z: -0.0030860903}
 --- !u!1 &4554872332711203366
 GameObject:
   m_ObjectHideFlags: 0
@@ -15161,9 +15139,10 @@ GameObject:
   - component: {fileID: 733359442850451271}
   - component: {fileID: 3291929177163679839}
   - component: {fileID: 5696462373227328841}
+  - component: {fileID: 912267981621728377}
   m_Layer: 0
   m_Name: Toyota Fortuner 2021 Miniature
-  m_TagString: Untagged
+  m_TagString: Miniature
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15388,6 +15367,27 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
+--- !u!65 &912267981621728377
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4806285886595784458}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.67, y: 1.6555835, z: 4.535634}
+  m_Center: {x: 0.0000071525574, y: 0.8452218, z: 0.038434118}
 --- !u!1 &4810964410210599115
 GameObject:
   m_ObjectHideFlags: 0

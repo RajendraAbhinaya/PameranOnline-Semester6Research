@@ -28,6 +28,7 @@ public class CarMiniature : MonoBehaviour
     }
 
     public void DestroyMiniature(){
-        Destroy(this);
+        Debug.Log("Destroyed " + this.gameObject.name);
+        Destroy(this.gameObject);
     }
 }

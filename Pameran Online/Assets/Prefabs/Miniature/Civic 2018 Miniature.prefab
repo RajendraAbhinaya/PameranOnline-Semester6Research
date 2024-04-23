@@ -2863,7 +2863,7 @@ GameObject:
   - component: {fileID: 2491947382331211367}
   m_Layer: 0
   m_Name: Civic 2018 Miniature
-  m_TagString: Untagged
+  m_TagString: Miniature
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

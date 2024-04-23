@@ -9288,7 +9288,7 @@ GameObject:
   - component: {fileID: 1486747374038391188}
   m_Layer: 0
   m_Name: m4 csl Miniature
-  m_TagString: Untagged
+  m_TagString: Miniature
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

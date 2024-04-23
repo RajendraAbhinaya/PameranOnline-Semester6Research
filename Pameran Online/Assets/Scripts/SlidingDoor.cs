@@ -24,8 +24,8 @@ public class SlidingDoor : MonoBehaviour
         }
     }
 
-    public void Open(){
-        if(pokeButton.GetActiveStatus()){
+    public void Open(bool noButton){
+        if(pokeButton.GetActiveStatus() || noButton){
             isOpen = true;
         }
     }

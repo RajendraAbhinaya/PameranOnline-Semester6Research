@@ -8,9 +8,10 @@ public class MiniatureSelector : MonoBehaviour
     public TMP_Dropdown brandDropdown;
     public TMP_Dropdown carDropdown;
     public CarSearch carSearchScript;
-    private GameObject miniature;
-    private string carBrand;
-    private string carName;
+    private GameObject miniature = null;
+    private string carBrand = "";
+    private string carName = "";
+    //private int i = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -26,7 +27,10 @@ public class MiniatureSelector : MonoBehaviour
 
     void OnTriggerEnter(Collider col){
         if(col.gameObject.tag == "Miniature"){
-            Destroy(miniature);
+            //Debug.Log("Trigger Enter " + i++);
+            if(miniature != null){
+                Destroy(miniature);
+            }
             miniature = col.gameObject;
             carBrand = miniature.GetComponent<CarMiniature>().car.brand;
             carName = miniature.GetComponent<CarMiniature>().car.name;
@@ -34,7 +38,7 @@ public class MiniatureSelector : MonoBehaviour
             for(int i=0; i<brandDropdown.options.Count; i++){
                 if(carBrand == brandDropdown.options[i].text){
                     brandDropdown.value = i;
-                    carSearchScript.SelectBrand();
+                    carSearchScript.SelectBrand(true);
                     break;
                 }
             }
@@ -49,9 +53,11 @@ public class MiniatureSelector : MonoBehaviour
     }
 
     void OnTriggerExit(Collider col){
-        if(col.gameObject.tag == "Miniature"){
-            miniature = null;
-            col.gameObject.GetComponent<CarMiniature>().SetDespawnTimer();
-        }
+        miniature = null;
+    }
+
+    public void DestroyMiniature(){
+        Destroy(miniature);
+        miniature = null;
     }
 }

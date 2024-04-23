@@ -21,10 +21,13 @@ public class CarSearch : MonoBehaviour
     private List<string> brandNames = new List<string>();
     private List<Car> currCarList = new List<Car>();
     private Brand currBrand;
+    private int prevCar;
+    private MiniatureSelector miniatureSelectorScript;
 
     // Start is called before the first frame update
     void Start()
     {
+        miniatureSelectorScript = socket.GetComponent<MiniatureSelector>();
         for(int i=0; i<brandList.Count; i++){
             brandNames.Add(brandList[i].brandName);
         }
@@ -48,6 +51,8 @@ public class CarSearch : MonoBehaviour
         }
         carDropdown.ClearOptions();
         carDropdown.AddOptions(carNames);
+        prevCar = carDropdown.value;
+        SelectCar();
     }
 
     // Update is called once per frame
@@ -56,7 +61,7 @@ public class CarSearch : MonoBehaviour
         
     }
 
-    public void SelectBrand(){
+    public void SelectBrand(bool fromMiniature){
         string currBrandName = brandNames[brandDropdown.value];
         for(int i=0; i<brandList.Count; i++){
             if(currBrandName == brandList[i].brandName){
@@ -72,16 +77,35 @@ public class CarSearch : MonoBehaviour
         }
         carDropdown.ClearOptions();
         carDropdown.AddOptions(carNames);
+
+        if(!fromMiniature){
+            Debug.Log("Not from miniature");
+            //prevCar = -1;
+            CheckCar();
+        }
+        else{
+            Debug.Log("From miniature");
+        }
     }
 
     public void SelectCar(){
-        
+        //miniatureSelectorScript.DestroyMiniature();
+        //spawnMiniature = Time.time + 0.5f;
+        Instantiate(currCarList[carDropdown.value].miniature, socket.transform.position, new Quaternion(0, 180, 0, 0));
+        Debug.Log("AAAAAAA");
+    }
+
+    public void CheckCar(){
+        if(carDropdown.value != prevCar){
+            SelectCar();
+            prevCar = carDropdown.value;
+        }
     }
 
     public void SelectButton(){
         carStand.DestroyCar();
         carStand.SetCar(currCarList[carDropdown.value]);
-        Instantiate(currCarList[carDropdown.value].miniature, socket.transform.position, Quaternion.identity);
+        //SelectCar();
         center.transform.Rotate(0, 180, 0);
     }
 }

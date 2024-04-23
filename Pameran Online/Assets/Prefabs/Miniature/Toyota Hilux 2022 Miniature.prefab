@@ -2619,9 +2619,10 @@ GameObject:
   - component: {fileID: 3188290081096759859}
   - component: {fileID: 8927309024316163761}
   - component: {fileID: 7984307516482746218}
+  - component: {fileID: 5694061097095234724}
   m_Layer: 0
   m_Name: Toyota Hilux 2022 Miniature
-  m_TagString: Untagged
+  m_TagString: Miniature
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2846,6 +2847,27 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
+--- !u!65 &5694061097095234724
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6511814633744166963}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.6883379, y: 1.5945358, z: 4.646084}
+  m_Center: {x: 0.000049471855, y: 0.88773215, z: -0.0008019805}
 --- !u!1 &6576262526298861357
 GameObject:
   m_ObjectHideFlags: 0
@@ -3837,7 +3859,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6400306463898377350}
-  - component: {fileID: 7445408913378492691}
   m_Layer: 0
   m_Name: hilux (1)
   m_TagString: Untagged
@@ -3862,27 +3883,6 @@ Transform:
   - {fileID: 9216966164756444702}
   m_Father: {fileID: 3710577046270275982}
   m_LocalEulerAnglesHint: {x: -89.98, y: 180, z: 0}
---- !u!65 &7445408913378492691
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7760770030059781232}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.018759308, y: 0.051623162, z: 0.018395955}
-  m_Center: {x: 0.0000494649, y: -0.002355785, z: -0.0008020276}
 --- !u!1 &7761150307872889038
 GameObject:
   m_ObjectHideFlags: 0
