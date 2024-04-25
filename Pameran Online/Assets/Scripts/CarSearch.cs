@@ -52,7 +52,7 @@ public class CarSearch : MonoBehaviour
         carDropdown.ClearOptions();
         carDropdown.AddOptions(carNames);
         prevCar = carDropdown.value;
-        SelectCar();
+        //SelectCar();
     }
 
     // Update is called once per frame

@@ -7,10 +7,14 @@ public class SlidingDoor : MonoBehaviour
     private Vector3 initialPosition;
     public Vector3 openPosition;
     public PokeButton pokeButton;
+    public AudioClip openAudio;
+    public AudioClip closeAudio;
     private bool isOpen = false;
+    private AudioSource audioSource;
     // Start is called before the first frame update
     void Start()
     {
+        audioSource = this.GetComponent<AudioSource>();
         initialPosition = transform.position;
     }
 
@@ -27,10 +31,12 @@ public class SlidingDoor : MonoBehaviour
     public void Open(bool noButton){
         if(pokeButton.GetActiveStatus() || noButton){
             isOpen = true;
+            audioSource.PlayOneShot(openAudio);
         }
     }
 
     public void Close(){
         isOpen = false;
+        audioSource.PlayOneShot(closeAudio);
     }
 }
