@@ -1604,6 +1604,17 @@
                 },
                 {
                     "name": "",
+                    "id": "aee72066-c5a8-42d6-96aa-74e91965dcc1",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Generic XR Controller",
+                    "action": "Select",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "dd433817-216c-46b9-8dd3-f3a4ea1767b9",
                     "path": "<XRController>{RightHand}/{Grip}",
                     "interactions": "",
@@ -1637,6 +1648,17 @@
                 },
                 {
                     "name": "",
+                    "id": "1744b71e-0429-491e-a3bf-4ffc36408917",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Generic XR Controller",
+                    "action": "Activate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "150f414f-61bf-47b1-b4f8-f772a2a40565",
                     "path": "<XRController>{RightHand}/{Trigger}",
                     "interactions": "",
@@ -1661,6 +1683,17 @@
                     "name": "",
                     "id": "1652c26e-d835-461f-b46b-55b146fd9bba",
                     "path": "<MetaAimHand>{RightHand}/indexPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Generic XR Controller",
+                    "action": "UI Press",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "589e4e9a-f400-48cd-9ec2-c4b42fc82644",
+                    "path": "<Mouse>/leftButton",
                     "interactions": "",
                     "processors": "",
                     "groups": "Generic XR Controller",

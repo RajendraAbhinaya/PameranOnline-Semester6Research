@@ -10,6 +10,7 @@ public class MainMenu : MonoBehaviour
     public ActionBasedContinuousTurnProvider continuousTurn;
     public TeleportationProvider teleportationProvider;
     public ActionBasedControllerManager controllerManager;
+    public KeyboardControls keyboardControls;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +28,7 @@ public class MainMenu : MonoBehaviour
         continuousTurn.enabled = true;
         teleportationProvider.enabled = true;
         controllerManager.enabled = true;
+        keyboardControls.enabled = true;
         Destroy(this.gameObject);
     }
 }
