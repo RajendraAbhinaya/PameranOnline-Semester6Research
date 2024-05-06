@@ -5,15 +5,18 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Old Main Gate.unity
     guid: 3e21d0d1505996b4dadc24c4f9c921f5
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Car Expo.unity
     guid: 2cb80bbc732f70343ab3ecb08b32f7a6
+  - enabled: 1
+    path: Assets/Scenes/Main Gate 1.unity
+    guid: 9c31e929ec2534a468ded7117b33b4e9
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: cf9973c4b908bab4ca0afa3b9e326101,
       type: 2}
