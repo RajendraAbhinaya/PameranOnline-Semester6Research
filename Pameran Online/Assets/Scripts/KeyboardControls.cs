@@ -20,28 +20,28 @@ public class KeyboardControls : MonoBehaviour
     void FixedUpdate()
     {
         if(Input.GetKey(KeyCode.W)){
-            characterController.Move(transform.forward * speed);
+            characterController.Move((transform.forward - Vector3.up) * speed);
         }
 
         if(Input.GetKey(KeyCode.S)){
-            characterController.Move(-transform.forward * speed);
+            characterController.Move((-transform.forward - Vector3.up) * speed);
         }
 
         if(Input.GetKey(KeyCode.A)){
-            characterController.Move(-transform.right * speed);
+            characterController.Move((-transform.right - Vector3.up) * speed);
         }
 
         if(Input.GetKey(KeyCode.D)){
-            characterController.Move(transform.right * speed);
+            characterController.Move((transform.right - Vector3.up) * speed);
         }
 
-        characterController.Move(-Vector3.up);
+        if(Input.GetAxis("Mouse X") != 0 || Input.GetAxis("Mouse Y") != 0){
+            xRotation += Input.GetAxis("Mouse Y") * rotationSpeed;
+            xRotation = Mathf.Clamp(xRotation, -30f, 30f);
+            yRotation += Input.GetAxis("Mouse X") * rotationSpeed;
+            cameraOffset.transform.localRotation = Quaternion.Euler(-xRotation, 0f, 0f);
 
-        xRotation += Input.GetAxis("Mouse Y") * rotationSpeed;
-        xRotation = Mathf.Clamp(xRotation, -30f, 30f);
-        yRotation += Input.GetAxis("Mouse X") * rotationSpeed;
-        cameraOffset.transform.localRotation = Quaternion.Euler(-xRotation, 0f, 0f);
-
-        transform.rotation = Quaternion.Euler(0f, yRotation, 0f);
+            transform.rotation = Quaternion.Euler(0f, yRotation, 0f);
+        }
     }
 }
