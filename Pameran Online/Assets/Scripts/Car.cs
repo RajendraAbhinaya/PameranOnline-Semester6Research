@@ -10,6 +10,8 @@ public class Car : ScriptableObject
     public new string name;
     public string brand;
     public string description;
+    [TextArea(5,10)]
+    public string features;
     public string length;
     public string width;
     public string height;

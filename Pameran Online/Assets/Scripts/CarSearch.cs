@@ -22,12 +22,12 @@ public class CarSearch : MonoBehaviour
     private List<Car> currCarList = new List<Car>();
     private Brand currBrand;
     private int prevCar;
-    private MiniatureSelector miniatureSelectorScript;
+    //private MiniatureSelector miniatureSelectorScript;
 
     // Start is called before the first frame update
     void Start()
     {
-        miniatureSelectorScript = socket.GetComponent<MiniatureSelector>();
+        //miniatureSelectorScript = socket.GetComponent<MiniatureSelector>();
         for(int i=0; i<brandList.Count; i++){
             brandNames.Add(brandList[i].brandName);
         }
@@ -78,6 +78,7 @@ public class CarSearch : MonoBehaviour
         carDropdown.ClearOptions();
         carDropdown.AddOptions(carNames);
 
+        /*
         if(!fromMiniature){
             Debug.Log("Not from miniature");
             //prevCar = -1;
@@ -86,8 +87,10 @@ public class CarSearch : MonoBehaviour
         else{
             Debug.Log("From miniature");
         }
+        */
     }
 
+/*
     public void SelectCar(){
         //miniatureSelectorScript.DestroyMiniature();
         //spawnMiniature = Time.time + 0.5f;
@@ -101,6 +104,7 @@ public class CarSearch : MonoBehaviour
             prevCar = carDropdown.value;
         }
     }
+    */
 
     public void SelectButton(){
         carStand.DestroyCar();

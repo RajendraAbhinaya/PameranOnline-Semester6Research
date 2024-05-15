@@ -9,6 +9,7 @@ public class CarStand : MonoBehaviour
     public GameObject canvas;
     public TMP_Text carName;
     public TMP_Text description;
+    public TMP_Text features;
     public TMP_Text length;
     public TMP_Text width;
     public TMP_Text height;
@@ -91,6 +92,7 @@ public class CarStand : MonoBehaviour
 
         carName.text = car.name;
         description.text = car.description;
+        features.text = car.features;
         length.text = "Length: " + car.length;
         width.text = "Width: " + car.width;
         height.text = "Height: " + car.height;

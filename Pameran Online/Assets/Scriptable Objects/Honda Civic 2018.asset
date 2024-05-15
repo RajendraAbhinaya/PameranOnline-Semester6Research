@@ -17,8 +17,16 @@ MonoBehaviour:
     type: 3}
   name: Honda Civic 2018
   brand: Honda
-  description: 
-  length: 
-  width: 
-  height: 
-  price: 
+  description: Honda Civic Type R 2018
+  features: '-Brake Assist
+
+    -Front and Rear Stabilizer Bars
+
+    -Automatic Climatic
+    Control System
+
+    -Rear View Camera'
+  length: 455mm
+  width: 1799mm
+  height: 1416mm
+  price: 360.000.000

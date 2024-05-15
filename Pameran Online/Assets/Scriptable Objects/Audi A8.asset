@@ -17,8 +17,16 @@ MonoBehaviour:
     type: 3}
   name: Audi A8
   brand: Audi
-  description: 
-  length: 
-  width: 
-  height: 
-  price: 
+  description: Aud A8 adalah sebuah sedan
+  features: '-Heated Leather Seats
+
+    -Quattro All Wheel Drive
+
+    -Heated Mirrors
+
+    -Stability
+    Control'
+  length: 5137mm
+  width: 1949mm
+  height: 1467mm
+  price: 1.340.000.000

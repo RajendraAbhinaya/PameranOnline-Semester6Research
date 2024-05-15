@@ -18,7 +18,15 @@ MonoBehaviour:
   name: Toyota Vellfire 2022
   brand: Toyota
   description: Toyota Vellfire memiliki 7 kursi
+  features: '-Power Sliding Doors
+
+    -Rear Seat Entertainment System
+
+    -Wireless
+    Charging Pad
+
+    -Traction Control'
   length: 4935mm
   width: 1850mm
   height: 1895mm
-  price: 2147483647
+  price: 1.090.000.000

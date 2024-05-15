@@ -17,8 +17,16 @@ MonoBehaviour:
     type: 3}
   name: Mercedes G63 AMG
   brand: Mercedes
-  description: 
-  length: 
-  width: 
-  height: 
-  price: 
+  description: Mercedes G Wagpn
+  features: '-AMG SPEEDSHIFT TCT 9G-TRONIC Automatic transmission
+
+    -38.1-68.6
+    cu ft. Cargo capacity
+
+    -Automatic Climate Control
+
+    -Air Quality Control'
+  length: 4873mm
+  width: 1984mm
+  height: 1966mm
+  price: 5.655.000.000

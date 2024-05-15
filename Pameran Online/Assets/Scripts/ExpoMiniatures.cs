@@ -22,6 +22,5 @@ public class ExpoMiniatures : MonoBehaviour
     void OnCollisionEnter(Collision col){
         float velocity = Mathf.Clamp(Vector3.Magnitude(rigidBody.velocity) / 5f, 0.1f, 1f);
         audioSource.PlayOneShot(collisionAudio, velocity);
-        Debug.Log(velocity);
     }
 }

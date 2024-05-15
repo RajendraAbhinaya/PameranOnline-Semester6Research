@@ -17,8 +17,16 @@ MonoBehaviour:
     type: 3}
   name: BMW M4 CSL
   brand: BMW
-  description: 
-  length: 
-  width: 
-  height: 
-  price: 
+  description: BMW M4 CSL adalah sebuah coupe
+  features: '-3.0-liter BMW M TwinPower Turbo inline-6 cylinder Engine
+
+    -M Carbon
+    Ceramic Brakes
+
+    -M Carbon Full Bucket Seats
+
+    -Carbon Fiber Hood'
+  length: 4794mm
+  width: 1887mm
+  height: 1392mm
+  price: 5.500.000.000

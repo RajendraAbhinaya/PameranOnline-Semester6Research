@@ -17,7 +17,15 @@ MonoBehaviour:
     type: 3}
   name: Toyota Hilux 2022
   brand: Toyota
-  description: The Toyota Hilux 2022 is a pickup truck
+  description: The Toyota Hilux 2022 adalah sebuah pickup truck
+  features: '-Rear Bumper Step
+
+    -Multifunction Steering Wheel
+
+    -Toyota Safety
+    Sense
+
+    -Cruise Control'
   length: 5265mm
   width: 1800mm
   height: 1750mm

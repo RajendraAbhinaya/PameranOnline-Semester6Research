@@ -17,7 +17,15 @@ MonoBehaviour:
     type: 3}
   name: Toyota Fortuner 2021
   brand: Toyota
-  description: The Toyota Fortuner 2021 is an SUV
+  description: The Toyota Fortuner 2021 adalah sebuah SUV
+  features: '-Smart Entry and Push-Button Start
+
+    -Touchscreen Infotainment System
+
+    -Rear-Seat
+    Entertainment System
+
+    -Rear-View Camera'
   length: 4795
   width: 1855
   height: 1835

@@ -17,8 +17,16 @@ MonoBehaviour:
     type: 3}
   name: Mercedes S65 W222
   brand: Mercedes
-  description: 
-  length: 
-  width: 
-  height: 
-  price: 
+  description: Mercedes S65 W222 adalah sebuah sedan
+  features: '-Heated and Ventilated Seats
+
+    -Night View Assist PLUS
+
+    -Active
+    Steering Assist
+
+    -Quad-Zone Automatic Climate Control'
+  length: 5248mm
+  width: 1899mm
+  height: 1494mm
+  price: 745.000.000

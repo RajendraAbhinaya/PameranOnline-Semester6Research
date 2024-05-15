@@ -17,8 +17,16 @@ MonoBehaviour:
     type: 3}
   name: BMW F82
   brand: BMW
-  description: 
-  length: 
-  width: 
-  height: 
-  price: 
+  description: BMW F82 adalah sebuah coupe
+  features: '-Keyless Entry
+
+    -Heated Mirrors
+
+    -Knee Airbag
+
+    -S521A Rain
+    Sensor'
+  length: 4681mm
+  width: 1869mm
+  height: 1382mm
+  price: 1.850.000.000

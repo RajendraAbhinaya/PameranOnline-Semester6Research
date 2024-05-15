@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: Toyota Corolla
   m_EditorClassIdentifier: 
   prefab: {fileID: 146324900188071930, guid: a930148232eab2d4082090fea2a88c21, type: 3}
+  miniature: {fileID: 0}
   name: Toyota Corolla
+  brand: Toyota
   description: The new Toyota Corolla
   length: 4375mm
   width: 1780mm

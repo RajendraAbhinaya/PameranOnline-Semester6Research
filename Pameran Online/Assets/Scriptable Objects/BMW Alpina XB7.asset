@@ -17,8 +17,16 @@ MonoBehaviour:
     type: 3}
   name: BMW Alpina XB7
   brand: BMW
-  description: 
-  length: 
-  width: 
-  height: 
-  price: 
+  description: BMW Alpina XB7 adalah sebuah SUV
+  features: '-Electronic Throttle Control
+
+    -Brake Energy Regeneration
+
+    -Auto
+    Start-Stop Function
+
+    -Active Kidney Grille'
+  length: 5178mm
+  width: 2218mm
+  height: 1835mm
+  price: 2.774.000.000

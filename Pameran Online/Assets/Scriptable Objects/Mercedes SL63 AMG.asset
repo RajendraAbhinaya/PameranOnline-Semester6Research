@@ -17,8 +17,16 @@ MonoBehaviour:
     type: 3}
   name: Mercedes SL63 AMG
   brand: Mercedes
-  description: 
-  length: 
-  width: 
-  height: 
-  price: 
+  description: Mercedes SL63 AMG adalah sebuah convertible
+  features: '-AMG High-Performance Braking System
+
+    -Quad Exhaust System
+
+    -Bluetooth
+    and USB Connectivity
+
+    -AMG Performance Suspension'
+  length: 4640mm
+  width: 1877mm
+  height: 1316mm
+  price: 3.680.000.000

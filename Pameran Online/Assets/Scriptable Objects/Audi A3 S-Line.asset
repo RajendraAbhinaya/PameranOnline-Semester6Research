@@ -17,8 +17,16 @@ MonoBehaviour:
     type: 3}
   name: Audi A3 S-Line
   brand: Audi
-  description: 
-  length: 
-  width: 
-  height: 
-  price: 
+  description: Aud A3 adalah sebuah sedan
+  features: '-Audi Matrix LED Headlights
+
+    -Audi Virtual Cockpit
+
+    -Audi Drive
+    Select
+
+    -Parking Sensors'
+  length: 4458mm
+  width: 1795mm
+  height: 1477mm
+  price: 678.000.000
