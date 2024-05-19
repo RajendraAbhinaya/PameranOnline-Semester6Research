@@ -17,7 +17,8 @@ MonoBehaviour:
     type: 3}
   name: BMW M4 CSL
   brand: BMW
-  description: BMW M4 CSL adalah sebuah coupe
+  description: BMW M4 CSL 2023 adalah versi terbatas dari M4 dengan bobot yang lebih
+    ringan, performa yang lebih tinggi, dan desain yang fokus pada trek balap.
   features: '-3.0-liter BMW M TwinPower Turbo inline-6 cylinder Engine
 
     -M Carbon

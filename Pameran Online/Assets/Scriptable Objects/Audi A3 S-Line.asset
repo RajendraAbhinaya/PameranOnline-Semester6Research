@@ -17,7 +17,9 @@ MonoBehaviour:
     type: 3}
   name: Audi A3 S-Line
   brand: Audi
-  description: Aud A3 adalah sebuah sedan
+  description: Audi A3 S-Line adalah sedan premium yang menggabungkan desain sporty,
+    interior mewah, dan teknologi canggih untuk pengalaman berkendara yang dinamis
+    dan elegan.
   features: '-Audi Matrix LED Headlights
 
     -Audi Virtual Cockpit

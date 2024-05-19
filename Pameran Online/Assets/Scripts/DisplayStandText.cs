@@ -7,18 +7,20 @@ public class DisplayStandText : MonoBehaviour
 {
     public TMP_Text expoName;
     public GameObject canvas;
-    private GameObject expo;
+    private GameObject expo = null;
 
     void OnTriggerEnter(Collider col){
-        expo = col.gameObject;
-        if(expo.tag == "Expo Select"){
-            expoName.text = expo.name;
-            canvas.SetActive(true);
+        if(expo == null){
+            expo = col.gameObject;
+            if(expo.tag == "Expo Select"){
+                expoName.text = expo.name;
+                canvas.SetActive(true);
+            }
         }
     }
 
     void OnTriggerExit(Collider col){
-        if(expo.tag == "Expo Select"){
+        if(col.gameObject == expo){
             expo = null;
             expoName.text = "";
             canvas.SetActive(false);

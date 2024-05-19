@@ -47,7 +47,7 @@ public class CarStand : MonoBehaviour
         if(isRotating){
             //Rotates the stand based on the y rotation of the controller.
             float handRotation = startingHandPosition.localRotation.y - startingHandRotation;
-            transform.Rotate(new Vector3(0, -handRotation, 0));
+            transform.Rotate(new Vector3(0, handRotation, 0));
         }
 
          //Reset the stand's rotation.

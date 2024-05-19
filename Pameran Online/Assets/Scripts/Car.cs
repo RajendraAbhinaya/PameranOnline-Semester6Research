@@ -9,6 +9,7 @@ public class Car : ScriptableObject
     public GameObject miniature;
     public new string name;
     public string brand;
+    [TextArea(5,10)]
     public string description;
     [TextArea(5,10)]
     public string features;
