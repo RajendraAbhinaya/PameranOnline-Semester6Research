@@ -11,7 +11,6 @@ public class Props : MonoBehaviour
 
     private Vector3 startingPosition;
     private Quaternion startingRotation;
-    private bool isBeingHeld = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +20,6 @@ public class Props : MonoBehaviour
 
         startingPosition = transform.position;
         startingRotation = transform.rotation;
-        Invoke("Reset", 60f);
     }
 
     void SetVolume(){
@@ -33,17 +31,17 @@ public class Props : MonoBehaviour
         audioSource.PlayOneShot(collisionAudio, velocity);
     }
 
-    public void Reset(){
-        if(!isBeingHeld){
-            Instantiate(this.gameObject, startingPosition, startingRotation);
-            Destroy(this.gameObject);
-        }
-        else{
-            Invoke("Reset", 60f);
-        }
+    void Reset(){
+        Instantiate(this.gameObject, startingPosition, startingRotation);
+        Destroy(this.gameObject);
     }
 
-    public void SetHeld(bool held){
-        isBeingHeld = held;
+    public void SetHeld(bool enterSelect){
+        if(enterSelect){
+            CancelInvoke();
+        }
+        else{
+            Invoke("Reset", 30f);
+        }
     }
 }

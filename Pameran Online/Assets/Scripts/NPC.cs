@@ -2,72 +2,55 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NPC : MonoBehaviour
+public class Npc : MonoBehaviour
 {
-    public Waypoint currWaypoint;
-    public float speed;
-    
-    private Transform body;
+    public GameObject waypoints;
+    public AudioClip footsteps;
+    private UnityEngine.AI.NavMeshAgent agent;
+    private List<Transform> destinations = new List<Transform>();
     private Animator animator;
-    private CharacterController characterController;
-    private bool isWalking = true;
-    private float minDistance = 1f;
-    private Quaternion targetRotation;
+    private int destinationAmount;
+    private Vector3 targetDestination;
+    private bool destinationSet = false;
+    private AudioSource audioSource;
     // Start is called before the first frame update
     void Start()
     {
+        agent = this.GetComponent<UnityEngine.AI.NavMeshAgent>();
         animator = this.GetComponent<Animator>();
-        characterController = this.GetComponent<CharacterController>();
-        body = animator.GetBoneTransform(HumanBodyBones.Chest);
-        targetRotation = Quaternion.LookRotation(currWaypoint.position - transform.position);
+        audioSource = this.GetComponent<AudioSource>();
+
+        destinationAmount = waypoints.transform.childCount;
+        for(int i=0; i<destinationAmount; i++){
+            destinations.Add(waypoints.transform.GetChild(i));
+        }
+        NewDestination();
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
-        if(isWalking){
-            Walk();
-        }
-        else if(currWaypoint.pointOfInterest != null){
-            targetRotation = Quaternion.LookRotation(currWaypoint.pointOfInterest.transform.position - transform.position);
-        }
-        transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, 0.1f);
-    }
-
-    void Walk(){
-        Vector3 destination = currWaypoint.position;
-        characterController.Move((destination - transform.position - Vector3.up).normalized * speed / 10f);
-
-        float distance = (destination - transform.position).magnitude;
-        if(distance < minDistance){
-            isWalking = false;
+        float distance = (targetDestination - transform.position).magnitude;
+        if(distance < 1f && destinationSet){
+            Invoke("NewDestination", Random.Range(3f, 8f));
             animator.SetBool("Walk", false);
-            Invoke("NewDestination", Random.Range(2f, 5f));
+            destinationSet = false;
+            StopAllCoroutines();
         }
     }
 
     void NewDestination(){
-        currWaypoint = currWaypoint.NextWaypoint();
-        targetRotation = Quaternion.LookRotation(currWaypoint.position - transform.position);
-        minDistance = Random.Range(0.2f, 2f);
-        isWalking = true;
+        targetDestination = destinations[Random.Range(0, destinationAmount)].position;
+        agent.SetDestination(targetDestination);
         animator.SetBool("Walk", true);
+        destinationSet = true;
+        StartCoroutine(Footsetps());
     }
 
-    /*
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.tag == "Expo Object") {
-            targetLook = other.transform;
-            Debug.Log("Enter");
+    IEnumerator Footsetps(){
+        while(true){
+            audioSource.PlayOneShot(footsteps, 0.5f);
+            yield return new WaitForSeconds(0.5f);
         }
     }
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.gameObject.tag == "Expo Object") {
-            targetLook = null;
-            Debug.Log("Exit");
-        }
-    }
-    */
 }

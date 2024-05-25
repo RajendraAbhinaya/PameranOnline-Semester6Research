@@ -182,6 +182,7 @@ GameObject:
   - component: {fileID: 4227927359623998488}
   - component: {fileID: 1427916441970603767}
   - component: {fileID: 2450203049763338742}
+  - component: {fileID: 903663028712172852}
   m_Layer: 0
   m_Name: PottedTree
   m_TagString: Untagged
@@ -563,3 +564,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collisionAudio: {fileID: 8300000, guid: e796e1bb95c438e43be36b8f94647f73, type: 3}
+--- !u!208 &903663028712172852
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5716527626758913397}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.215, y: 0.7845555, z: 0.215}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.7942963, z: 0}
+  m_TimeToStationary: 0.5

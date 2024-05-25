@@ -1137,6 +1137,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -2056393598334184119, guid: 8e4f707af374a1043bdab87d445028a0,
+        type: 3}
+      propertyPath: waypoints
+      value: 
+      objectReference: {fileID: 243134846}
     - target: {fileID: 5307119050927853573, guid: 8e4f707af374a1043bdab87d445028a0,
         type: 3}
       propertyPath: currWaypoint
@@ -1196,6 +1201,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SkelMesh_Bodyguard_01 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8643059346824876141, guid: 8e4f707af374a1043bdab87d445028a0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8876,6 +8886,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SkelMesh_Bodyguard_03 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5934813156151636233, guid: 64d48bf6a2bb40c45aaf1bb5f34bbc9e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5934813156151668009, guid: 64d48bf6a2bb40c45aaf1bb5f34bbc9e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8931,6 +8946,11 @@ PrefabInstance:
       propertyPath: currWaypoint
       value: 
       objectReference: {fileID: 886661579}
+    - target: {fileID: 7422232187052824887, guid: 64d48bf6a2bb40c45aaf1bb5f34bbc9e,
+        type: 3}
+      propertyPath: waypoints
+      value: 
+      objectReference: {fileID: 243134846}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8948,6 +8968,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SkelMesh_Bodyguard_03 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5934813156151636233, guid: 64d48bf6a2bb40c45aaf1bb5f34bbc9e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5934813156151668009, guid: 64d48bf6a2bb40c45aaf1bb5f34bbc9e,
         type: 3}
@@ -9004,6 +9029,11 @@ PrefabInstance:
       propertyPath: currWaypoint
       value: 
       objectReference: {fileID: 302699023}
+    - target: {fileID: 7422232187052824887, guid: 64d48bf6a2bb40c45aaf1bb5f34bbc9e,
+        type: 3}
+      propertyPath: waypoints
+      value: 
+      objectReference: {fileID: 243134846}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9779,6 +9809,10 @@ Transform:
   - {fileID: 1785332172}
   - {fileID: 131051663}
   - {fileID: 171154144}
+  - {fileID: 1522690666}
+  - {fileID: 1712941555}
+  - {fileID: 1089415639}
+  - {fileID: 2137004914}
   - {fileID: 1513151920}
   - {fileID: 886661578}
   - {fileID: 772325839}
@@ -9790,6 +9824,8 @@ Transform:
   - {fileID: 302699022}
   - {fileID: 1988989273}
   - {fileID: 1650872307}
+  - {fileID: 262567969}
+  - {fileID: 785453090}
   m_Father: {fileID: 1544316049}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &251962465
@@ -10504,6 +10540,57 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!1 &262567968
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 262567969}
+  - component: {fileID: 262567970}
+  m_Layer: 0
+  m_Name: Car Search Waypoint 3
+  m_TagString: Untagged
+  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &262567969
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 262567968}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.5, y: 0, z: 17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 243134847}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &262567970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 262567968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa2348ef81f54ec47be0bc858e69fd49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbours:
+  - {fileID: 131051662}
+  - {fileID: 171154143}
+  - {fileID: 2094459843}
+  - {fileID: 1988989272}
+  pointOfInterest: {fileID: 0}
+  position: {x: 0, y: 0, z: 0}
 --- !u!43 &265586910
 Mesh:
   m_ObjectHideFlags: 0
@@ -16398,6 +16485,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -2056393598334184119, guid: 8e4f707af374a1043bdab87d445028a0,
+        type: 3}
+      propertyPath: waypoints
+      value: 
+      objectReference: {fileID: 243134846}
     - target: {fileID: 5307119050927853573, guid: 8e4f707af374a1043bdab87d445028a0,
         type: 3}
       propertyPath: currWaypoint
@@ -16457,6 +16549,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SkelMesh_Bodyguard_01 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8643059346824876141, guid: 8e4f707af374a1043bdab87d445028a0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -25454,10 +25551,20 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -3726785473775044009, guid: 2fec3966fe98e954496558afc81c1ce2,
+        type: 3}
+      propertyPath: waypoints
+      value: 
+      objectReference: {fileID: 243134846}
     - target: {fileID: 2600387383616252318, guid: 2fec3966fe98e954496558afc81c1ce2,
         type: 3}
       propertyPath: m_Name
       value: SkelMesh_Bodyguard_04
+      objectReference: {fileID: 0}
+    - target: {fileID: 2600387383616252318, guid: 2fec3966fe98e954496558afc81c1ce2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2600387383616419262, guid: 2fec3966fe98e954496558afc81c1ce2,
         type: 3}
@@ -28956,6 +29063,69 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 739280320}
   m_Mesh: {fileID: 4300110, guid: 83e5ddd5977f64451bf5d8f291b767be, type: 3}
+--- !u!1 &745136038
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 745136040}
+  - component: {fileID: 745136039}
+  m_Layer: 0
+  m_Name: NavMesh
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &745136039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 745136038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_GenerateLinks: 0
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.16666667
+  m_MinRegionArea: 2
+  m_NavMeshData: {fileID: 23800000, guid: 667a0015c02cafc4ab6dcb399f55701d, type: 2}
+  m_BuildHeightMesh: 0
+--- !u!4 &745136040
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 745136038}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7.5, y: 0, z: 20}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &754182022
 GameObject:
   m_ObjectHideFlags: 0
@@ -29615,6 +29785,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SkelMesh_Bodyguard_03 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5934813156151636233, guid: 64d48bf6a2bb40c45aaf1bb5f34bbc9e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5934813156151668009, guid: 64d48bf6a2bb40c45aaf1bb5f34bbc9e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -29670,6 +29845,11 @@ PrefabInstance:
       propertyPath: currWaypoint
       value: 
       objectReference: {fileID: 283357792}
+    - target: {fileID: 7422232187052824887, guid: 64d48bf6a2bb40c45aaf1bb5f34bbc9e,
+        type: 3}
+      propertyPath: waypoints
+      value: 
+      objectReference: {fileID: 243134846}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -29735,6 +29915,7 @@ Transform:
   - {fileID: 1389709881}
   - {fileID: 1325408000}
   - {fileID: 1272337475}
+  - {fileID: 1164639824}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &772325837
@@ -29782,7 +29963,7 @@ Transform:
   m_GameObject: {fileID: 772325837}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.5, y: 0, z: -3.5}
+  m_LocalPosition: {x: -6, y: 0, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -29871,6 +30052,57 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 776929046}
   m_Mesh: {fileID: 4300136, guid: 83e5ddd5977f64451bf5d8f291b767be, type: 3}
+--- !u!1 &785453089
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 785453090}
+  - component: {fileID: 785453091}
+  m_Layer: 0
+  m_Name: Car Search Waypoint 4
+  m_TagString: Untagged
+  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &785453090
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 785453089}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.5, y: 0, z: 17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 243134847}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &785453091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 785453089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa2348ef81f54ec47be0bc858e69fd49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbours:
+  - {fileID: 131051662}
+  - {fileID: 171154143}
+  - {fileID: 2094459843}
+  - {fileID: 1988989272}
+  pointOfInterest: {fileID: 0}
+  position: {x: 0, y: 0, z: 0}
 --- !u!1 &800741827
 GameObject:
   m_ObjectHideFlags: 0
@@ -30431,10 +30663,20 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -3726785473775044009, guid: 2fec3966fe98e954496558afc81c1ce2,
+        type: 3}
+      propertyPath: waypoints
+      value: 
+      objectReference: {fileID: 243134846}
     - target: {fileID: 2600387383616252318, guid: 2fec3966fe98e954496558afc81c1ce2,
         type: 3}
       propertyPath: m_Name
       value: SkelMesh_Bodyguard_04 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2600387383616252318, guid: 2fec3966fe98e954496558afc81c1ce2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2600387383616419262, guid: 2fec3966fe98e954496558afc81c1ce2,
         type: 3}
@@ -42107,6 +42349,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -2056393598334184119, guid: 8e4f707af374a1043bdab87d445028a0,
+        type: 3}
+      propertyPath: waypoints
+      value: 
+      objectReference: {fileID: 243134846}
     - target: {fileID: 5307119050927853573, guid: 8e4f707af374a1043bdab87d445028a0,
         type: 3}
       propertyPath: currWaypoint
@@ -42166,6 +42413,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SkelMesh_Bodyguard_01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8643059346824876141, guid: 8e4f707af374a1043bdab87d445028a0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -42662,6 +42914,59 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1086761280}
   m_CullTransparentMesh: 1
+--- !u!1 &1089415638
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1089415639}
+  - component: {fileID: 1089415640}
+  m_Layer: 0
+  m_Name: Car Stand Waypoint 11
+  m_TagString: Untagged
+  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1089415639
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1089415638}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -18, y: 0, z: 17.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 243134847}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1089415640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1089415638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa2348ef81f54ec47be0bc858e69fd49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbours:
+  - {fileID: 1530250459}
+  - {fileID: 1513151921}
+  - {fileID: 886661579}
+  - {fileID: 772325838}
+  - {fileID: 1467911217}
+  - {fileID: 302699023}
+  pointOfInterest: {fileID: 473883415}
+  position: {x: 0, y: 0, z: 0}
 --- !u!1001 &1089641721
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -43328,10 +43633,20 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -3726785473775044009, guid: 2fec3966fe98e954496558afc81c1ce2,
+        type: 3}
+      propertyPath: waypoints
+      value: 
+      objectReference: {fileID: 243134846}
     - target: {fileID: 2600387383616252318, guid: 2fec3966fe98e954496558afc81c1ce2,
         type: 3}
       propertyPath: m_Name
       value: SkelMesh_Bodyguard_04 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2600387383616252318, guid: 2fec3966fe98e954496558afc81c1ce2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2600387383616419262, guid: 2fec3966fe98e954496558afc81c1ce2,
         type: 3}
@@ -43540,6 +43855,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SkelMesh_Bodyguard_03 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5934813156151636233, guid: 64d48bf6a2bb40c45aaf1bb5f34bbc9e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5934813156151668009, guid: 64d48bf6a2bb40c45aaf1bb5f34bbc9e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -43595,6 +43915,11 @@ PrefabInstance:
       propertyPath: currWaypoint
       value: 
       objectReference: {fileID: 171154143}
+    - target: {fileID: 7422232187052824887, guid: 64d48bf6a2bb40c45aaf1bb5f34bbc9e,
+        type: 3}
+      propertyPath: waypoints
+      value: 
+      objectReference: {fileID: 243134846}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -43608,10 +43933,20 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -3726785473775044009, guid: 2fec3966fe98e954496558afc81c1ce2,
+        type: 3}
+      propertyPath: waypoints
+      value: 
+      objectReference: {fileID: 243134846}
     - target: {fileID: 2600387383616252318, guid: 2fec3966fe98e954496558afc81c1ce2,
         type: 3}
       propertyPath: m_Name
       value: SkelMesh_Bodyguard_04 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2600387383616252318, guid: 2fec3966fe98e954496558afc81c1ce2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2600387383616419262, guid: 2fec3966fe98e954496558afc81c1ce2,
         type: 3}
@@ -45193,6 +45528,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -2056393598334184119, guid: 8e4f707af374a1043bdab87d445028a0,
+        type: 3}
+      propertyPath: waypoints
+      value: 
+      objectReference: {fileID: 243134846}
     - target: {fileID: 5307119050927853573, guid: 8e4f707af374a1043bdab87d445028a0,
         type: 3}
       propertyPath: currWaypoint
@@ -45252,6 +45592,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SkelMesh_Bodyguard_01 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8643059346824876141, guid: 8e4f707af374a1043bdab87d445028a0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -46009,6 +46354,54 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1164068633}
   m_Mesh: {fileID: 4300166, guid: 83e5ddd5977f64451bf5d8f291b767be, type: 3}
+--- !u!1 &1164639823
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1164639824}
+  - component: {fileID: 1164639825}
+  m_Layer: 0
+  m_Name: Nav Mesh Volume
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1164639824
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1164639823}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 11.75, z: 28.25}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 772179062}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1164639825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1164639823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e95dc5ff2b64380880dd7ac5922847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Size: {x: 40, y: 23, z: 120}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!43 &1166323940
 Mesh:
   m_ObjectHideFlags: 0
@@ -53581,10 +53974,20 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -3726785473775044009, guid: 2fec3966fe98e954496558afc81c1ce2,
+        type: 3}
+      propertyPath: waypoints
+      value: 
+      objectReference: {fileID: 243134846}
     - target: {fileID: 2600387383616252318, guid: 2fec3966fe98e954496558afc81c1ce2,
         type: 3}
       propertyPath: m_Name
       value: SkelMesh_Bodyguard_04 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2600387383616252318, guid: 2fec3966fe98e954496558afc81c1ce2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2600387383616419262, guid: 2fec3966fe98e954496558afc81c1ce2,
         type: 3}
@@ -56648,6 +57051,8 @@ GameObject:
   - component: {fileID: 1413240754}
   - component: {fileID: 1413240753}
   - component: {fileID: 1413240763}
+  - component: {fileID: 1413240765}
+  - component: {fileID: 1413240764}
   m_Layer: 0
   m_Name: XR Origin (XR Rig)
   m_TagString: Player
@@ -56938,6 +57343,129 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraOffset: {fileID: 1023002126}
+--- !u!82 &1413240764
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1413240752}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &1413240765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1413240752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f6dab6bd45818a4f916506fdb9a09a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftHandMove:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Left Hand Move
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: ad6e9692-1c14-42e0-8900-3100a54414ce
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 6972639530819350904, guid: c348712bda248c246b8c49b3db54643f,
+      type: 3}
+  footstep: {fileID: 8300000, guid: f64e8dc3f16176d4da55d2c9ac69de54, type: 3}
+  footstepInterval: 0.5
 --- !u!1 &1418962004
 GameObject:
   m_ObjectHideFlags: 0
@@ -58049,6 +58577,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -2056393598334184119, guid: 8e4f707af374a1043bdab87d445028a0,
+        type: 3}
+      propertyPath: waypoints
+      value: 
+      objectReference: {fileID: 243134846}
     - target: {fileID: 5307119050927853573, guid: 8e4f707af374a1043bdab87d445028a0,
         type: 3}
       propertyPath: currWaypoint
@@ -58108,6 +58641,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SkelMesh_Bodyguard_01 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8643059346824876141, guid: 8e4f707af374a1043bdab87d445028a0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -58478,7 +59016,7 @@ Transform:
   m_GameObject: {fileID: 1467911215}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -61904,6 +62442,59 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &1522690665
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1522690666}
+  - component: {fileID: 1522690667}
+  m_Layer: 0
+  m_Name: Car Stand Waypoint 9
+  m_TagString: Untagged
+  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1522690666
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1522690665}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -18, y: 0, z: -17.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 243134847}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1522690667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1522690665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa2348ef81f54ec47be0bc858e69fd49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbours:
+  - {fileID: 1530250459}
+  - {fileID: 1513151921}
+  - {fileID: 886661579}
+  - {fileID: 772325838}
+  - {fileID: 1467911217}
+  - {fileID: 302699023}
+  pointOfInterest: {fileID: 473883415}
+  position: {x: 0, y: 0, z: 0}
 --- !u!1001 &1522964714
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -69245,6 +69836,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SkelMesh_Bodyguard_03 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5934813156151636233, guid: 64d48bf6a2bb40c45aaf1bb5f34bbc9e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5934813156151668009, guid: 64d48bf6a2bb40c45aaf1bb5f34bbc9e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -69300,6 +69896,11 @@ PrefabInstance:
       propertyPath: currWaypoint
       value: 
       objectReference: {fileID: 2066668816}
+    - target: {fileID: 7422232187052824887, guid: 64d48bf6a2bb40c45aaf1bb5f34bbc9e,
+        type: 3}
+      propertyPath: waypoints
+      value: 
+      objectReference: {fileID: 243134846}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -69629,6 +70230,59 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: efeac81bcbca31d4e9f94e9d902c6124, type: 3}
+--- !u!1 &1712941554
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1712941555}
+  - component: {fileID: 1712941556}
+  m_Layer: 0
+  m_Name: Car Stand Waypoint 10
+  m_TagString: Untagged
+  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1712941555
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1712941554}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 18, y: 0, z: -17.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 243134847}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1712941556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1712941554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa2348ef81f54ec47be0bc858e69fd49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbours:
+  - {fileID: 1530250459}
+  - {fileID: 1513151921}
+  - {fileID: 886661579}
+  - {fileID: 772325838}
+  - {fileID: 1467911217}
+  - {fileID: 302699023}
+  pointOfInterest: {fileID: 473883415}
+  position: {x: 0, y: 0, z: 0}
 --- !u!1 &1715220112
 GameObject:
   m_ObjectHideFlags: 0
@@ -70077,6 +70731,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SkelMesh_Bodyguard_03
       objectReference: {fileID: 0}
+    - target: {fileID: 5934813156151636233, guid: 64d48bf6a2bb40c45aaf1bb5f34bbc9e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5934813156151668009, guid: 64d48bf6a2bb40c45aaf1bb5f34bbc9e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -70132,6 +70791,11 @@ PrefabInstance:
       propertyPath: currWaypoint
       value: 
       objectReference: {fileID: 1530250459}
+    - target: {fileID: 7422232187052824887, guid: 64d48bf6a2bb40c45aaf1bb5f34bbc9e,
+        type: 3}
+      propertyPath: waypoints
+      value: 
+      objectReference: {fileID: 243134846}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -74509,6 +75173,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -2056393598334184119, guid: 8e4f707af374a1043bdab87d445028a0,
+        type: 3}
+      propertyPath: waypoints
+      value: 
+      objectReference: {fileID: 243134846}
     - target: {fileID: 5307119050927853573, guid: 8e4f707af374a1043bdab87d445028a0,
         type: 3}
       propertyPath: currWaypoint
@@ -74568,6 +75237,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SkelMesh_Bodyguard_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8643059346824876141, guid: 8e4f707af374a1043bdab87d445028a0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -82170,7 +82844,7 @@ Transform:
   m_GameObject: {fileID: 2066668815}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.5, y: 0, z: -3.5}
+  m_LocalPosition: {x: 6, y: 0, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -82386,10 +83060,20 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -3726785473775044009, guid: 2fec3966fe98e954496558afc81c1ce2,
+        type: 3}
+      propertyPath: waypoints
+      value: 
+      objectReference: {fileID: 243134846}
     - target: {fileID: 2600387383616252318, guid: 2fec3966fe98e954496558afc81c1ce2,
         type: 3}
       propertyPath: m_Name
       value: SkelMesh_Bodyguard_04 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2600387383616252318, guid: 2fec3966fe98e954496558afc81c1ce2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2600387383616419262, guid: 2fec3966fe98e954496558afc81c1ce2,
         type: 3}
@@ -83111,7 +83795,7 @@ Transform:
   m_GameObject: {fileID: 2094459841}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 3}
+  m_LocalPosition: {x: 0, y: 0, z: 4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -84599,6 +85283,59 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2133304287}
   m_Mesh: {fileID: 4300002, guid: 83e5ddd5977f64451bf5d8f291b767be, type: 3}
+--- !u!1 &2137004913
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2137004914}
+  - component: {fileID: 2137004915}
+  m_Layer: 0
+  m_Name: Car Stand Waypoint 12
+  m_TagString: Untagged
+  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2137004914
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2137004913}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 18, y: 0, z: 17.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 243134847}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2137004915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2137004913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa2348ef81f54ec47be0bc858e69fd49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbours:
+  - {fileID: 1530250459}
+  - {fileID: 1513151921}
+  - {fileID: 886661579}
+  - {fileID: 772325838}
+  - {fileID: 1467911217}
+  - {fileID: 302699023}
+  pointOfInterest: {fileID: 473883415}
+  position: {x: 0, y: 0, z: 0}
 --- !u!43 &2139699130
 Mesh:
   m_ObjectHideFlags: 0
@@ -85024,6 +85761,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -2056393598334184119, guid: 8e4f707af374a1043bdab87d445028a0,
+        type: 3}
+      propertyPath: waypoints
+      value: 
+      objectReference: {fileID: 243134846}
+    - target: {fileID: 5307119050927853573, guid: 8e4f707af374a1043bdab87d445028a0,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5307119050927853573, guid: 8e4f707af374a1043bdab87d445028a0,
         type: 3}
       propertyPath: currWaypoint
@@ -85456,3 +86203,4 @@ SceneRoots:
   - {fileID: 225425396}
   - {fileID: 1343267831}
   - {fileID: 24963744}
+  - {fileID: 745136040}
