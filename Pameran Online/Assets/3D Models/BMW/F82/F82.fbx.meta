@@ -3,7 +3,12 @@ guid: 8a7109a0dbdb82240ad8642a7ebfc505
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ARm4_m_bmw_logo
+    second: {fileID: 2100000, guid: 6bfa1e004522ba34da9b047878e853c6, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

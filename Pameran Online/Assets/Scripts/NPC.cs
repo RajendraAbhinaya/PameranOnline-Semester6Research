@@ -24,14 +24,14 @@ public class Npc : MonoBehaviour
         for(int i=0; i<destinationAmount; i++){
             destinations.Add(waypoints.transform.GetChild(i));
         }
-        NewDestination();
+        Invoke("NewDestination", Random.Range(0f, 5f));
     }
 
     // Update is called once per frame
     void Update()
     {
         float distance = (targetDestination - transform.position).magnitude;
-        if(distance < 1f && destinationSet){
+        if(distance < 0.5f && destinationSet){
             Invoke("NewDestination", Random.Range(3f, 8f));
             animator.SetBool("Walk", false);
             destinationSet = false;
@@ -49,7 +49,7 @@ public class Npc : MonoBehaviour
 
     IEnumerator Footsetps(){
         while(true){
-            audioSource.PlayOneShot(footsteps, 0.5f);
+            audioSource.PlayOneShot(footsteps, 0.3f);
             yield return new WaitForSeconds(0.5f);
         }
     }

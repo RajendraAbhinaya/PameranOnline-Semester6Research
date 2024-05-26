@@ -3,7 +3,23 @@ guid: 709796a78ce18f54a8f4237b5b662aa2
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bmw_emblem
+    second: {fileID: 2100000, guid: 6bfa1e004522ba34da9b047878e853c6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bmw_emblem_c
+    second: {fileID: 2100000, guid: 6bfa1e004522ba34da9b047878e853c6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: e92_signal_R_alt
+    second: {fileID: -779770868488121387, guid: 5c24d59345ce7394690a96fd383a6e39,
+      type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

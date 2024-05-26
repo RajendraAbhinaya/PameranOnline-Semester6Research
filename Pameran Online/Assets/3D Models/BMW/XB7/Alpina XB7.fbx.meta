@@ -3,7 +3,12 @@ guid: 391027e7f4a86bd4fab14d620f4c41d4
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: logo_alpina
+    second: {fileID: 2100000, guid: 6bfa1e004522ba34da9b047878e853c6, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

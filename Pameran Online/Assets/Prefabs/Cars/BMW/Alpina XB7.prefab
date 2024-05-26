@@ -230,7 +230,7 @@ MeshRenderer:
   m_Materials:
   - {fileID: -2795250226848021364, guid: 391027e7f4a86bd4fab14d620f4c41d4, type: 3}
   - {fileID: -5405324782598998711, guid: 391027e7f4a86bd4fab14d620f4c41d4, type: 3}
-  - {fileID: 7848147753365593467, guid: 391027e7f4a86bd4fab14d620f4c41d4, type: 3}
+  - {fileID: 2100000, guid: 6bfa1e004522ba34da9b047878e853c6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -749,7 +749,7 @@ MeshRenderer:
   m_Materials:
   - {fileID: -2795250226848021364, guid: 391027e7f4a86bd4fab14d620f4c41d4, type: 3}
   - {fileID: -5405324782598998711, guid: 391027e7f4a86bd4fab14d620f4c41d4, type: 3}
-  - {fileID: 7848147753365593467, guid: 391027e7f4a86bd4fab14d620f4c41d4, type: 3}
+  - {fileID: 2100000, guid: 6bfa1e004522ba34da9b047878e853c6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1396,7 +1396,7 @@ MeshRenderer:
   m_Materials:
   - {fileID: -2795250226848021364, guid: 391027e7f4a86bd4fab14d620f4c41d4, type: 3}
   - {fileID: -5405324782598998711, guid: 391027e7f4a86bd4fab14d620f4c41d4, type: 3}
-  - {fileID: 7848147753365593467, guid: 391027e7f4a86bd4fab14d620f4c41d4, type: 3}
+  - {fileID: 2100000, guid: 6bfa1e004522ba34da9b047878e853c6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2930,9 +2930,9 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 20
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -2965,7 +2965,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -4076,9 +4076,9 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 20
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -4111,7 +4111,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -6489,9 +6489,9 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 20
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -6524,7 +6524,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -6880,7 +6880,7 @@ MeshRenderer:
   m_Materials:
   - {fileID: -2795250226848021364, guid: 391027e7f4a86bd4fab14d620f4c41d4, type: 3}
   - {fileID: -5405324782598998711, guid: 391027e7f4a86bd4fab14d620f4c41d4, type: 3}
-  - {fileID: 7848147753365593467, guid: 391027e7f4a86bd4fab14d620f4c41d4, type: 3}
+  - {fileID: 2100000, guid: 6bfa1e004522ba34da9b047878e853c6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7132,9 +7132,9 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 20
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -7167,7 +7167,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -7769,7 +7769,7 @@ MeshRenderer:
   - {fileID: -2795250226848021364, guid: 391027e7f4a86bd4fab14d620f4c41d4, type: 3}
   - {fileID: -5405324782598998711, guid: 391027e7f4a86bd4fab14d620f4c41d4, type: 3}
   - {fileID: -2984868768897815536, guid: 391027e7f4a86bd4fab14d620f4c41d4, type: 3}
-  - {fileID: 7848147753365593467, guid: 391027e7f4a86bd4fab14d620f4c41d4, type: 3}
+  - {fileID: 2100000, guid: 6bfa1e004522ba34da9b047878e853c6, type: 2}
   - {fileID: -5703373146703662422, guid: 391027e7f4a86bd4fab14d620f4c41d4, type: 3}
   - {fileID: -8261106405512475880, guid: 391027e7f4a86bd4fab14d620f4c41d4, type: 3}
   m_StaticBatchInfo:
@@ -8285,7 +8285,7 @@ MeshRenderer:
   m_Materials:
   - {fileID: -2795250226848021364, guid: 391027e7f4a86bd4fab14d620f4c41d4, type: 3}
   - {fileID: -5405324782598998711, guid: 391027e7f4a86bd4fab14d620f4c41d4, type: 3}
-  - {fileID: 7848147753365593467, guid: 391027e7f4a86bd4fab14d620f4c41d4, type: 3}
+  - {fileID: 2100000, guid: 6bfa1e004522ba34da9b047878e853c6, type: 2}
   - {fileID: 5140466775294976191, guid: 391027e7f4a86bd4fab14d620f4c41d4, type: 3}
   - {fileID: -2893103968595699373, guid: 391027e7f4a86bd4fab14d620f4c41d4, type: 3}
   m_StaticBatchInfo:
@@ -9134,9 +9134,9 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 20
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -9169,7 +9169,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -9270,7 +9270,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 7848147753365593467, guid: 391027e7f4a86bd4fab14d620f4c41d4, type: 3}
+  - {fileID: 2100000, guid: 6bfa1e004522ba34da9b047878e853c6, type: 2}
   - {fileID: 5140466775294976191, guid: 391027e7f4a86bd4fab14d620f4c41d4, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
