@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bbd0e4b01a3a9e40a465c55477a5725, type: 3}
+  m_Name: Audi A5
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 4744217709274310068, guid: 522dc4ba0dde99641a242325e9aa5a15, type: 3}
+  miniature: {fileID: 0}
+  name: Audi A5
+  brand: Audi
+  description: Audi A5 Sportback S Line 2021 adalah sedan elegan dengan desain sporty,
+    performa dinamis, dan fitur teknologi canggih untuk pengalaman berkendara yang
+    premium.
+  features: '-Quattro All Wheel Drive
+
+    -Heated Mirrors
+
+    -Driveline Traction
+    Control
+
+    -Stability Control'
+  length: 4757mm
+  width: 1843mm
+  height: 1386mm
+  price: 1.248.000.000

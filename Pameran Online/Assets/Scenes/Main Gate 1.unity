@@ -5280,8 +5280,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 100}
-  m_SizeDelta: {x: 600, y: 150}
+  m_AnchoredPosition: {x: 0, y: 75}
+  m_SizeDelta: {x: 500, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &114126611
 MonoBehaviour:
@@ -5303,7 +5303,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Expo World
+  m_text: Virtual Reality Expo
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5330,7 +5330,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
+  m_fontSize: 66.15
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -29109,7 +29109,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.16666667
   m_MinRegionArea: 2
-  m_NavMeshData: {fileID: 23800000, guid: 667a0015c02cafc4ab6dcb399f55701d, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 3eeb5968ab86a2148b04eeb5febf3f2d, type: 2}
   m_BuildHeightMesh: 0
 --- !u!4 &745136040
 Transform:
@@ -45239,6 +45239,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 176816f0653aa024e8a26785c4d79236, type: 2}
     - {fileID: 11400000, guid: 853a5be2c9e906849abc06419516f6ed, type: 2}
     - {fileID: 11400000, guid: c3b08700626a31147945a5405b6fad4b, type: 2}
+    - {fileID: 11400000, guid: 558023a3113b47b4999e2f7e8fdfb041, type: 2}
     - {fileID: 11400000, guid: 810c24ddaad70fc4ea63e576a1da8518, type: 2}
   - countryName: Japan
     carList:
@@ -69979,6 +69980,7 @@ MonoBehaviour:
   - brandName: Audi
     carList:
     - {fileID: 11400000, guid: c3b08700626a31147945a5405b6fad4b, type: 2}
+    - {fileID: 11400000, guid: 558023a3113b47b4999e2f7e8fdfb041, type: 2}
     - {fileID: 11400000, guid: 810c24ddaad70fc4ea63e576a1da8518, type: 2}
   - brandName: Honda
     carList:
