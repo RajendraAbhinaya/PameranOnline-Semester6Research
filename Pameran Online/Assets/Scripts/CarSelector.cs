@@ -22,8 +22,8 @@ public class CarSelector : MonoBehaviour
     private int carStandsLength;
     private Country currCountry;
     private int currCountryCarListLength;
-    private int currPage = 0;
-    private int pageCount;
+    private int currHall = 0;
+    private int hallCount;
 
     // Start is called before the first frame update
     void Start()
@@ -32,12 +32,12 @@ public class CarSelector : MonoBehaviour
         carStandsLength = carStands.Count;
         currCountry = countryList[0];
         currCountryCarListLength = currCountry.carList.Count;
-        pageCount = Mathf.CeilToInt((float)currCountry.carList.Count / (float)carStandsLength);
+        hallCount = Mathf.CeilToInt((float)currCountry.carList.Count / (float)carStandsLength);
         countryText.text = currCountry.countryName;
 
         //Set prev button off as it is the first page. Set next button off if there is only one page
         prevButton.SetActive(false);
-        if(pageCount <= 1){
+        if(hallCount <= 1){
             nextButton.SetActive(false);
         }
         else{
@@ -52,14 +52,14 @@ public class CarSelector : MonoBehaviour
         //Set variable values according to the country chosen from the dropdown
         currCountry = countryList[dropdown.value];
         currCountryCarListLength = currCountry.carList.Count;
-        currPage = 0;
+        currHall = 0;
         countryText.text = currCountry.countryName;
-        hallText.text = "Hall " + (currPage+1);
-        pageCount = Mathf.CeilToInt((float)currCountry.carList.Count / (float)carStandsLength);
+        hallText.text = "Hall " + (currHall+1);
+        hallCount = Mathf.CeilToInt((float)currCountry.carList.Count / (float)carStandsLength);
 
         //Set prev button off as it is the first page. Set next button off if there is only one page
         prevButton.SetActive(false);
-        if(pageCount <= 1){
+        if(hallCount <= 1){
             nextButton.SetActive(false);
         }
         else{
@@ -71,7 +71,7 @@ public class CarSelector : MonoBehaviour
     //Sets the stands in the scene with the scriptable objects in the selected country's carList
     public void SetStands(){
         //Sets the offset for car selection based on which page is chosen
-        int offset = carStandsLength*currPage;
+        int offset = carStandsLength*currHall;
         for(int i = 0; i < carStandsLength; i++){
             //Erases all existing cars from the stands and then replaces them if there is a car available in the list
             carStands[i].DestroyCar();
@@ -84,10 +84,10 @@ public class CarSelector : MonoBehaviour
     //Used to go back to a previous page
     public void Prev(){
         nextButton.SetActive(true);
-        currPage--;
-        hallText.text = "Hall " + (currPage+1);
+        currHall--;
+        hallText.text = "Hall " + (currHall+1);
         SetStands();
-        if(currPage == 0){
+        if(currHall == 0){
             prevButton.SetActive(false);
         }
     }
@@ -95,10 +95,10 @@ public class CarSelector : MonoBehaviour
     //Used to go to the next page
     public void Next(){
         prevButton.SetActive(true);
-        currPage++;
-        hallText.text = "Hall " + (currPage+1);
+        currHall++;
+        hallText.text = "Hall " + (currHall+1);
         SetStands();
-        if(currPage == pageCount-1){
+        if(currHall == hallCount-1){
             nextButton.SetActive(false);
         }
     }

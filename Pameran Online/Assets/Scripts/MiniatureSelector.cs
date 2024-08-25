@@ -38,7 +38,7 @@ public class MiniatureSelector : MonoBehaviour
             for(int i=0; i<brandDropdown.options.Count; i++){
                 if(carBrand == brandDropdown.options[i].text){
                     brandDropdown.value = i;
-                    carSearchScript.SelectBrand(true);
+                    //carSearchScript.SelectBrand(true);
                     break;
                 }
             }

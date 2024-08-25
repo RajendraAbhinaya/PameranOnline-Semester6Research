@@ -21,7 +21,6 @@ public class CarSearch : MonoBehaviour
     private List<string> brandNames = new List<string>();
     private List<Car> currCarList = new List<Car>();
     private Brand currBrand;
-    private int prevCar;
     //private MiniatureSelector miniatureSelectorScript;
 
     // Start is called before the first frame update
@@ -51,8 +50,6 @@ public class CarSearch : MonoBehaviour
         }
         carDropdown.ClearOptions();
         carDropdown.AddOptions(carNames);
-        prevCar = carDropdown.value;
-        //SelectCar();
     }
 
     // Update is called once per frame
@@ -61,7 +58,7 @@ public class CarSearch : MonoBehaviour
         
     }
 
-    public void SelectBrand(bool fromMiniature){
+    public void SelectBrand(){
         string currBrandName = brandNames[brandDropdown.value];
         for(int i=0; i<brandList.Count; i++){
             if(currBrandName == brandList[i].brandName){
@@ -77,17 +74,6 @@ public class CarSearch : MonoBehaviour
         }
         carDropdown.ClearOptions();
         carDropdown.AddOptions(carNames);
-
-        /*
-        if(!fromMiniature){
-            Debug.Log("Not from miniature");
-            //prevCar = -1;
-            CheckCar();
-        }
-        else{
-            Debug.Log("From miniature");
-        }
-        */
     }
 
 /*
