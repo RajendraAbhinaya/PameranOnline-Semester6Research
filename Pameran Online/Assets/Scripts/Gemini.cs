@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.Networking;
 using Uralstech.UGemini;
 using Uralstech.UGemini.Chat;
@@ -11,14 +12,14 @@ public class Gemini : MonoBehaviour
 {
     const string gasUrl = "https://script.google.com/macros/s/AKfycbxzaYwRmU4v-icQZF8wvunbuOiS_-0aVur3IsBk00TZwxwbvkfl28BLmI9yaCjE87a0/exec";
 
-    private string inputPrompt = "What are the newest toyota releases in indonesia";
+    private string inputPrompt;
     private GeminiInputField geminiInputfield;
-    List<GeminiContent> _chatHistory = new();
+    private RawImage responseImage;
 
     // Start is called before the first frame update
     void Start()
     {
-        //StartCoroutine(SendDataToGas());
+
     }
 
     private IEnumerator SendDataToGas()
@@ -47,26 +48,35 @@ public class Gemini : MonoBehaviour
     {
         inputPrompt = prompt;
         geminiInputfield = inputField;
-        //RunChatRequest();
         StartCoroutine(SendDataToGas());
     }
 
-    private async void RunChatRequest()
+    private IEnumerator SendImageDataToGas()
     {
         Debug.Log("Running chat request.");
-        geminiInputfield.SetResponseText("Running chat request.");
-    
-        GeminiChatResponse response = await GeminiManager.Instance.Request<GeminiChatResponse>(
-            new GeminiChatRequest(GeminiModel.Gemini1_5Pro, true)
-            {
-                Contents = new GeminiContent[]
-                {
-                    GeminiContent.GetContent(inputPrompt)
-                },
-            }
-        );
         
-        Debug.Log($"Gemini's response: {response.Parts[^1].Text}");
-        geminiInputfield.SetResponseText(response.Parts[^1].Text);
+        WWWForm form = new WWWForm();
+        form.AddField("parameter", inputPrompt);
+        UnityWebRequest www = UnityWebRequest.Post(gasUrl, form);
+
+        yield return www.SendWebRequest();
+        Texture2D texture = new Texture2D(256, 256);
+
+        if(www. result == UnityWebRequest.Result.Success){
+            texture.LoadImage(www.downloadHandler.data);
+        }
+        else{
+            Debug.Log("There was an error");
+        }
+
+        responseImage.texture = texture;
     }
+
+    public void EnterImagePrompt(string prompt, RawImage image)
+    {
+        inputPrompt = prompt;
+        responseImage = image;
+        StartCoroutine(SendImageDataToGas());
+    }
+
 }
