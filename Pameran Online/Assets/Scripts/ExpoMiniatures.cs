@@ -4,23 +4,24 @@ using UnityEngine;
 
 public class ExpoMiniatures : MonoBehaviour
 {
-    public AudioClip collisionAudio;
-    private AudioSource audioSource;
-    private Rigidbody rigidBody;
+    public AnimationCurve selectWiggle;
+    public float animationLength;
+    private Vector3 startingPosition;
     // Start is called before the first frame update
     void Start()
     {
-        audioSource = this.GetComponent<AudioSource>();
-        rigidBody = this.GetComponent<Rigidbody>();
-        Invoke("SetVolume", 2f);
+        startingPosition = transform.position;
     }
 
-    void SetVolume(){
-        audioSource.volume = 1f;
+    public void ExpoSelected(){
+        StopAllCoroutines();
+        StartCoroutine(ExpoAnimation());
     }
 
-    void OnCollisionEnter(Collision col){
-        float velocity = Mathf.Clamp(Vector3.Magnitude(rigidBody.velocity) / 5f, 0.1f, 1f);
-        audioSource.PlayOneShot(collisionAudio, velocity);
+    IEnumerator ExpoAnimation(){
+        for(float i = 0.0f; i <= animationLength; i += 0.02f){
+            transform.position = startingPosition + new Vector3(0f, selectWiggle.Evaluate(i), 0f);
+            yield return new WaitForSeconds(0.02f);
+        }
     }
 }

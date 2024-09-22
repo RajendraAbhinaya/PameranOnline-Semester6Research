@@ -30,13 +30,17 @@ public class SlidingDoor : MonoBehaviour
 
     public void Open(bool noButton){
         if(pokeButton.GetActiveStatus() || noButton){
+            if(!isOpen){
+                audioSource.PlayOneShot(closeAudio);
+            }
             isOpen = true;
-            audioSource.PlayOneShot(openAudio);
         }
     }
 
     public void Close(){
+        if(isOpen){
+            audioSource.PlayOneShot(closeAudio);
+        }
         isOpen = false;
-        audioSource.PlayOneShot(closeAudio);
     }
 }

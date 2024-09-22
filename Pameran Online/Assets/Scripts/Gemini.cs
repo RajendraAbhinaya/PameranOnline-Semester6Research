@@ -11,11 +11,14 @@ using System.Threading.Tasks;
 public class Gemini : MonoBehaviour
 {
     const string gasUrl = "https://script.google.com/macros/s/AKfycbxzaYwRmU4v-icQZF8wvunbuOiS_-0aVur3IsBk00TZwxwbvkfl28BLmI9yaCjE87a0/exec";
+    const string imageRequestPrompt = "Provide a url for an image of the following using the first image from google images and make sure the url is valid: ";
 
+    public Texture2D loadingImage;
+    public Texture2D errorImage;
     private string inputPrompt;
     private GeminiInputField geminiInputfield;
     private RawImage responseImage;
-
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -34,7 +37,7 @@ public class Gemini : MonoBehaviour
         yield return www.SendWebRequest();
         string response = "";
 
-        if(www. result == UnityWebRequest.Result.Success){
+        if(www.result == UnityWebRequest.Result.Success){
             response = www.downloadHandler.text;
         }
         else{
@@ -54,27 +57,41 @@ public class Gemini : MonoBehaviour
     private IEnumerator SendImageDataToGas()
     {
         Debug.Log("Running chat request.");
+        responseImage.texture = loadingImage;
         
         WWWForm form = new WWWForm();
         form.AddField("parameter", inputPrompt);
         UnityWebRequest www = UnityWebRequest.Post(gasUrl, form);
 
         yield return www.SendWebRequest();
-        Texture2D texture = new Texture2D(256, 256);
-
-        if(www. result == UnityWebRequest.Result.Success){
-            texture.LoadImage(www.downloadHandler.data);
+        
+        string response = "";
+        if(www.result == UnityWebRequest.Result.Success){
+            response = www.downloadHandler.text;
+            StartCoroutine(GetTexture(response));
         }
         else{
-            Debug.Log("There was an error");
+            responseImage.texture = errorImage;
         }
+    }
 
-        responseImage.texture = texture;
+    private IEnumerator GetTexture(string url){
+        Debug.Log("Running image request: " + url);
+        UnityWebRequest request = UnityWebRequestTexture.GetTexture(url);
+        yield return request.SendWebRequest();
+
+        if(request.isNetworkError || request.isHttpError){
+            responseImage.texture = errorImage;
+            StartCoroutine(SendImageDataToGas());
+        }
+        else{
+            responseImage.texture = ((DownloadHandlerTexture) request.downloadHandler).texture;
+        }
     }
 
     public void EnterImagePrompt(string prompt, RawImage image)
     {
-        inputPrompt = prompt;
+        inputPrompt = imageRequestPrompt + prompt;
         responseImage = image;
         StartCoroutine(SendImageDataToGas());
     }
