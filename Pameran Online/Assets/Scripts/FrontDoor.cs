@@ -7,7 +7,7 @@ public class FrontDoor : MonoBehaviour
     public SlidingDoor leftDoor;
     public SlidingDoor rightDoor;
     
-    void OnTriggerEnter(Collider col){
+    void OnTriggerStay(Collider col){
         leftDoor.Open(true);
         rightDoor.Open(true);
     }

@@ -1,13 +1,5 @@
 {
   "dependencies": {
-    "com.srcnalt.openai-unity": {
-      "version": "file:C:/Users/User/Downloads/OpenAI-Unity",
-      "depth": 0,
-      "source": "local",
-      "dependencies": {
-        "com.unity.nuget.newtonsoft-json": "3.2.1"
-      }
-    },
     "com.unity.ai.navigation": {
       "version": "1.1.5",
       "depth": 0,
