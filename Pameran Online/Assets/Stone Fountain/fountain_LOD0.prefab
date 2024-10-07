@@ -95,6 +95,7 @@ GameObject:
   - component: {fileID: 3359438}
   - component: {fileID: 2354436}
   - component: {fileID: 20518526}
+  - component: {fileID: 3133436306204614892}
   m_Layer: 0
   m_Name: fountain_LOD0
   m_TagString: Untagged
@@ -194,3 +195,24 @@ LODGroup:
     fadeTransitionWidth: 0
     renderers: []
   m_Enabled: 1
+--- !u!65 &3133436306204614892
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 178508}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.670269, y: 3.6702688, z: 2.8826084}
+  m_Center: {x: -0.00000017881393, y: -0.00000033132403, z: 1.4413041}
