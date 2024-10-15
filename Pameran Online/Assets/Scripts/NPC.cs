@@ -40,7 +40,7 @@ public class Npc : MonoBehaviour
     }
 
     void NewDestination(){
-        targetDestination = destinations[Random.Range(0, destinationAmount)].position;
+        targetDestination = destinations[Random.Range(0, destinationAmount)].position + new Vector3(Random.Range(-0.2f, 0.2f), 0f, Random.Range(-0.2f, 0.2f));
         agent.SetDestination(targetDestination);
         animator.SetBool("Walk", true);
         destinationSet = true;
