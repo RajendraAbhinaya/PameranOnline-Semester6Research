@@ -14,9 +14,12 @@ public class CarInterior : MonoBehaviour
     private bool canExit = false;
     private GameObject player;
     private Vector3 lastPosition;
-    private CapsuleCollider collider;
+    private CapsuleCollider capsuleCollider;
     private GameObject settings;
     private GameObject playerCamera;
+    private GameObject cameraOffset;
+    private GameObject leftHand;
+    private GameObject rightHand;
     private TrackedPoseDriver trackedPoseDriver;
 
     private ActionBasedContinuousMoveProvider continuousMove;
@@ -29,12 +32,15 @@ public class CarInterior : MonoBehaviour
     {
         player = GameObject.Find("XR Origin (XR Rig)");
         settings = GameObject.Find("Settings Menu");
-        playerCamera = GameObject.Find("Camera Offset");
-        collider = this.GetComponent<CapsuleCollider>();
+        cameraOffset = GameObject.Find("Camera Offset");
+        playerCamera = cameraOffset.transform.GetChild(0).gameObject;
+        leftHand = cameraOffset.transform.GetChild(1).gameObject;
+        rightHand = cameraOffset.transform.GetChild(2).gameObject;
+        capsuleCollider = this.GetComponent<CapsuleCollider>();
         continuousMove = player.GetComponent<ActionBasedContinuousMoveProvider>();
         teleportation = player.GetComponent<TeleportationProvider>();
         keyboard = player.GetComponent<KeyboardControls>();
-        trackedPoseDriver = playerCamera.transform.GetChild(0).GetComponent<TrackedPoseDriver>();
+        trackedPoseDriver = playerCamera.GetComponent<TrackedPoseDriver>();
     }
 
     // Update is called once per frame
@@ -47,11 +53,17 @@ public class CarInterior : MonoBehaviour
             settings.SetActive(false);
 
             if(exitPressed && canExit){
-                collider.enabled = true;
+                capsuleCollider.enabled = true;
                 player.transform.position = lastPosition;
-                playerCamera.transform.localPosition = new Vector3(0f, 1.5f, 0f);
                 hasEntered = false;
                 canExit = false;
+
+                if(cameraOffset.transform.localPosition.y < 0.1f){
+                    trackedPoseDriver.trackingType = TrackedPoseDriver.TrackingType.RotationAndPosition;
+                }
+                else{
+                    cameraOffset.transform.localPosition = new Vector3(0f, 1.5f, 0f);
+                }
 
                 if(wasTeleportationEnabled){
                     teleportation.enabled = true;
@@ -67,7 +79,7 @@ public class CarInterior : MonoBehaviour
     }
 
     public void EnterInterior(){
-        collider.enabled = false;
+        capsuleCollider.enabled = false;
         lastPosition = player.transform.position;
         player.transform.position = transform.parent.position;
         hasEntered = true;
@@ -90,9 +102,14 @@ public class CarInterior : MonoBehaviour
 
         continuousMove.enabled = false;
 
-        playerCamera.transform.position = cameraPosition.position;
-        playerCamera.transform.localRotation = Quaternion.Euler(cameraPosition.forward);
-        trackedPoseDriver.trackingType = TrackedPoseDriver.TrackingType.RotationOnly;
+        Debug.Log(cameraOffset.transform.localPosition.y);
+        if(cameraOffset.transform.localPosition.y < 0.1f){
+            playerCamera.transform.position = cameraPosition.position;
+            trackedPoseDriver.trackingType = TrackedPoseDriver.TrackingType.RotationOnly;
+        }
+        else{
+            cameraOffset.transform.position = cameraPosition.position;
+        }
 
         Invoke("ExitCooldown", 1f);
     }

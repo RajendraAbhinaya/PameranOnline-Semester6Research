@@ -12,7 +12,7 @@ public class Settings : MonoBehaviour
     public GameObject settingsMenu;
     public GameObject player;
     public Transform head;
-    public Transform camera;
+    public Transform playerCamera;
     public float spawnDistance;
     public float despawnDistance;
     public InputActionProperty showButton;
@@ -52,7 +52,7 @@ public class Settings : MonoBehaviour
     {
         if(showButton.action.WasPressedThisFrame()){
             settingsMenu.SetActive(!settingsMenu.activeSelf);
-            transform.position = head.position + camera.localPosition + new Vector3(head.forward.x, 0, head.forward.z).normalized * spawnDistance;
+            transform.position = head.position + playerCamera.localPosition + new Vector3(head.forward.x, 0, head.forward.z).normalized * spawnDistance;
         }
         transform.LookAt(new Vector3(head.position.x, transform.position.y, head.position.z));
         transform.forward *= -1;

@@ -12,7 +12,7 @@ public class GeminiInputField : MonoBehaviour
 
     public void OnEnter(string input)
     {
-        gemini.EnterPrompt(input, this);
+        gemini.EnterInputFieldPrompt(input, this);
     }
 
     public void SetResponseText(string geminiResponse)
