@@ -74,6 +74,7 @@ public class Gemini : MonoBehaviour
 
                 if(www.result == UnityWebRequest.Result.Success){
                     response = www.downloadHandler.text;
+                    response.Replace("*", "");
                 }
                 else{
                     response = "There was an error";
