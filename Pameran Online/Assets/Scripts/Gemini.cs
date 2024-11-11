@@ -29,10 +29,11 @@ public class Gemini : MonoBehaviour
     private string inputPrompt;
     private RawImage responseImage;
     private List<TMP_Prompt> prompts = new List<TMP_Prompt>();
+    private Coroutine tmpCoroutine;
 
     void Start()
     {
-        StartCoroutine(SendDataToGasTMP());
+        tmpCoroutine = StartCoroutine(SendDataToGasTMP());
     }
 
     private IEnumerator SendDataToGasGeminiInputField(GeminiInputField geminiInputField)
@@ -140,6 +141,12 @@ public class Gemini : MonoBehaviour
         inputPrompt = imageRequestPrompt + prompt;
         responseImage = image;
         StartCoroutine(SendImageDataToGas());
+    }
+
+    public void ClearPrompts(){
+        StopCoroutine(tmpCoroutine);
+        prompts.Clear();
+        tmpCoroutine = StartCoroutine(SendDataToGasTMP());
     }
 
 }
