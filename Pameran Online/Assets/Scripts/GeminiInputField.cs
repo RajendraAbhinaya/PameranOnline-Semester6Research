@@ -7,8 +7,15 @@ using TMPro;
 public class GeminiInputField : MonoBehaviour
 {
     public TMP_Text response;
-    public Gemini gemini;
     public ContentSizeFitter contentSizer;
+    protected Gemini gemini;
+    protected GameObject player;
+
+    void Start()
+    {
+        player = GameObject.FindWithTag("Player");
+        gemini = GameObject.FindWithTag("GeminiAPI").GetComponent<Gemini>();
+    }
 
     public void OnEnter(string input)
     {
@@ -25,5 +32,9 @@ public class GeminiInputField : MonoBehaviour
     {
         contentSizer.enabled = false;
         contentSizer.enabled = true;
+    }
+
+    public void ToggleKeyboard(bool toggle){
+        player.GetComponent<KeyboardControls>().enabled = toggle;
     }
 }

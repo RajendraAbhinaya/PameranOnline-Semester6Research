@@ -7,6 +7,8 @@ TagManager:
   - Expo Select
   - Miniature
   - Expo Object
+  - CinemachineTarget
+  - GeminiAPI
   layers:
   - Default
   - TransparentFX
