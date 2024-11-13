@@ -24,12 +24,10 @@ public class CarSelector : MonoBehaviour
     private int currCountryCarListLength;
     private int currHall = 0;
     private int hallCount;
-    private Gemini gemini;
 
     // Start is called before the first frame update
     void Start()
     {
-        gemini = GameObject.Find("Gemini API").GetComponent<Gemini>();
         //Initialise starting values. currCountry set to first country in countryList
         carStandsLength = carStands.Count;
         currCountry = countryList[0];
@@ -72,7 +70,6 @@ public class CarSelector : MonoBehaviour
 
     //Sets the stands in the scene with the scriptable objects in the selected country's carList
     public void SetStands(){
-        gemini.ClearPrompts();
         //Sets the offset for car selection based on which page is chosen
         int offset = carStandsLength*currHall;
         for(int i = 0; i < carStandsLength; i++){

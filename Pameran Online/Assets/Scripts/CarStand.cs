@@ -8,7 +8,6 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class CarStand : MonoBehaviour
 {
     public GameObject canvas;
-    public GameObject spg;
     public ContentSizeFitter descriptionContentSizer;
     public ContentSizeFitter featuresContentSizer;
     public TMP_Text carName;
@@ -22,7 +21,6 @@ public class CarStand : MonoBehaviour
     public GameObject[] panels;
     public GameObject prevButton;
     public GameObject nextButton;
-    public AudioSource ttsAudioSource;
 
     private int panelAmount;
     private int currPanel = 0;
@@ -36,7 +34,6 @@ public class CarStand : MonoBehaviour
     private Quaternion startingRotation;
     private bool reset = false;
     private Gemini gemini;
-    private Spg spgScript;
 
     // Start is called before the first frame update
     void Awake()
@@ -47,7 +44,6 @@ public class CarStand : MonoBehaviour
 
         startingRotation = transform.rotation;
         gemini = GameObject.Find("Gemini API").GetComponent<Gemini>();
-        spgScript = spg.GetComponent<Spg>();
         StartCoroutine(ResetContentSizer());
     }
 
@@ -121,9 +117,7 @@ public class CarStand : MonoBehaviour
         */
 
         canvas.SetActive(true);
-        spg.SetActive(true);
         currPanel = 0;
-        spgScript.SetTextIndex(currPanel);
         prevButton.SetActive(false);
         nextButton.SetActive(true);
         panelAmount = panels.Length;
@@ -135,7 +129,6 @@ public class CarStand : MonoBehaviour
         nextButton.SetActive(true);
         panels[currPanel].SetActive(false);
         currPanel--;
-        spgScript.SetTextIndex(currPanel);
         panels[currPanel].SetActive(true);
         if(currPanel == 0){
             prevButton.SetActive(false);
@@ -147,7 +140,6 @@ public class CarStand : MonoBehaviour
         prevButton.SetActive(true);
         panels[currPanel].SetActive(false);
         currPanel++;
-        spgScript.SetTextIndex(currPanel);
         panels[currPanel].SetActive(true);
         if(currPanel == panelAmount-1){
             nextButton.SetActive(false);
@@ -159,9 +151,7 @@ public class CarStand : MonoBehaviour
         transform.rotation = startingRotation;
         Destroy(spawnedCar);
         canvas.SetActive(false);
-        spg.SetActive(false);
         panels[currPanel].SetActive(false);
-        ttsAudioSource.Stop();
     }
 
     IEnumerator ResetContentSizer(){

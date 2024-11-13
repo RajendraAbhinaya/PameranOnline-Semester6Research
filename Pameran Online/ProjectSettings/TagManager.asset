@@ -7,7 +7,6 @@ TagManager:
   - Expo Select
   - Miniature
   - Expo Object
-  - NPC
   layers:
   - Default
   - TransparentFX
