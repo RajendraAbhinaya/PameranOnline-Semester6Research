@@ -162,6 +162,10 @@ public class CarStand : MonoBehaviour
         panels[currPanel].SetActive(false);
     }
 
+    public void ToggleCanvas(){
+        canvas.SetActive(!canvas.activeSelf);
+    }
+
     IEnumerator ResetContentSizer(){
         while(true){
             descriptionContentSizer.enabled = false;

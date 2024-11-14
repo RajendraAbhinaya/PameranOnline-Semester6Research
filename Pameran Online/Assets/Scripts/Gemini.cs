@@ -126,7 +126,7 @@ public class Gemini : MonoBehaviour
         UnityWebRequest request = UnityWebRequestTexture.GetTexture(url);
         yield return request.SendWebRequest();
 
-        if(request.isNetworkError || request.isHttpError){
+        if(request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError){
             responseImage.texture = errorImage;
             StartCoroutine(SendImageDataToGas());
         }

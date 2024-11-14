@@ -6,11 +6,11 @@ using UnityEngine.UI;
 using UnityEngine.Audio;
 using UnityEngine.XR.Interaction.Toolkit;
 using TMPro;
+using UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets;
 
 public class Settings : MonoBehaviour
 {
     public GameObject settingsMenu;
-    public GameObject player;
     public Transform head;
     public Transform playerCamera;
     public float spawnDistance;
@@ -37,6 +37,8 @@ public class Settings : MonoBehaviour
     public GameObject titleText;
     private int panelAmount;
     private int currPanel = 0;
+    private GameObject player;
+    private ActionBasedControllerManager rightHand;
 
     // Start is called before the first frame update
     void Start()
@@ -45,6 +47,8 @@ public class Settings : MonoBehaviour
         moveSpeedText.text = continuousMove.moveSpeed.ToString("#.00") + "m/s";
         turnSpeedText.text = continuousTurn.turnSpeed.ToString("#.0") + "°/s";
         snapTurnText.text = snapTurn.turnAmount.ToString("#.0") + "°";
+        player = GameObject.FindWithTag("Player");
+        rightHand = GameObject.Find("Right Hand").GetComponent<ActionBasedControllerManager>();
     }
 
     // Update is called once per frame
@@ -84,6 +88,7 @@ public class Settings : MonoBehaviour
     public void SnapTurnToggle(bool active){
         snapTurn.enabled = active;
         continuousTurn.enabled = !active;
+        rightHand.smoothTurnEnabled = !active;
     }
 
     public void TeleportationToggle(bool active){

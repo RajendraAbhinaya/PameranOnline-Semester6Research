@@ -4,11 +4,13 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.InputSystem.XR;
+using UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets;
 
 public class CarInterior : MonoBehaviour
 {
     public InputActionProperty[] exitButtons;
     public Transform cameraPosition;
+    public GameObject[] interiorAnchors;
     private bool hasEntered = false;
     private bool exitPressed = false;
     private bool canExit = false;
@@ -57,6 +59,8 @@ public class CarInterior : MonoBehaviour
                 player.transform.position = lastPosition;
                 hasEntered = false;
                 canExit = false;
+                ToggleHands(true);
+                Invoke("ActivateAnchors", 1f);
 
                 if(cameraOffset.transform.localPosition.y < 0.1f){
                     trackedPoseDriver.trackingType = TrackedPoseDriver.TrackingType.RotationAndPosition;
@@ -110,11 +114,29 @@ public class CarInterior : MonoBehaviour
         else{
             cameraOffset.transform.position = cameraPosition.position;
         }
-
+        ToggleHands(false);
+        DeactivateAnchors();
         Invoke("ExitCooldown", 1f);
     }
 
     void ExitCooldown(){
         canExit = true;
+    }
+
+    void ToggleHands(bool toggle){
+        leftHand.SetActive(toggle);
+        rightHand.SetActive(toggle);
+    }
+
+    void ActivateAnchors(){
+        foreach(GameObject anchor in interiorAnchors){
+            anchor.SetActive(true);
+        }
+    }
+
+    void DeactivateAnchors(){
+        foreach(GameObject anchor in interiorAnchors){
+            anchor.SetActive(false);
+        }
     }
 }

@@ -9,6 +9,7 @@ TagManager:
   - Expo Object
   - CinemachineTarget
   - GeminiAPI
+  - NPC
   layers:
   - Default
   - TransparentFX

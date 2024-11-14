@@ -1,0 +1,44 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.UI;
+using UnityEngine.XR.Interaction.Toolkit;
+using TMPro;
+
+public class TutorialPanel : MonoBehaviour
+{
+    [System.Serializable]
+    public struct Tutorial{
+        public GameObject panel;
+        public InputActionProperty joystickInput;
+        public Vector2 threshholdValue;
+    }
+
+    public List<Tutorial> tutorialPanels = new List<Tutorial>();
+    private int index = 0;
+    private int tutorialCount;
+    // Start is called before the first frame update
+    void Start()
+    {
+        tutorialCount = tutorialPanels.Count;
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        Vector2 joystickDirection = tutorialPanels[index].joystickInput.action.ReadValue<Vector2>();
+        float dotProduct = Vector2.Dot(joystickDirection.normalized, tutorialPanels[index].threshholdValue.normalized);
+        if(dotProduct > 0.9f){
+            NextPanel();
+        }
+    }
+
+    public void NextPanel(){
+        tutorialPanels[index].panel.SetActive(false);
+        if(index < tutorialCount-1){
+            index++;
+            tutorialPanels[index].panel.SetActive(true);
+        }
+    }
+}  

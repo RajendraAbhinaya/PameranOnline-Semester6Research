@@ -13,11 +13,20 @@ public class GuardNPC : MonoBehaviour
     public RectTransform Content;
     private RectTransform questionsTransform;
     private RectTransform answersTransform;
+    private GameObject player;
     // Start is called before the first frame update
     void Start()
     {
         questionsTransform = questionsPanel.GetComponent<RectTransform>();
         answersTransform = answersPanel.GetComponent<RectTransform>();
+        player = GameObject.FindWithTag("Player");
+    }
+
+    void Update(){
+        Vector3 distance = player.transform.position - transform.position;
+        if(distance.magnitude > 10f){
+            ActivateCanvas(false);
+        }
     }
 
     public void SwitchPanels(){
