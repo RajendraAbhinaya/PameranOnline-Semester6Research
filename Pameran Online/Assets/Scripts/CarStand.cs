@@ -36,6 +36,8 @@ public class CarStand : MonoBehaviour
     private bool reset = false;
     private Gemini gemini;
     private Spg spgScript;
+    private CanvasGroup canvasGroup;
+    private Coroutine fadeCoroutine;
 
     // Start is called before the first frame update
     void Awake()
@@ -46,6 +48,7 @@ public class CarStand : MonoBehaviour
 
         startingRotation = transform.rotation;
         gemini = GameObject.FindWithTag("GeminiAPI").GetComponent<Gemini>();
+        canvasGroup = canvas.GetComponent<CanvasGroup>();
         spgScript = spg.GetComponent<Spg>();
         StartCoroutine(ResetContentSizer());
     }
@@ -163,7 +166,31 @@ public class CarStand : MonoBehaviour
     }
 
     public void ToggleCanvas(){
-        canvas.SetActive(!canvas.activeSelf);
+        if(fadeCoroutine != null){
+            StopCoroutine(fadeCoroutine);
+        }
+        if(!canvas.activeSelf && spg.activeSelf){
+            fadeCoroutine = StartCoroutine(FadeIn());
+        }
+        else{
+            fadeCoroutine = StartCoroutine(FadeOut());
+        }
+    }
+
+    public IEnumerator FadeIn(){
+        canvas.SetActive(true);
+        while(canvasGroup.alpha < 1f){
+            canvasGroup.alpha += 0.1f;
+            yield return new WaitForSeconds(0.01f);
+        }
+    }
+
+    public IEnumerator FadeOut(){
+        while(canvasGroup.alpha > 0f){
+            canvasGroup.alpha -= 0.1f;
+            yield return new WaitForSeconds(0.01f);
+        }
+        canvas.SetActive(false);
     }
 
     IEnumerator ResetContentSizer(){

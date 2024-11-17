@@ -15,9 +15,12 @@ public class TutorialPanel : MonoBehaviour
         public Vector2 threshholdValue;
     }
 
+    public CanvasGroup canvasGroup;
+    public float fadeDuration;
     public List<Tutorial> tutorialPanels = new List<Tutorial>();
     private int index = 0;
     private int tutorialCount;
+    private Coroutine fadeCoroutine;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,16 +32,29 @@ public class TutorialPanel : MonoBehaviour
     {
         Vector2 joystickDirection = tutorialPanels[index].joystickInput.action.ReadValue<Vector2>();
         float dotProduct = Vector2.Dot(joystickDirection.normalized, tutorialPanels[index].threshholdValue.normalized);
-        if(dotProduct > 0.9f){
-            NextPanel();
+        if(dotProduct > 0.9f || Input.GetKeyDown(KeyCode.F)){
+            fadeCoroutine = StartCoroutine(NextPanel());
         }
     }
 
-    public void NextPanel(){
+    public IEnumerator NextPanel(){
+        while(canvasGroup.alpha > 0f){
+            canvasGroup.alpha -= 0.01f * (1/fadeDuration);
+            yield return new WaitForSeconds(0.01f);
+        }
+
         tutorialPanels[index].panel.SetActive(false);
         if(index < tutorialCount-1){
             index++;
             tutorialPanels[index].panel.SetActive(true);
+            while(canvasGroup.alpha < 1f){
+                canvasGroup.alpha += 0.01f * (1/fadeDuration);
+                yield return new WaitForSeconds(0.01f);
+            }
         }
+        else{
+            Destroy(this.gameObject, 5f);
+        }
+        StopCoroutine(fadeCoroutine);
     }
 }  
