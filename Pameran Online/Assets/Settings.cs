@@ -25,7 +25,7 @@ public class Settings : MonoBehaviour
     public ActionBasedContinuousMoveProvider continuousMove;
     public ActionBasedContinuousTurnProvider continuousTurn;
     public ActionBasedSnapTurnProvider snapTurn;
-    public TeleportationProvider teleportation;
+    public XRRayInteractor teleportation;
     public KeyboardControls keyboard;
 
     [Header("Panels")]
@@ -92,7 +92,13 @@ public class Settings : MonoBehaviour
     }
 
     public void TeleportationToggle(bool active){
-        teleportation.enabled = active;
+        //teleportation.enabled = active;
+        if(active){
+            rightHand.m_TeleportInteractor = teleportation;
+        }
+        else{
+            rightHand.m_TeleportInteractor = null;
+        }
     }
 
     //Speed Functions

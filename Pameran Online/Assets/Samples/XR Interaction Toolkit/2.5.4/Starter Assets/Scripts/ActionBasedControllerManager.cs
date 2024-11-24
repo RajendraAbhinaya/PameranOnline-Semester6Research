@@ -40,7 +40,7 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
 
         [SerializeField]
         [Tooltip("The GameObject containing the interactor used for teleportation.")]
-        XRRayInteractor m_TeleportInteractor;
+        public XRRayInteractor m_TeleportInteractor;
 
         [Space]
         [Header("Controller Actions")]

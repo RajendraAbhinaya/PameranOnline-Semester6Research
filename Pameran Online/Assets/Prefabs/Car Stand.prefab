@@ -7524,7 +7524,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2360752024072168787, guid: 92b1be7bb0eb374459cd249f06362f35,
         type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2360752024072168787, guid: 92b1be7bb0eb374459cd249f06362f35,
+        type: 3}
       propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2360752024072168787, guid: 92b1be7bb0eb374459cd249f06362f35,
+        type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2360752024072168787, guid: 92b1be7bb0eb374459cd249f06362f35,
@@ -7534,7 +7544,17 @@ PrefabInstance:
       objectReference: {fileID: 7147985117715533513}
     - target: {fileID: 2360752024072168787, guid: 92b1be7bb0eb374459cd249f06362f35,
         type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7147985117715533513}
+    - target: {fileID: 2360752024072168787, guid: 92b1be7bb0eb374459cd249f06362f35,
+        type: 3}
       propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2360752024072168787, guid: 92b1be7bb0eb374459cd249f06362f35,
+        type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2360752024072168787, guid: 92b1be7bb0eb374459cd249f06362f35,
@@ -7544,12 +7564,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2360752024072168787, guid: 92b1be7bb0eb374459cd249f06362f35,
         type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CanTTS
+      objectReference: {fileID: 0}
+    - target: {fileID: 2360752024072168787, guid: 92b1be7bb0eb374459cd249f06362f35,
+        type: 3}
       propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: Spg, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2360752024072168787, guid: 92b1be7bb0eb374459cd249f06362f35,
         type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Spg, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2360752024072168787, guid: 92b1be7bb0eb374459cd249f06362f35,
+        type: 3}
       propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2360752024072168787, guid: 92b1be7bb0eb374459cd249f06362f35,
+        type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6165979312675049374, guid: 92b1be7bb0eb374459cd249f06362f35,

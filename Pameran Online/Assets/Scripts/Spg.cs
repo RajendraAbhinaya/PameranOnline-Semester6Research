@@ -11,6 +11,7 @@ public class Spg : GeminiInputField
     public TextToSpeech ttsScript;
     private int textIndex = 0;
     private List<GameObject> customers = new List<GameObject>();
+    private bool canTTS = true;
 
     // Update is called once per frame
     void Update()
@@ -30,16 +31,23 @@ public class Spg : GeminiInputField
     }
 
     public void ToggleCanvas(){
+        canTTS = false;
         canvas.SetActive(!canvas.activeSelf);
     }
 
     public void CallTTS(){
-        if(canvas.activeSelf){
-            ttsScript.StartTTS(response.text);
+        if(canTTS){
+            if(canvas.activeSelf){
+                ttsScript.StartTTS(response.text);
+            }
+            else{
+                ttsScript.StartTTS(texts[textIndex].text);
+            }
         }
-        else{
-            ttsScript.StartTTS(texts[textIndex].text);
-        }
+    }
+
+    public void CanTTS(){
+        canTTS = true;
     }
 
     public void OnEnter(string input)
