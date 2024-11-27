@@ -69,6 +69,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   icon: {fileID: 8091624511369047911}
+  particles: {fileID: 6222796804260638449, guid: 7ce2dacc8033e5242a5e588dca8ab176,
+    type: 3}
   destroyOnEnter: 0
   height: 0.25
   verticalSpeed: 2

@@ -11,12 +11,14 @@ public class CarInterior : MonoBehaviour
     public InputActionProperty[] exitButtons;
     public Transform cameraPosition;
     public GameObject[] interiorAnchors;
+
     private bool hasEntered = false;
     private bool exitPressed = false;
     private bool canExit = false;
     private GameObject player;
     private Vector3 lastPosition;
     private CapsuleCollider capsuleCollider;
+    private MeshRenderer meshRenderer;
     private GameObject settings;
     private GameObject playerCamera;
     private GameObject cameraOffset;
@@ -39,6 +41,7 @@ public class CarInterior : MonoBehaviour
         leftHand = cameraOffset.transform.GetChild(1).gameObject;
         rightHand = cameraOffset.transform.GetChild(2).gameObject;
         capsuleCollider = this.GetComponent<CapsuleCollider>();
+        meshRenderer = this.GetComponent<MeshRenderer>();
         continuousMove = player.GetComponent<ActionBasedContinuousMoveProvider>();
         teleportation = player.GetComponent<TeleportationProvider>();
         keyboard = player.GetComponent<KeyboardControls>();
@@ -116,6 +119,7 @@ public class CarInterior : MonoBehaviour
         }
         ToggleHands(false);
         DeactivateAnchors();
+        meshRenderer.enabled = false;
         Invoke("ExitCooldown", 1f);
     }
 

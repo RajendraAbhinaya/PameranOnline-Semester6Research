@@ -5,6 +5,7 @@ using UnityEngine;
 public class TutorialIcon : MonoBehaviour
 {
     public GameObject icon;
+    public GameObject particles;
     public bool destroyOnEnter;
     public float height;
     public float verticalSpeed;
@@ -39,6 +40,8 @@ public class TutorialIcon : MonoBehaviour
     }
 
     public void DestroyIcon(){
+        GameObject spawnedParticles = Instantiate(particles, this.transform.position + new Vector3(0f, 1.5f, 0f), Quaternion.Euler(-90f, 0f, 0f));
+        Destroy(spawnedParticles, 6f);
         Destroy(this.gameObject);
     }
 }

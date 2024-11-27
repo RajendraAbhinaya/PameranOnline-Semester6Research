@@ -22,6 +22,7 @@ public class CarStand : MonoBehaviour
     public GameObject[] panels;
     public GameObject prevButton;
     public GameObject nextButton;
+    public bool activateSalesperson;
 
     private int panelAmount;
     private int currPanel = 0;
@@ -38,6 +39,7 @@ public class CarStand : MonoBehaviour
     private Spg spgScript;
     private CanvasGroup canvasGroup;
     private Coroutine fadeCoroutine;
+    private Car car;
 
     // Start is called before the first frame update
     void Awake()
@@ -98,10 +100,11 @@ public class CarStand : MonoBehaviour
     }
 
     //Sets the stand using the values from the scriptable object passed through the function
-    public void SetCar(Car car){
+    public void SetCar(Car carObject){
+        car = carObject;
         spawnedCar = Instantiate(car.prefab, center.transform.position, Quaternion.identity);
         spawnedCar.transform.SetParent(center.transform);
-        spg.SetActive(true);
+        spg.SetActive(activateSalesperson);
 
         carName.text = car.name;
         /*
@@ -142,6 +145,8 @@ public class CarStand : MonoBehaviour
         if(currPanel == 0){
             prevButton.SetActive(false);
         }
+
+        DefaultText();
     }
 
     //Used to go to the next page
@@ -154,6 +159,8 @@ public class CarStand : MonoBehaviour
         if(currPanel == panelAmount-1){
             nextButton.SetActive(false);
         }
+
+        DefaultText();
     }
 
     //Remove the current car and reset the stand's rotation
@@ -200,6 +207,16 @@ public class CarStand : MonoBehaviour
             featuresContentSizer.enabled = false;
             featuresContentSizer.enabled = true;
             yield return new WaitForSeconds(1f);
+        }
+    }
+
+    void DefaultText(){
+        if(description.text == "There was an error"){
+            description.text = car.description;
+        }
+
+        if(features.text == "There was an error"){
+            features.text = car.features;
         }
     }
 }
