@@ -11,10 +11,13 @@ public class TutorialIcon : MonoBehaviour
     public float verticalSpeed;
     public float rotationSpeed;
     private float startingY;
+    private AudioSource audioSource;
+
     // Start is called before the first frame update
     void Start()
     {
         startingY = icon.transform.position.y;
+        audioSource = this.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -40,8 +43,11 @@ public class TutorialIcon : MonoBehaviour
     }
 
     public void DestroyIcon(){
+        if(destroyOnEnter){
+            audioSource.Play();
+        }
         GameObject spawnedParticles = Instantiate(particles, this.transform.position + new Vector3(0f, 1.5f, 0f), Quaternion.Euler(-90f, 0f, 0f));
         Destroy(spawnedParticles, 6f);
-        Destroy(this.gameObject);
+        Destroy(this.gameObject, 1f);
     }
 }

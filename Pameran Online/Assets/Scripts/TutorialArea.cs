@@ -11,10 +11,12 @@ public class TutorialArea : MonoBehaviour
     public bool facePlayer;
     private Coroutine fadeCoroutine;
     private GameObject player;
+    private AudioSource audioSource;
 
     void Start(){
         fadeCoroutine = StartCoroutine(FadeOut(false));
         player = GameObject.FindWithTag("Player");
+        audioSource = this.GetComponent<AudioSource>();
     }
 
     void Update(){
@@ -40,6 +42,7 @@ public class TutorialArea : MonoBehaviour
     }
 
     public void DestroyTutorial(){
+        audioSource.Play();
         StopCoroutine(fadeCoroutine);
         fadeCoroutine = StartCoroutine(FadeOut(true));
     }
@@ -59,7 +62,7 @@ public class TutorialArea : MonoBehaviour
         }
         tutorialCanvas.SetActive(false);
         if(destroy){
-            Destroy(this.gameObject);
+            Destroy(this.gameObject, 1f);
         }
     }
 }

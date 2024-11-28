@@ -127,6 +127,7 @@ public class CarStand : MonoBehaviour
         */
 
         canvas.SetActive(true);
+        fadeCoroutine = StartCoroutine(FadeIn());
         currPanel = 0;
         spgScript.SetTextIndex(currPanel);
         prevButton.SetActive(false);
@@ -167,6 +168,7 @@ public class CarStand : MonoBehaviour
     public void DestroyCar(){
         transform.rotation = startingRotation;
         Destroy(spawnedCar);
+        car = null;
         spg.SetActive(false);
         canvas.SetActive(false);
         panels[currPanel].SetActive(false);
@@ -176,7 +178,7 @@ public class CarStand : MonoBehaviour
         if(fadeCoroutine != null){
             StopCoroutine(fadeCoroutine);
         }
-        if(!canvas.activeSelf && spg.activeSelf){
+        if(!canvas.activeSelf && car != null){
             fadeCoroutine = StartCoroutine(FadeIn());
         }
         else{
