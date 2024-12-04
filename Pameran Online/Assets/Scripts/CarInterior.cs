@@ -56,7 +56,7 @@ public class CarInterior : MonoBehaviour
         }
         if(hasEntered){
             meshRenderer.enabled = false;
-            settings.SetActive(false);
+            //settings.SetActive(false);
 
             if(exitPressed && canExit){
                 capsuleCollider.enabled = true;
