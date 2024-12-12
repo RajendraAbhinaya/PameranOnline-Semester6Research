@@ -8,6 +8,7 @@ public class GeminiInputField : MonoBehaviour
 {
     public TMP_Text response;
     public ContentSizeFitter contentSizer;
+    public TMP_InputField inputField;
     protected Gemini gemini;
     protected GameObject player;
 
@@ -17,9 +18,9 @@ public class GeminiInputField : MonoBehaviour
         gemini = GameObject.FindWithTag("GeminiAPI").GetComponent<Gemini>();
     }
 
-    public void OnEnter(string input)
+    public void OnEnter()
     {
-        gemini.EnterInputFieldPrompt(input, this);
+        gemini.EnterInputFieldPrompt(inputField.text, this);
     }
 
     public void SetResponseText(string geminiResponse)
