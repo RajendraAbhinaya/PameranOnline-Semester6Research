@@ -751,7 +751,7 @@ GameObject:
   - component: {fileID: 4044461995583451267}
   - component: {fileID: 1028907752072046668}
   m_Layer: 0
-  m_Name: Gemini InputField
+  m_Name: Salesperson InputField
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
