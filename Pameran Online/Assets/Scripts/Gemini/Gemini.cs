@@ -3,9 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Networking;
-using Uralstech.UGemini;
-using Uralstech.UGemini.Chat;
-using Uralstech.UGemini.Models;
 using System.Threading.Tasks;
 using TMPro;
 
